@@ -1,0 +1,35 @@
+section.container.container--partial.container--almostwhite(data-container, data-ng-class="{'container--test':container.states.active}")
+	div.container__content
+		div.container__inner
+			h1.container__headline.container__headline--closer Seneste arbejde
+
+	div.slides(data-slides="3", data-slides-autoplay="false", data-ng-controller="SlidesCtrl as slides")
+		div.slides__list(data-ng-style="slides.css")
+			- for(var i=0;i<3;i++)
+				div.slides__slide
+					div.container__content
+						div.container__inner
+							div.featured
+								div.featured__text
+									div.rte.rte--layout4
+										h2 Urtekram
+										h3 Strategi / UX / Design / Implementering
+										p Efter mange gode, økologiske stunder i udviklingsprocessen, er Urtekram siderne netop lanceret. Nu er der masser af tilgængelig madinspiration og produktinformation klar til fornøjelse & fordøjelse for de danske, tyske, finske, svenske og engelske markeder.
+									div.featured__button
+										a.btn.btn--fit
+											div.btn__text Se flere
+									div.featured__button
+										a.btn.btn--fit
+											div.btn__text Se sitet
+								div.featured__image
+									img(src="http://placehold.it/850x500")
+		//div.slides__arrow.query--desktop.query--narrowdesktop(data-ng-click="slides.switchSlide(-1)")
+		//div.slides__arrow.slides__arrow--right.query--desktop.query--narrowdesktop(data-ng-click="slides.switchSlide(1)")
+		div.slides__map
+			div.slides__mapitem(data-ng-class="{'slides__mapitem--active': slides.checkActive(0)}", data-ng-click="slides.switchSlide(0, true)")
+			div.slides__mapitem(data-ng-class="{'slides__mapitem--active': slides.checkActive(1)}", data-ng-click="slides.switchSlide(1, true)")
+			div.slides__mapitem(data-ng-class="{'slides__mapitem--active': slides.checkActive(2)}", data-ng-click="slides.switchSlide(2, true)")
+
+	div.spacer
+	a.btn.btn--center
+		div.btn__text Se flere

@@ -1,0 +1,205 @@
+
+
+// PARAMETERS
+$__gutterWidth: 20px;
+
+// BLOCK
+.panel {
+  @include transition(transform 800ms ease);
+  width: 100%;
+  height: 100%;
+	padding-right: $__gutterWidth;
+	padding-left: $__gutterWidth;
+	position: relative;
+	opacity: 1;
+  //overflow-y: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  //position: fixed;
+  top: 0;
+  left: 0;
+  @include onlyInDebug() {
+    background-color: red;
+	}
+  /*
+  &:not(.panel--list) {
+    &:nth-child(1) {
+      @include translate(0%, 0%);
+    }
+    &:nth-child(2) {
+      @include translate(0%, 100%);
+    }
+    &:nth-child(3) {
+      @include translate(0%, 200%);
+    }
+  }
+  */
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+	}
+}
+
+.panel,
+.panel__inner,
+.panel__content,
+.panel__overlay,
+.panel__frame {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.panel__inner {
+  position: relative;
+	width: 100%;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	@include onlyInDebug() {
+		background-color: gold;
+	}
+}
+
+.panel__content {
+  width: $contentWidth;
+	margin: 0 auto;
+  @include mediaQueries(tablet){
+		width: $contentWidth;
+	};
+	@include mediaQueries(desktop){
+		width: $contentWidth;
+	};
+	@include mediaQueries(narrowdesktop){
+		width: $contentWidth;
+	};
+	@include mediaQueries(mobile){
+		//width: $contentWidth;
+	};
+	@include onlyInDebug() {
+		background-color: goldenrod;
+	}
+}
+
+.panel__overlay {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 1200px;
+  background-color: green;
+  left: 50%;
+  top: 100px;
+  margin-left: -150px;
+  border-bottom: 20px solid blue;
+}
+
+.panel__scrollarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+
+.panel__frame {
+  border-style: solid;
+  border-width: 15px;
+  @include border-image(url('/images/graphic/border_bullet.png') 15 15 round);
+  position: absolute;
+  z-index: 0;
+  top: 10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 20px);
+}
+
+//--- MODIFIERS ----------------------------------------------------------//
+
+.panel--list {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  //overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.panel--sun {
+  background-image: url('/images/graphic/sun_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*
+.panel-show2 {
+  .panel {
+    &:nth-child(1) {
+      @include translate(0%, -100%);
+    }
+    &:nth-child(2) {
+      @include translate(0%, 0%);
+    }
+    &:nth-child(3) {
+      @include translate(0%, 100%);
+    }
+  }
+}
+
+.panel-show3 {
+  .panel {
+    &:nth-child(1) {
+      @include translate(0%, -200%);
+    }
+    &:nth-child(2) {
+      @include translate(0%, -100%);
+    }
+    &:nth-child(3) {
+      @include translate(0%, 0%);
+    }
+  }
+}
+*/
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//
+@include mediaQueries(desktop) {
+  .panel {
+    //background-color: red;
+  }
+  @include mediaQueries(portrait) {
+    .panel {
+      //background-color: blue;
+    }
+  }
+  @include mediaQueries(landscape) {
+    .panel {
+      //background-color: blue;
+    }
+  }
+}
+
+
+@include mediaQueries(landscape) {
+  @include mediaQueries(desktop) {
+    // By having the landscape on the outside, the contentWidth variable will not be overriden
+  }
+}
+@include mediaQueries(portrait) {
+  @include mediaQueries(desktop) {
+    // By having the landscape on the outside, the contentWidth variable will not be overriden
+  }
+}

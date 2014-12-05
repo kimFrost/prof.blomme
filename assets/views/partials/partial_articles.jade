@@ -1,0 +1,19 @@
+section.container.container--partial(data-container, data-ng-class="{'container--test':container.states.active}")
+	div.container__content
+		div.container__inner
+			h1.container__headline Udvalgte nörderier
+			div.cluster.cluster--autoHeight
+				div.cluster__list
+					- for(var i=0;i<6;i++)
+						div.cluster__item
+							div.cluster__inner
+								a(href="#").card.card--link
+									div.card__image
+										img(src="http://placehold.it/400x195")
+									div.card__body
+										div.rte
+											h2 Headline
+											p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			div.spacer
+			a.btn.btn--center
+				div.btn__text Se flere

@@ -1,0 +1,79 @@
+
+// DESCRIPTION
+
+
+// NOTES
+
+
+// PARAMETERS
+
+
+// BLOCK
+.justy {
+  @include transition(background-color 300ms ease, transform 300ms ease);
+  width: 100%;
+  min-widows: 24;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  background-color: $color_coal;
+  z-index: -1;
+  &:before,
+  &:after {
+    @include transition(all 300ms ease);
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-color: $color_coal;
+  }
+  &:before {
+    //@include transform-origin(0%, 0%);
+    @include transform-origin(50%, 50%);
+    @include translate(0%, -200%);
+    //top: -200%;
+    top: 0%;
+  }
+  &:after {
+    //@include transform-origin(0%, 100%);
+    @include transform-origin(50%, 50%);
+    @include translate(0%, 200%);
+    //top: 200%;
+    top: 0%;
+  }
+  &:focus,
+  &:hover {
+
+  }
+  &:active {
+
+  }
+}
+
+.justy {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+
+
+//--- MODIFIERS -------------------------------------------------------//
+
+.justy--active {
+  //@include translate(3px, 0);
+  background-color: transparent;
+  &:before {
+    @include transform(rotate(45deg) translate(0%, 0%));
+    background-color: $color_white;
+  }
+  &:after {
+    @include transform(rotate(-45deg) translate(0%, 0%));
+    background-color: $color_white;
+  }
+}

@@ -1,0 +1,51 @@
+
+
+$attachmentIndicatorSize: 16px;
+$attachmentIndicatorSizeNoPx: 16;
+$attachmentIndicatorOffsetBottom: -8px;
+
+$__distToCenter: (sqrt(($attachmentIndicatorSizeNoPx * $attachmentIndicatorSizeNoPx) + ($attachmentIndicatorSizeNoPx * $attachmentIndicatorSizeNoPx)) / 2);
+
+
+// PARAMETERS
+
+// BLOCK
+.attachment {
+	display: block;
+	position: absolute;
+	//bottom: 0;
+	bottom: 5px;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+	text-align: center;
+}
+
+.attachment {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+
+//--- MODIFIERS -------------------------------------------------------//
+
+.attachment--indicator {
+  width: $__distToCenter * 2px;
+  height: #{$__distToCenter}px;
+  margin-left: -(#{$__distToCenter / 2}px);
+  &:before {
+    @include transform-origin(0%, 0%);
+    @include rotate(45deg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: $attachmentIndicatorSize;
+    height: $attachmentIndicatorSize;
+    background-color: $color_white;
+  }
+}

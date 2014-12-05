@@ -1,0 +1,97 @@
+
+// PARAMETERS
+
+
+
+// BLOCK
+
+.case {
+	display: block;
+    width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.case,
+.case__laptop,
+.case__mobile,
+.case__inner {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS -----------------------------------------------------//
+
+.case__laptop {
+	$_ratio: (image-width('../images/graphic/case/laptop_small.png') / image-height('../images/graphic/case/laptop_small.png'));
+	background-image: url('/images/graphic/case/laptop_small.png');
+	background-size: 100% auto;
+	width: 100%;
+	padding-bottom: (100% / $_ratio);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	.case__inner {
+		top: 5.8%;
+		left: 12.1%;
+		width: 76.1%;
+		height: 82.9%;
+	}
+}
+
+.case__mobile {
+	$_ratio: (image-width('../images/graphic/case/mobile.png') / image-height('../images/graphic/case/mobile.png'));
+	background-image: url('/images/graphic/case/mobile.png');
+	width: 20%;
+	padding-bottom: (20% / $_ratio);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	position: absolute;
+	bottom: -30px;
+	left: 15%;
+	.case__inner {
+		top: 14.5%;
+		left: 7.2%;
+		width: 86.1%;
+		height: 71.6%;
+	}
+}
+
+.case__inner {
+	@include transition(opacity 300ms ease);
+	position: absolute;
+	background-color: darkslategray;
+	overflow: hidden;
+	opacity: 1;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.6;
+	}
+	&:active {
+		opacity: 0.8;
+	}
+	& > img {
+		display: block;
+		width: 100%;
+		border: none;
+		margin: 0;
+	}
+}
+
+//--- MODIFERS -----------------------------------------------------//
+
+
+
+//--- MEDIA QUERIES -----------------------------------------------------//
+
+@include mediaQueries(narrowdesktop desktop) {
+	.case {
+		width: 80%;
+	}
+	.case__laptop {
+		background-image: url('/images/graphic/case/laptop.png');
+	}
+}

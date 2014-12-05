@@ -1,0 +1,127 @@
+
+@font-face {
+	font-family: 'FontIcomoon';
+	src: url('/fonts/icomoon.eot?');
+	src: url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/icomoon.woff?') format('woff'),
+	url('/fonts/icomoon.ttf?') format('truetype'),
+	url('/fonts/icomoon.svg?#fonticomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+[class^="icomoon--"],
+[class*=" icomoon--"] {
+	display: inline-block;
+	font-family: FontIcomoon;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&:before {
+		display: block;
+		font-family: inherit;
+		font-weight: inherit;
+	}
+}
+
+
+
+
+
+
+
+
+.icomoon--lyd {
+	&:before {
+		content: "\e600";
+	}
+}
+
+
+.icomoon--marketing {
+	&:before {
+		content: "\e601";
+	}
+}
+
+.icomoon--screen {
+	&:before {
+		content: "\e602";
+	}
+}
+
+.icomoon--seo {
+	&:before {
+		content: "\e603";
+	}
+}
+
+.icomoon--speaker {
+	&:before {
+		content: "\e604";
+	}
+}
+
+.icomoon--strategi {
+	&:before {
+		content: "\e605";
+	}
+}
+
+.icomoon--unicorn {
+	&:before {
+		content: "\e606";
+	}
+}
+
+.icomoon--ux {
+	&:before {
+		content: "\e607";
+	}
+}
+
+.icomoon--geek {
+  &:before {
+    content: "\e608";
+  }
+}
+
+.icomoon--implementering {
+  &:before {
+    content: "\e609";
+  }
+}
+
+
+.icomoon--kaffe {
+  &:before {
+    content: "\e60a";
+  }
+}
+
+.icomoon--logo {
+  &:before {
+    content: "\e60b";
+  }
+}
+
+.icomoon--alder {
+  &:before {
+    content: "\e60c";
+  }
+}
+
+.icomoon--born {
+  &:before {
+    content: "\e60d";
+  }
+}
+
+.icomoon--design {
+  &:before {
+    content: "\e60e";
+  }
+}

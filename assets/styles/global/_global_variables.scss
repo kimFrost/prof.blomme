@@ -1,0 +1,41 @@
+
+/* Global Variables */
+
+// Options booleans
+$useAdaptive: true !global; // Media Querie mixin will skip if this ain't true
+$debug: true !global; // Show debug features
+
+
+// Colors
+$color_white: #fff;
+$color_black: #000;
+$color_textblack: #000;
+$color_textwhite: #fff;
+
+$color_coal: #313131;
+$color_heart: #ef4b54;
+$color_darkheart: #eb3e42;
+$color_grey: #777777;
+$color_lightgrey: #b3b3b3;
+$color_lightergrey: #ebebeb;
+$color_almostwhite: #f9f9f9;
+$color_babyblue: #59a9cc;
+$color_cyanblue: #127495;
+
+
+// Media Queries, Labels and Content widths
+$contentWidth: "" !global;
+$mediaQueries: mobile 1px 619px, tablet 620px 1008px, narrowdesktop 1009px 1288px, desktop 1289px;
+$mediaQueriesContentWidths: mobile 100%, tablet 560px, narrowdesktop 960px, desktop 1248px;
+$mediaQueriesDefault: mobile;
+
+
+
+// Global font type
+$font_basic: "Myriad Pro", "Arial", Sans-serif;
+
+$font_openSans: 'Open Sans', $font_basic;
+
+$font_HelveticaNeueLight: 'HelveticaNeueW02-45Ligh', $font_basic;
+$font_HelveticaNeueHeavy: 'HelveticaNeueW01-85Heav', $font_basic;
+$font_HelveticaNeueMedium: 'HelveticaNeueW01-65Medi', $font_basic;

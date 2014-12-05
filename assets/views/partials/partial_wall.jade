@@ -1,0 +1,10 @@
+section.container.container--wall(data-container, data-ng-class="{'container--test':container.states.active}")
+	div.container__content
+		div.container__inner
+			h1.container__headline Kunder
+			div.wall
+				- for(var i=0;i<44;i++)
+					- var sizes = ['30x40', '70x40', '60x30', '50x20', '40x60', '50x55'];
+					- var randomInt = Math.floor(Math.random()*6);
+					div.wall__item
+						img(src="http://placehold.it/#{sizes[randomInt]}")
