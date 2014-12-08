@@ -1,15 +1,15 @@
 
 /* Global mediaQueries mixin */
 
-@mixin mediaQueries($type) {
+@mixin mediaQueries($profile, $type:width) {
 	@if $useAdaptive == true {
-		$type: unquote($type);
-		@for $i from 1 through length($type) {
-			$_type: nth($type, $i);
+    $profile: unquote($profile);
+		@for $i from 1 through length($profile) {
+			$_profile: nth($profile, $i);
 			@for $i from 1 through length($mediaQueries) {
 				$dimension : nth($mediaQueries,$i);
 				$dimensionType : nth($dimension,1);
-				@if $dimensionType == $_type {
+				@if $dimensionType == $_profile {
 					@if length($dimension) == 3 {
 						$contentWidth: nth(nth($mediaQueriesContentWidths, $i), 2) !global;
 						@media all and (min-width: nth($dimension,2)) and (max-width: nth($dimension,3)) {
@@ -29,6 +29,7 @@
 	}
 }
 
+
 @mixin resetContentWidth() {
   @for $i from 1 through length($mediaQueriesContentWidths) {
     $__list: nth($mediaQueriesContentWidths, $i);
@@ -40,3 +41,52 @@
   }
 }
 @include resetContentWidth();
+
+
+// $_map: ("key1": 1, "key2": 2)
+// $_value: map-get($_map, "Key1");
+// @if map-has-key($_map, "Key3") {
+// $_map: map-remove($_map, "Key3");
+
+.testme {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+}
+
+@include mediaQueries(mobile, height) {
+
+  @include mq-landscape() {
+
+  }
+  @include mq-portrait() {
+
+  }
+}
+
+
+@mixin newMediaQuerie($_map) {
+
+}
+
+@mixin mediaQueries($_profile, $type:width) {
+  @if $useAdaptive == true {
+
+
+  }
+}
+
+@mixin mq-landscape() {
+  // use global variables to make a fictive scope
+  // set the variables in the main mediaQueries.
+  // It will have the base values from the selected profile
+}
+
+@mixin mq-portrait() {
+  // use global variables to make a fictive scope
+  // set the variables in the main mediaQueries.
+  // It will have the base values from the selected profile
+}
