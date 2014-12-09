@@ -80,12 +80,12 @@ $fontsizes: alpha $alpha, beta $beta, gamma $gamma, jimmi $jimmi, delta $delta, 
 // Set base font size, from which all will scale
 html {
 	font-size: percentage($font-size / 100) !important;
-	@include mediaQueries(tablet){
+	//@include mediaQueries(tablet){
 		//font-size: percentage($font-size / 100) * 0.9 !important;
-	}
-	@include mediaQueries(mobile){
+	//}
+	//@include mediaQueries(mobile){
 		//font-size: percentage($font-size / 100) * 0.75 !important;
-	}
+  //}
 }
 
 //@extend %alpha;

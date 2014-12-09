@@ -2,7 +2,7 @@
 /* Global Variables */
 
 // Options booleans
-$useAdaptive: true !global; // Media Querie mixin will skip if this ain't true
+$mq-useAdaptive: true !global; // Media Querie mixin will skip if this ain't true
 $debug: true !global; // Show debug features
 
 
@@ -12,36 +12,28 @@ $color_black: #000;
 $color_textblack: #000;
 $color_textwhite: #fff;
 
-$color_coal: #313131;
-$color_heart: #ef4b54;
-$color_darkheart: #eb3e42;
-$color_grey: #777777;
-$color_lightgrey: #b3b3b3;
-$color_lightergrey: #ebebeb;
-$color_almostwhite: #f9f9f9;
-$color_babyblue: #59a9cc;
-$color_cyanblue: #127495;
+$color_hearth: #bf343b;
+$color_easter: #ecb619;
+$color_harvest: #fbeb99;
+
 
 
 // Media Queries, Labels and Content widths
-$contentWidth: "" !global;
-
-$mediaQueries: mobile 1px 619px, tablet 620px 1008px, narrowdesktop 1009px 1288px, desktop 1289px;
-$mediaQueriesContentWidths: mobile 100%, tablet 560px, narrowdesktop 960px, desktop 1248px;
-$mediaQueriesDefault: mobile;
-
-
 @include newMediaQuerie((name: mobile, min-width: 1px, max-width: 619px, contentWidth: 100%, default: true));
 @include newMediaQuerie((name: tablet, min-width: 620px, max-width: 1008px, contentWidth: 560px));
 @include newMediaQuerie((name: desktop, min-width: 1009px, contentWidth: 960px));
 
 
-
 // Global font type
-$font_basic: "Myriad Pro", "Arial", Sans-serif;
+$font_basic: "Verdane", "Myriad Pro", "Arial", Sans-serif;
 
-$font_openSans: 'Open Sans', $font_basic;
-
-$font_HelveticaNeueLight: 'HelveticaNeueW02-45Ligh', $font_basic;
+$font_HelveticaNeueBlack: 'HelveticaNeueW01-95Blac', $font_basic;
 $font_HelveticaNeueHeavy: 'HelveticaNeueW01-85Heav', $font_basic;
+$font_HelveticaNeueBold: 'HelveticaNeueW01-75Bold', $font_basic;
 $font_HelveticaNeueMedium: 'HelveticaNeueW01-65Medi', $font_basic;
+$font_HelveticaNeueRoman: 'Helvetica Neue LT W06_55 Roman', $font_basic;
+$font_HelveticaNeueRomanLatin: 'HelveticaNeueW01-56It', $font_basic;
+$font_HelveticaNeueLight: 'HelveticaNeueW01-45Ligh', $font_basic;
+$font_HelveticaNeueLightLatin: 'HelveticaNeueW01-46Ligh', $font_basic;
+
+

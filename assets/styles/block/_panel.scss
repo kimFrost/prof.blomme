@@ -21,19 +21,6 @@ $__gutterWidth: 20px;
   @include onlyInDebug() {
     background-color: red;
 	}
-  /*
-  &:not(.panel--list) {
-    &:nth-child(1) {
-      @include translate(0%, 0%);
-    }
-    &:nth-child(2) {
-      @include translate(0%, 100%);
-    }
-    &:nth-child(3) {
-      @include translate(0%, 200%);
-    }
-  }
-  */
   &:after {
     content: "";
     display: block;
@@ -67,19 +54,35 @@ $__gutterWidth: 20px;
 }
 
 .panel__content {
-  width: $contentWidth;
+  width: $mq-contentWidth;
 	margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  z-index: 1;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
   @include mediaQueries(tablet){
-		width: $contentWidth;
+		width: $mq-contentWidth;
 	};
 	@include mediaQueries(desktop){
-		width: $contentWidth;
+		width: $mq-contentWidth;
 	};
-	@include mediaQueries(narrowdesktop){
-		width: $contentWidth;
-	};
+	//@include mediaQueries(narrowdesktop){
+		//width: $mq-contentWidth;
+	//};
 	@include mediaQueries(mobile){
-		//width: $contentWidth;
+		//width: $mq-contentWidth; // Mobile is set as default
 	};
 	@include onlyInDebug() {
 		background-color: goldenrod;
@@ -129,13 +132,23 @@ $__gutterWidth: 20px;
   padding: 0;
   overflow-y: auto;
   //overflow: hidden;
+
+
+  // Hide scrollbar, but still allow scroll
+  -ms-overflow-style: none;
+  //overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    //display: none;
+    width: 0;
+  }
+
+
   &:after {
     content: "";
     display: block;
     clear: both;
   }
 }
-
 
 .panel__bg--frame {
   border-style: solid;
@@ -158,30 +171,3 @@ $__gutterWidth: 20px;
 
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
-@include mediaQueries(desktop) {
-  .panel {
-    //background-color: red;
-  }
-  @include mediaQueries(portrait) {
-    .panel {
-      //background-color: blue;
-    }
-  }
-  @include mediaQueries(landscape) {
-    .panel {
-      //background-color: blue;
-    }
-  }
-}
-
-
-@include mediaQueries(landscape) {
-  @include mediaQueries(desktop) {
-    // By having the landscape on the outside, the contentWidth variable will not be overriden
-  }
-}
-@include mediaQueries(portrait) {
-  @include mediaQueries(desktop) {
-    // By having the landscape on the outside, the contentWidth variable will not be overriden
-  }
-}

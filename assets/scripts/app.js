@@ -10,8 +10,8 @@
  * Main module of the application.
  */
 angular
-  .module('prof-blomme', [])
+  .module('BrugSkallen', ['ngAnimate'])
   .run(function () {
-    console.log('Main Application Run()');
+    //console.log('Main Application Run()');
   });
 })();

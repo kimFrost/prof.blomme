@@ -1,5 +1,5 @@
 doctype html
-html(data-ng-app="NoerdDk", lang="da")
+html(data-ng-app="BrugSkallen", lang="da")
 	head
 		title Brug Skallen
 		meta(charset="UTF-8")
@@ -7,16 +7,24 @@ html(data-ng-app="NoerdDk", lang="da")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='./css/main.css')
 		// libs js
-		//script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js')
-		//script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js')
 		block head
 		// Fonts
-		link(type="text/css", rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,700,400')
+		link(type="text/css", rel='stylesheet', href="http://fast.fonts.net/cssapi/6140b4fc-9afc-4ae9-811c-f91cfd9f10ee.css")
 
-	body.prof-blomme
+	body.prof-blomme(data-ng-controller="MainCtrl as main")
 		block glovalVars
 		block body
+		div.header(data-ng-class="{'header--show':main.expandHeader}")
+			div.header__menu
+				a.header__menuitem Forside
+				a.header__menuitem Konkurrence
+				a.header__menuitem Ægsperimenter
+			div.header__toogle(data-ng-click="main.toogleHeader()") T
+			div.header__logo
 		div.panel.panel--list
 			block content
 
-		//script(src="./assets/scripts/app.js")
+		script(src="./assets/scripts/app.js")
+		script(src="./assets/scripts/controllers/main.controller.js")
