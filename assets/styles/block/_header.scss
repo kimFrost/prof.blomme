@@ -7,6 +7,7 @@
 
 // PARAMETERS
 $_headerHeight: 60px;
+$_headerDesktopHeight: 60px;
 $_toogleWidth: 50px;
 $_toogleHeight: 45px;
 
@@ -165,6 +166,7 @@ $_toogleHeight: 45px;
   }
 }
 @include mediaQueries(desktop) {
+
   .header__menuitem {
     &:first-child {
       @include rotate(1deg);
