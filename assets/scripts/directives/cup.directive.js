@@ -11,8 +11,11 @@
 			replace: true,
 			link: link,
 			restrict: 'A',
+      //transclude: false,
       templateUrl: 'templates/cup.html',
-			scope: {},
+			scope: {
+        reward: '&'
+      },
 			controller: directiveController
 		};
 
