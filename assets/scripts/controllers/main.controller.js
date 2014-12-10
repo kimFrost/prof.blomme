@@ -29,7 +29,7 @@
 
     var main = this;
     main.options = {
-      debug: false,
+      debug: true,
       useWebStorage: false,
       cookieStorageName: 'CookieAccepted'
     };
@@ -45,13 +45,14 @@
 /**---------------------------------------
 		FUNCTION LIBRARY
 ---------------------------------------**/
+
     // Header
     function toogleHeader(state) {
       state = (state === undefined) ? 'toogle' : state;
       if (state === 'toogle') {
-        state = !main.expandHeader;
+        state = !main.states.expandHeader;
       }
-      main.expandHeader = state;
+      main.states.expandHeader = state;
     }
 
     // Cookie

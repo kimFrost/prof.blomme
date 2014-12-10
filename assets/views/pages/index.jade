@@ -8,21 +8,34 @@ block append content
 
   //div.testme
 
-  section.panel
-    div.panel__bg.panel__bg--sun
+  section.panel.panel--sun
+    div.panel__bg
     div.panel__content
       div.panel__inner 1
     div.panel__scrollarea
       div.panel__overlay overlay
 
-  section.panel
-    div.panel__bg.panel__bg--frame
+  section.panel.panel--frame
+    div.panel__bg
     div.panel__content
-      div.panel__inner 2
+      div.panel__inner
+        div.cupgame(data-cupgame)
+          //div.cupgame__slot
+            div.cup
+              div.cup__goblet
+              div.cup__reward
+          //div.cupgame__slot
+            div.cup
+              div.cup__goblet
+              div.cup__reward
+          //div.cupgame__slot
+            div.cup
+              div.cup__goblet
+              div.cup__reward
     div.panel__scrollarea
       div.panel__overlay overlay
 
-  section.panel
+  section.panel.panel--sun
     div.panel__bg
     div.panel__content
       div.panel__inner 3

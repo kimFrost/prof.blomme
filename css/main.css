@@ -24,7 +24,6 @@ html {
   overflow-x: hidden;
   top: 0;
   left: 0;
-  background-color: red;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000324}}
 .panel:after {
@@ -38,31 +37,31 @@ html {
 .panel__inner,
 .panel__content,
 .panel__overlay,
-.panel__bg {
+.panel__bg,
+.panel__bg:before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000344}}
 .panel__inner {
   position: relative;
   width: 100%;
-  background-color: gold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000347}}
 .panel__inner:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
 .panel__content {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-height: 100%;
+  height: 100%;
   z-index: 1;
   display: -webkit-box;
   display: -moz-box;
@@ -74,22 +73,21 @@ html {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background-color: goldenrod;
 }
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
   .panel__content {
     width: 560px;
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
   .panel__content {
     width: 960px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000394}}
 .panel__overlay {
   display: block;
   position: absolute;
@@ -102,7 +100,7 @@ html {
   border-bottom: 20px solid blue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003106}}
 .panel__scrollarea {
   position: absolute;
   top: 0;
@@ -114,7 +112,7 @@ html {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003117}}
 .panel__bg {
   display: block;
   position: absolute;
@@ -125,7 +123,7 @@ html {
   z-index: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003129}}
 .panel--list {
   position: static;
   display: block;
@@ -135,7 +133,7 @@ html {
   overflow-y: auto;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003141}}
 .panel--list::-webkit-scrollbar {
   width: 0;
 }
@@ -146,24 +144,30 @@ html {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003153}}
-.panel__bg--frame {
-  border-style: solid;
-  border-width: 15px;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003154}}
+.panel--frame .panel__bg {
+  background-color: #bf343b;
+  z-index: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003157}}
+.panel--frame .panel__bg:before {
   -moz-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -o-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -webkit-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   border-image: url("/images/graphic/border_bullet.png") 15 15 round;
+  content: "";
+  display: block;
   position: absolute;
-  z-index: 0;
   top: 10px;
   left: 20px;
   width: calc(100% - 40px);
   height: calc(100% - 20px);
+  border-style: solid;
+  border-width: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003165}}
-.panel__bg--sun {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003173}}
+.panel--sun .panel__bg {
   background-image: url("/images/graphic/sun_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,6 +388,215 @@ html {
     transform: rotate(-1deg);
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000312}}
+.cupgame {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000316}}
+.cupgame:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000323}}
+.cupgame,
+.cupgame__slot,
+.cupgame__controls {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000333}}
+.cupgame__slot {
+  display: block;
+  float: left;
+  width: calc(100% / 3 - 30px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000337}}
+.cupgame__slot + .cupgame__slot {
+  margin-left: 45px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000342}}
+.cupgame__controls {
+  display: block;
+  width: 100%;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000348}}
+.cupgame__controls > * {
+  padding: 5px;
+  margin: 5px;
+  border: 1px dotted black;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000312}}
+.cup {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  text-align: center;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000321}}
+.cup:focus .cup__goblet, .cup:hover .cup__goblet {
+  -moz-transform: translate(0%, -40%) rotate(15deg);
+  -ms-transform: translate(0%, -40%) rotate(15deg);
+  -webkit-transform: translate(0%, -40%) rotate(15deg);
+  transform: translate(0%, -40%) rotate(15deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000325}}
+.cup:focus .cup__reward:after, .cup:hover .cup__reward:after {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000329}}
+.cup:focus:after, .cup:hover:after {
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000334}}
+.cup:before {
+  -moz-border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+  -webkit-border-radius: 0%;
+  border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+  width: 100%;
+  padding-bottom: 12%;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000344}}
+.cup:after {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  background: transparent;
+  /* fallback for non-supporting browsers */
+  background-image: -webkit-radial-gradient(center center, ellipse contain, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+  /* New WebKit syntax */
+  background-image: -moz-radial-gradient(center center, ellipse contain, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+  background-image: -ms-radial-gradient(center center, ellipse contain, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+  /* IE10+ */
+  background-image: -o-radial-gradient(center center, ellipse contain, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+  /* Opera (13?) */
+  content: "";
+  display: block;
+  opacity: 1.0;
+  position: absolute;
+  top: calc(100% - 23%);
+  width: 130%;
+  left: -15%;
+  padding-bottom: 27%;
+  z-index: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000369}}
+.cup,
+.cup__goblet,
+.cup__reward {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000379}}
+.cup__goblet {
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -moz-transition: -moz-transform 300ms ease;
+  -o-transition: -o-transform 300ms ease;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  -moz-transform: translate(0%, 0%) rotate(0deg);
+  -ms-transform: translate(0%, 0%) rotate(0deg);
+  -webkit-transform: translate(0%, 0%) rotate(0deg);
+  transform: translate(0%, 0%) rotate(0deg);
+  -moz-border-radius: 60% 60% 50% 50%/100% 100% 15% 15%;
+  -webkit-border-radius: 60%;
+  border-radius: 60% 60% 50% 50%/100% 100% 15% 15%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #fff;
+  background-image: -webkit-radial-gradient(65% 30%, ellipse cover, white 10px, #888888 100%);
+  /* New WebKit syntax */
+  background-image: -moz-radial-gradient(65% 30%, ellipse cover, white 10px, #888888 100%);
+  background-image: -ms-radial-gradient(65% 30%, ellipse cover, white 10px, #888888 100%);
+  /* IE10+ */
+  background-image: -o-radial-gradient(65% 30%, ellipse cover, white 10px, #888888 100%);
+  /* Opera (13?) */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003107}}
+.cup__reward {
+  display: block;
+  position: absolute;
+  width: 30%;
+  padding-bottom: 30%;
+  bottom: 10%;
+  left: calc(50% - 15%);
+  background-color: #004444;
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003116}}
+.cup__reward:after {
+  -moz-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003136}}
+.cup--open .cup__goblet {
+  -moz-transform: translate(0%, -40%) rotate(15deg);
+  -ms-transform: translate(0%, -40%) rotate(15deg);
+  -webkit-transform: translate(0%, -40%) rotate(15deg);
+  transform: translate(0%, -40%) rotate(15deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003140}}
+.cup--open .cup__reward:after {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003144}}
+.cup--open:after {
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  opacity: 0.5;
+}
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */

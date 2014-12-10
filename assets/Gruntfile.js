@@ -253,7 +253,7 @@ module.exports = function(grunt) {
           dot: true,
           cwd: './',
           dest: '../',
-          src: 'templates/{,*/}*.html',
+          src: 'templates/{,*/}*.html'
         }]
       },
       images: {

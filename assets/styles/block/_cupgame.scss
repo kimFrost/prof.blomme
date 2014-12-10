@@ -1,0 +1,59 @@
+
+// DESCRIPTION
+
+
+// NOTES
+
+
+// PARAMETERS
+
+
+// BLOCK
+.cupgame {
+  width: 100%;
+  display: block;
+  position: relative;
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.cupgame,
+.cupgame__slot,
+.cupgame__controls {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.cupgame__slot {
+  display: block;
+  float: left;
+  width: calc(100% / 3 - 30px);
+  & + & {
+    margin-left: 45px;
+  }
+}
+
+.cupgame__controls {
+  display: block;
+  width: 100%;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  & > * {
+    padding: 5px;
+    margin: 5px;
+    border: 1px dotted black;
+    float: left;
+  }
+}
+
+//--- MODIFIERS -------------------------------------------------------//
+
+
+//--- MEDIA QUERIES -------------------------------------------------------//

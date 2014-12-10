@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <!-- libs js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.js"></script>
     <!-- Fonts-->
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/6140b4fc-9afc-4ae9-811c-f91cfd9f10ee.css">
   </head>
   <body data-ng-controller="MainCtrl as main" class="prof-blomme">
-    <div data-ng-class="{'header--show':main.expandHeader}" class="header">
+    <div data-ng-class="{'header--show':main.states.expandHeader}" class="header">
       <div class="header__menu"><a class="header__menuitem">Forside</a><a class="header__menuitem">Konkurrence</a><a class="header__menuitem">Ægsperimenter</a></div>
       <div data-ng-click="main.toogleHeader()" class="header__toogle">T</div>
       <div class="header__logo"></div>
     </div>
     <div class="panel panel--list">
       <!--div.testme-->
-      <section class="panel">
-        <div class="panel__bg panel__bg--sun"></div>
+      <section class="panel panel--sun">
+        <div class="panel__bg"></div>
         <div class="panel__content">
           <div class="panel__inner">1</div>
         </div>
@@ -29,16 +29,34 @@
           <div class="panel__overlay">overlay</div>
         </div>
       </section>
-      <section class="panel">
-        <div class="panel__bg panel__bg--frame"></div>
+      <section class="panel panel--frame">
+        <div class="panel__bg"></div>
         <div class="panel__content">
-          <div class="panel__inner">2</div>
+          <div class="panel__inner">
+            <div data-cupgame class="cupgame">
+              <!--div.cupgame__slot
+              div.cup
+                div.cup__goblet
+                div.cup__reward
+              -->
+              <!--div.cupgame__slot
+              div.cup
+                div.cup__goblet
+                div.cup__reward
+              -->
+              <!--div.cupgame__slot
+              div.cup
+                div.cup__goblet
+                div.cup__reward
+              -->
+            </div>
+          </div>
         </div>
         <div class="panel__scrollarea">
           <div class="panel__overlay">overlay</div>
         </div>
       </section>
-      <section class="panel">
+      <section class="panel panel--sun">
         <div class="panel__bg"></div>
         <div class="panel__content">
           <div class="panel__inner">3</div>
@@ -50,5 +68,8 @@
     </div>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/controllers/main.controller.js"></script>
+    <!--script(src="./assets/scripts/controllers/cupgame.controller.js")-->
+    <script src="./assets/scripts/directives/cupgame.directive.js"></script>
+    <script src="./assets/scripts/directives/cup.directive.js"></script>
   </body>
 </html>

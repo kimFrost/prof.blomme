@@ -32,7 +32,8 @@ $__gutterWidth: 20px;
 .panel__inner,
 .panel__content,
 .panel__overlay,
-.panel__bg {
+.panel__bg,
+.panel__bg:before {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -57,7 +58,8 @@ $__gutterWidth: 20px;
   width: $mq-contentWidth;
 	margin: 0 auto;
   position: relative;
-  min-height: 100%;
+  height: 100%;
+  //min-height: 100%; // flexbox will now center align with min-height
   z-index: 1;
 
   display: -webkit-box;
@@ -133,7 +135,6 @@ $__gutterWidth: 20px;
   overflow-y: auto;
   //overflow: hidden;
 
-
   // Hide scrollbar, but still allow scroll
   -ms-overflow-style: none;
   //overflow: -moz-scrollbars-none;
@@ -142,7 +143,6 @@ $__gutterWidth: 20px;
     width: 0;
   }
 
-
   &:after {
     content: "";
     display: block;
@@ -150,23 +150,32 @@ $__gutterWidth: 20px;
   }
 }
 
-.panel__bg--frame {
-  border-style: solid;
-  border-width: 15px;
-  @include border-image(url('/images/graphic/border_bullet.png') 15 15 round);
-  position: absolute;
-  z-index: 0;
-  top: 10px;
-  left: 20px;
-  width: calc(100% - 40px);
-  height: calc(100% - 20px);
+.panel--frame {
+  .panel__bg {
+    background-color: $color_hearth;
+    z-index: 0;
+    &:before {
+      @include border-image(url('/images/graphic/border_bullet.png') 15 15 round);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: calc(100% - 40px);
+      height: calc(100% - 20px);
+      border-style: solid;
+      border-width: 15px;
+    }
+  }
 }
 
-.panel__bg--sun {
-  background-image: url('/images/graphic/sun_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.panel--sun {
+  .panel__bg {
+    background-image: url('/images/graphic/sun_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 
