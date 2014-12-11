@@ -1,14 +1,23 @@
 <div class="cupgame">
-  <div class="cupgame__slot">
-    <div class="cup" data-cup="false"></div>
+  <div class="cupgame__slot" data-ng-repeat="i in getCupList()" data-ng-style="cupgame.indexes[$index].css">
+    <div class="cup">
+      <div class="cup__goblet"></div>
+      <div class="cup__reward"></div>
+    </div>
   </div>
-  <div class="cupgame__slot">
-    <div class="cup" data-cup="true"></div>
-  </div>
-  <div class="cupgame__slot">
-    <div class="cup" data-cup="false"></div>
-  </div>
+
   <div class="cupgame__controls">
     <div data-ng-click="cupgame.shuffle()">Shuffle</div>
   </div>
+  <!--
+  <div class="cupgame__slot cupgame__slot--pos3" data-ng-controller="CupCtrl as cup">
+    <div class="cup" data-ng-class="{'cup--open':cup.states.open}">
+      <div class="cup__goblet"></div>
+      <div class="cup__reward"></div>
+    </div>
+  </div>
+  -->
 </div>
+
+
+

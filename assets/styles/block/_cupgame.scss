@@ -13,6 +13,8 @@
   width: 100%;
   display: block;
   position: relative;
+  //padding-bottom: calc(100% / 3 - 30px); // As long as Cup width/height relation is 1:1, this will hold true.
+  padding-bottom: calc(100% / 3 - 30px); // As long as Cup width/height relation is 1:1, this will hold true.
   &:after {
     display: block;
     content: "";
@@ -31,15 +33,43 @@
 //--- ELEMENTS ----------------------------------------------------------//
 
 .cupgame__slot {
+  @include transition(transform 400ms linear);
   display: block;
   float: left;
-  width: calc(100% / 3 - 30px);
+  //width: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 40px);
+  padding-left: 20px;
+  padding-right: 20px;
   & + & {
-    margin-left: 45px;
+    //margin-left: 45px;
+  }
+  float: none;
+  position: absolute;
+  &:nth-of-type(1) {
+    @include translate(0%, 0%);
+  }
+  &:nth-of-type(2) {
+    //@include translate(calc(100% + 45px) , 0%);
+    @include translate(100% , 0%);
+  }
+  &:nth-of-type(3) {
+    //@include translate(calc(200% + 90px) , 0%);
+    @include translate(200% , 0%);
+  }
+  &:nth-of-type(4) {
+    //@include translate(calc(200% + 90px) , 0%);
+    @include translate(300% , 0%);
+  }
+  &:nth-of-type(5) {
+    @include translate(400% , 0%);
+  }
+  &:nth-of-type(6) {
+    @include translate(500% , 0%);
   }
 }
 
 .cupgame__controls {
+  @include noUserSelect();
   display: block;
   width: 100%;
   position: fixed;
@@ -50,10 +80,53 @@
     margin: 5px;
     border: 1px dotted black;
     float: left;
+    cursor: pointer;
   }
 }
 
 //--- MODIFIERS -------------------------------------------------------//
 
 
+.cupgame--count2 {
+  padding-bottom: calc(100% / 2 - 40px);
+  .cupgame__slot {
+    width: calc(100% / 2);
+  }
+}
+
+.cupgame--count3 {
+  padding-bottom: calc(100% / 3 - 40px);
+  .cupgame__slot {
+    width: calc(100% / 3);
+  }
+}
+
+.cupgame--count4 {
+  padding-bottom: calc(100% / 4 - 40px);
+  .cupgame__slot {
+    width: calc(100% / 4);
+  }
+}
+
+.cupgame--count5 {
+  padding-bottom: calc(100% / 5 - 40px);
+  .cupgame__slot {
+    width: calc(100% / 5);
+  }
+}
+
+.cupgame--count6 {
+  padding-bottom: calc(100% / 6 - 40px);
+  .cupgame__slot {
+    width: calc(100% / 6);
+  }
+}
+
+
 //--- MEDIA QUERIES -------------------------------------------------------//
+
+.cupgame__slot:nth-child(2) {
+  .cup__reward {
+    background-color: gold;
+  }
+}

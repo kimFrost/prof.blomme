@@ -1,6 +1,6 @@
 ﻿
 
-(function (undefiend) {
+(function (undefined) {
 	'use strict';
 
 	angular

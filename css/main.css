@@ -393,15 +393,16 @@ html {
   width: 100%;
   display: block;
   position: relative;
+  padding-bottom: calc(100% / 3 - 30px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000318}}
 .cupgame:after {
   display: block;
   content: "";
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000325}}
 .cupgame,
 .cupgame__slot,
 .cupgame__controls {
@@ -410,31 +411,133 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000335}}
 .cupgame__slot {
+  -moz-transition: -moz-transform 400ms linear;
+  -o-transition: -o-transform 400ms linear;
+  -webkit-transition: -webkit-transform 400ms linear;
+  transition: transform 400ms linear;
   display: block;
   float: left;
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 40px);
+  padding-left: 20px;
+  padding-right: 20px;
+  float: none;
+  position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000337}}
-.cupgame__slot + .cupgame__slot {
-  margin-left: 45px;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000348}}
+.cupgame__slot:nth-of-type(1) {
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000351}}
+.cupgame__slot:nth-of-type(2) {
+  -moz-transform: translate(100%, 0%);
+  -ms-transform: translate(100%, 0%);
+  -webkit-transform: translate(100%, 0%);
+  transform: translate(100%, 0%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000355}}
+.cupgame__slot:nth-of-type(3) {
+  -moz-transform: translate(200%, 0%);
+  -ms-transform: translate(200%, 0%);
+  -webkit-transform: translate(200%, 0%);
+  transform: translate(200%, 0%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000359}}
+.cupgame__slot:nth-of-type(4) {
+  -moz-transform: translate(300%, 0%);
+  -ms-transform: translate(300%, 0%);
+  -webkit-transform: translate(300%, 0%);
+  transform: translate(300%, 0%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000363}}
+.cupgame__slot:nth-of-type(5) {
+  -moz-transform: translate(400%, 0%);
+  -ms-transform: translate(400%, 0%);
+  -webkit-transform: translate(400%, 0%);
+  transform: translate(400%, 0%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000366}}
+.cupgame__slot:nth-of-type(6) {
+  -moz-transform: translate(500%, 0%);
+  -ms-transform: translate(500%, 0%);
+  -webkit-transform: translate(500%, 0%);
+  transform: translate(500%, 0%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000371}}
 .cupgame__controls {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
   display: block;
   width: 100%;
   position: fixed;
   left: 50px;
   bottom: 50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000378}}
 .cupgame__controls > * {
   padding: 5px;
   margin: 5px;
   border: 1px dotted black;
   float: left;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000390}}
+.cupgame--count2 {
+  padding-bottom: calc(100% / 2 - 40px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000392}}
+.cupgame--count2 .cupgame__slot {
+  width: calc(100% / 2);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000397}}
+.cupgame--count3 {
+  padding-bottom: calc(100% / 3 - 40px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000399}}
+.cupgame--count3 .cupgame__slot {
+  width: calc(100% / 3);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003104}}
+.cupgame--count4 {
+  padding-bottom: calc(100% / 4 - 40px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003106}}
+.cupgame--count4 .cupgame__slot {
+  width: calc(100% / 4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003111}}
+.cupgame--count5 {
+  padding-bottom: calc(100% / 5 - 40px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003113}}
+.cupgame--count5 .cupgame__slot {
+  width: calc(100% / 5);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003118}}
+.cupgame--count6 {
+  padding-bottom: calc(100% / 6 - 40px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003120}}
+.cupgame--count6 .cupgame__slot {
+  width: calc(100% / 6);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003129}}
+.cupgame__slot:nth-child(2) .cup__reward {
+  background-color: gold;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000312}}
@@ -444,19 +547,32 @@ html {
   padding-bottom: 100%;
   text-align: center;
   position: relative;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000340}}
 .cup:focus .cup__goblet, .cup:hover .cup__goblet {
   -moz-transform: translate(0%, -40%) rotate(15deg);
   -ms-transform: translate(0%, -40%) rotate(15deg);
   -webkit-transform: translate(0%, -40%) rotate(15deg);
   transform: translate(0%, -40%) rotate(15deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000344}}
 .cup:focus .cup__reward:after, .cup:hover .cup__reward:after {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000348}}
 .cup:focus:after, .cup:hover:after {
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
@@ -464,7 +580,7 @@ html {
   transform: scale(0.7, 0.7);
   opacity: 0.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000353}}
 .cup:before {
   -moz-border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
   -webkit-border-radius: 0%;
@@ -475,7 +591,7 @@ html {
   top: 100%;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000363}}
 .cup:after {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -505,7 +621,7 @@ html {
   z-index: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000388}}
 .cup,
 .cup__goblet,
 .cup__reward {
@@ -514,7 +630,7 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000398}}
 .cup__goblet {
   -moz-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
@@ -548,7 +664,7 @@ html {
   /* Opera (13?) */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003126}}
 .cup__reward {
   display: block;
   position: absolute;
@@ -559,7 +675,7 @@ html {
   background-color: #004444;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003135}}
 .cup__reward:after {
   -moz-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
@@ -577,18 +693,18 @@ html {
   z-index: 2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003155}}
 .cup--open .cup__goblet {
   -moz-transform: translate(0%, -40%) rotate(15deg);
   -ms-transform: translate(0%, -40%) rotate(15deg);
   -webkit-transform: translate(0%, -40%) rotate(15deg);
   transform: translate(0%, -40%) rotate(15deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003159}}
 .cup--open .cup__reward:after {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003163}}
 .cup--open:after {
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
