@@ -25,7 +25,7 @@
 				options: {
 					debug: true,
 					rewardIndex: 1, //0-2
-          shuffleTime: 400
+          shuffleTime: 3000
 				},
 				indexes: [],
 				states: {
@@ -67,7 +67,7 @@
           // Change translate position again, to move down again
           $timeout(function(){
             $scope.cupgame.updateOffsets(false);
-          },$scope.cupgame.options.shuffleTime / 2);
+          },$scope.cupgame.options.shuffleTime / 3);
 
           $timeout(function(){
             $scope.cupgame.states.shuffling = false;
@@ -88,7 +88,7 @@
           var zIndex = 0;
 
           leftOffset = index.posX * 100;
-          topOffset = index.posY * 70;
+          topOffset = index.posY * 30;
           zIndex = index.posY;
 
           if (!updateZIndex) {
