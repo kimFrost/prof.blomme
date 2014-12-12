@@ -128,7 +128,8 @@ a.slides__slide {
 	@include transition(transform 300ms ease);
 	@include translate(0%, 0%);
 	@include fontSize(iota);
-	@include hoverActiveStates($color_coal, 'color', 25%);
+	@include hoverActiveStates($color_black, 'color', 25%);
+  @include noUserSelect();
 	display: block;
 	position: absolute;
 	left: 0;
@@ -153,17 +154,17 @@ a.slides__slide {
 }
 
 .slides__mapitem {
-	@include border-radius(50%, 50%, 50%, 50%);
+	@include border-radius(50% 50% 50% 50%);
 	display: inline-block;
 	width: 18px;
 	height: 18px;
 	overflow: hidden;
 	background-color: $color_white;
-	border: 1px solid $color_lightgrey;
+	border: 1px solid $color_black;
 	position: relative;
 	cursor: pointer;
 	&:before {
-		@include border-radius(50%, 50%, 50%, 50%);
+		@include border-radius(50% 50% 50% 50%);
 		content: "";
 		display: block;
 		position: absolute;
@@ -183,7 +184,7 @@ a.slides__slide {
 	left: 10px;
 	bottom: 30px;
 	//width: 50px;
-	background: $color_coal;
+	background: $color_black;
 	color: red;
 	overflow: hidden;
 	padding: 5px;

@@ -23,7 +23,7 @@
 
 			$scope.cupgame = {
 				options: {
-					debug: true,
+					debug: false,
 					rewardIndex: 1, //0-2
 					shuffleTime: 250,
           minRotations: 10,
@@ -111,11 +111,13 @@
         if ($scope.cupgame.openCupIndex === $scope.cupgame.options.rewardIndex) {
           log('Won');
           $scope.cupgame.states.won = true;
+          $scope.cupgame.states.presentChoice = false;
           $scope.cupgame.states.defeat = false;
         }
         else {
           log('Defeat');
           $scope.cupgame.states.won = false;
+          $scope.cupgame.states.presentChoice = false;
           $scope.cupgame.states.defeat = true;
         }
 
@@ -126,7 +128,7 @@
         log('liftCup', index);
         log('isUser', isUser);
         if (isUser) {
-          if (!$scope.cupgame.states.cupsUserLocked) {
+          if (!$scope.cupgame.states.cupsUserLocked && $scope.cupgame.states.presentChoice) {
             $scope.cupgame.openCupIndex = index;
             $scope.cupgame.validateChoice();
           }

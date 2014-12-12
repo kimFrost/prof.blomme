@@ -174,6 +174,11 @@ html {
   background-position: center center;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003181}}
+.panel__scrollarea--show {
+  display: block;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000315}}
 .header {
   -moz-transition: -moz-transform 300ms ease;
@@ -750,6 +755,313 @@ html {
   -webkit-transform: scale(0.7, 0.7);
   transform: scale(0.7, 0.7);
   opacity: 0.5;
+}
+
+/* NOTES */
+/*
+  Right now the first slides determines the height of the container
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000312}}
+.slides {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000320}}
+.slides,
+.slides__slide,
+.slides__arrow,
+.slides__list
+.slides__map,
+.slides__mapitem,
+.slides__dev {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000334}}
+.slides__list {
+  -moz-transition: -moz-transform 300ms ease;
+  -o-transition: -o-transform 300ms ease;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000346}}
+.slides__slide {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000358}}
+.slides__slide + .slides__slide {
+  position: absolute;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000362}}
+.slides__slide:nth-child(2) {
+  left: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000366}}
+.slides__slide:nth-child(3) {
+  left: 200%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000370}}
+.slides__slide:nth-child(4) {
+  left: 300%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000374}}
+.slides__slide:nth-child(5) {
+  left: 400%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000378}}
+.slides__slide:nth-child(6) {
+  left: 500%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000382}}
+.slides__slide:nth-child(7) {
+  left: 600%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000386}}
+.slides__slide:nth-child(8) {
+  left: 700%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000390}}
+.slides__slide:nth-child(9) {
+  left: 800%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000394}}
+.slides__slide:nth-child(10) {
+  left: 900%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000398}}
+.slides__slide:nth-child(11) {
+  left: 1000%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003101}}
+.slides__slide:nth-child(12) {
+  left: 1100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003104}}
+.slides__slide:nth-child(13) {
+  left: 1200%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003107}}
+.slides__slide:nth-child(14) {
+  left: 1300%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003110}}
+.slides__slide:nth-child(15) {
+  left: 1400%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003113}}
+.slides__slide:nth-child(16) {
+  left: 1500%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003116}}
+.slides__slide:nth-child(17) {
+  left: 1600%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003119}}
+.slides__slide:nth-child(18) {
+  left: 1700%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003123}}
+a.slides__slide {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003127}}
+.slides__arrow {
+  -moz-transition: -moz-transform 300ms ease;
+  -o-transition: -o-transform 300ms ease;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  color: #000;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  opacity: 0.8;
+  height: 47px;
+  width: 50px;
+  margin-top: -23.5px;
+  background-color: red;
+  z-index: 40;
+  text-align: center;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+.slides__arrow {
+  font-size: 48px;
+  font-size: 2.6666666667rem;
+  line-height: 48px;
+  line-height: 2.6666666667rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_mixins\.scss}line{font-family:\0000332}}
+.slides__arrow:hover {
+  color: #404040;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_mixins\.scss}line{font-family:\0000335}}
+.slides__arrow:active {
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003147}}
+.slides__map {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  z-index: 40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003156}}
+.slides__mapitem {
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50% 50% 50% 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: relative;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003166}}
+.slides__mapitem:before {
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50% 50% 50% 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background-color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003181}}
+.slides__dev {
+  position: fixed;
+  left: 10px;
+  bottom: 30px;
+  background: #000;
+  color: red;
+  overflow: hidden;
+  padding: 5px;
+  z-index: 20;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+.slides__dev {
+  font-size: 12px;
+  font-size: 0.6666666667rem;
+  line-height: 12px;
+  line-height: 0.6666666667rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003197}}
+.slides--fadeanimate .slides__list {
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003200}}
+.slides--fadeanimate .slides__slide {
+  -moz-transition: opacity 800ms ease;
+  -o-transition: opacity 800ms ease;
+  -webkit-transition: opacity 800ms ease;
+  transition: opacity 800ms ease;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003204}}
+.slides--fadeanimate .slides__slide--active {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003210}}
+.slides--noanimate .slides__list {
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003216}}
+.slides--bottompadding .slides__slide {
+  padding-bottom: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003222}}
+.slides__mapitem--active:before {
+  background-color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003227}}
+.slides__arrow--right {
+  left: auto;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003232}}
+.slides__arrow--hide {
+  -moz-transform: translate(0%, 100%);
+  -ms-transform: translate(0%, 100%);
+  -webkit-transform: translate(0%, 100%);
+  transform: translate(0%, 100%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003234}}
+.slides__arrow--hide.slides__arrow--top {
+  -moz-transform: translate(0%, -100%);
+  -ms-transform: translate(0%, -100%);
+  -webkit-transform: translate(0%, -100%);
+  transform: translate(0%, -100%);
 }
 
 /* ==========================================================================

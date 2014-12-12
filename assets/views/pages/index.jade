@@ -38,6 +38,28 @@ block append content
   section.panel.panel--sun
     div.panel__bg
     div.panel__content
-      div.panel__inner 3
-    div.panel__scrollarea
-      div.panel__overlay overlay
+      div.panel__inner
+        div.slides(data-ng-controller="SlidesCtrl as slides", data-slides="4", data-slides-autoplay="false")
+          div.slides__list(data-ng-style="slides.css")
+            div.slides__slide
+              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('juicy', true)")
+            div.slides__slide
+              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('egg', true)")
+            div.slides__slide
+              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('sugar', true)")
+            div.slides__slide
+              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('fruit', true)")
+          div.slides__arrow(data-ng-click="slides.switchSlide(-1)") <-
+          div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") ->
+
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlay['juice'].states.show}")
+      div.panel__overlay juicy
+
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('egg')", data-ng-class="{'panel__scrollarea--show':main.overlay['egg'].states.show}")
+      div.panel__overlay egg
+
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('sugar')", data-ng-class="{'panel__scrollarea--show':main.overlay['sugar'].states.show}")
+      div.panel__overlay sugar
+
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('fruit')", data-ng-class="{'panel__scrollarea--show':main.overlay['fruit'].states.show}")
+      div.panel__overlay fruit

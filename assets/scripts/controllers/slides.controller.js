@@ -1,27 +1,8 @@
 ﻿(function (undefined) {
 	'use strict';
 
-	// shim layer with setTimeout fallback
-	window.requestAnimFrame = (function(){
-		return  window.requestAnimationFrame       ||
-			window.webkitRequestAnimationFrame ||
-			window.mozRequestAnimationFrame    ||
-			function( callback ){
-				window.setTimeout(callback, 1000 / 60);
-			};
-	})();
-
-	/**
-	 * @ngdoc overview
-	 * @name frostNoerdDk - SlidesController
-	 * @description
-	 * # frostNoerdDk
-	 *
-	 * Main module of the application.
-	 */
-
 	angular
-		.module('NoerdDk')
+		.module('BrugSkallen')
 		.controller('SlidesCtrl', SlidesCtrl);
 
 	/* @ngInject */
@@ -103,7 +84,7 @@
 		// Set state of autoplay
 		function setAutoPlay(direction) {
 			direction = (direction === undefined) ? 1 : direction;
-			log('setAutoPlay');
+			log('setAutoPlay', slides.options.autoplay);
 			if (slides.options.autoplay) {
 				slides.timer = $timeout(function(){
 					switchSlide(direction);
@@ -163,6 +144,12 @@
 		});
 		// Watch slides autoplay state from attribute. Yes, I know its dirty.
 		$scope.$watch($element.attr('data-slides-autoplay'), function(val) {
+      if (val === 'false') {
+        val = false;
+      }
+      else if (val === 'true') {
+        val = true;
+      }
 			slides.options.autoplay = val;
 			setAutoPlay();
 		});
@@ -227,12 +214,12 @@
 			}
 			xDistance = Math.abs(xDistance);
 
-			log('v---------GROUP----------v');
-			log('x', x);
-			log('timeDiff', timeDiff);
-			log('xDistance', xDistance);
-			log('direction', direction);
-			log('slides.states.noAnimate', slides.states.noAnimate);
+			//log('v---------GROUP----------v');
+			//log('x', x);
+			//log('timeDiff', timeDiff);
+			//log('xDistance', xDistance);
+			//log('direction', direction);
+			//log('slides.states.noAnimate', slides.states.noAnimate);
 
 			if (timeDiff > slides.options.swipeMinTime &&
 				timeDiff < slides.options.swipeMaxTime &&
@@ -251,7 +238,7 @@
 			}
 			else {
 				slides.temp.allowClick = false;
-				log('recal');
+				//log('recal');
 				//recalPos();
 			}
 
