@@ -1,6 +1,6 @@
 <div class="cupgame">
-  <div class="cupgame__slot" data-ng-repeat="i in getCupList()" data-ng-style="cupgame.indexes[$index].css">
-    <div class="cup">
+  <div class="cupgame__slot" data-ng-repeat="i in getCupList()" data-ng-style="cupgame.indexes[$index].css" data-ng-click="cupgame.liftCup($index)">
+    <div class="cup" data-ng-class="{'cup--open': cupgame.checkCupOpen($index)}">
       <div class="cup__goblet"></div>
       <div class="cup__reward"></div>
     </div>
@@ -8,6 +8,7 @@
 
   <div class="cupgame__controls">
     <div data-ng-click="cupgame.shuffle()">Shuffle</div>
+    <div data-ng-click="cupgame.startNewGame()">Start new game</div>
   </div>
   <!--
   <div class="cupgame__slot cupgame__slot--pos3" data-ng-controller="CupCtrl as cup">

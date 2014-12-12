@@ -345,8 +345,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('sync', [
     'clean:deploy',
-    'wiredep',
-	'compass:debug',
+    //'wiredep',
+	  'compass:debug',
     'copy:images',
     'copy:templates',
     'copy:fonts',

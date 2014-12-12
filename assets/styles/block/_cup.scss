@@ -34,7 +34,7 @@
   -ms-perspective: 1000;
   perspective: 1000;
 
-
+  /*
   &:focus,
   &:hover {
     .cup__goblet {
@@ -50,6 +50,8 @@
       opacity: 0.5;
     }
   }
+  */
+
   &:before {
     @include border-radius(0% 0% 50% 50% / 0% 0% 100% 100%);
     //content: "";
@@ -165,8 +167,6 @@
     opacity: 0.5;
   }
 }
-
-
 
 
 //--- MEDIA QUERIES -------------------------------------------------------//
