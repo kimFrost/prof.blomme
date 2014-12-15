@@ -103,6 +103,7 @@
       return;
     }
 
+
     var container = this,
       scrollTop = container.scrollTop,
       direction = 0,

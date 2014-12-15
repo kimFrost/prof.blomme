@@ -50,6 +50,7 @@
 		main.toogleHeader = toogleHeader;
 		main.toggleOverlay = toggleOverlay;
 		main.registerOverlay = registerOverlay;
+		main.closeAllOverlays = closeAllOverlays;
 
 
 /**---------------------------------------
@@ -76,6 +77,12 @@
         }
 			}
 		}
+
+    function closeAllOverlays(event) {
+      for (var key in main.overlays) {
+          main.overlays[key].states.show = false;
+      }
+    }
 
 		function registerOverlay(id) {
       log('registerOverlay', id);

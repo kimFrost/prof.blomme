@@ -114,6 +114,8 @@ $__gutterWidth: 20px;
   overflow-y: auto;
   overflow-x: hidden;
   display: none;
+  z-index: 50;
+  background-color: rgba($color_black, 0.5);
 }
 
 .panel__bg {
