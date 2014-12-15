@@ -23,9 +23,10 @@ html(data-ng-app="BrugSkallen", lang="da")
 				a.header__menuitem Ægsperimenter
 			div.header__toogle(data-ng-click="main.toogleHeader()") T
 			div.header__logo
-		div.panel.panel--list
+		div.panel.panel--list(id="scrollCapture")
 			block content
 
+		script(src="./assets/scripts/snap.js")
 		script(src="./assets/scripts/app.js")
 		script(src="./assets/scripts/controllers/main.controller.js")
 		//script(src="./assets/scripts/controllers/cup.controller.js")

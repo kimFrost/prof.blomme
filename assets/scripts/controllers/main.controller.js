@@ -25,7 +25,7 @@
 		.controller('MainCtrl', MainCtrl);
 
 	/* @ngInject */
-	function MainCtrl($scope) {
+	function MainCtrl($scope, $window) {
 
 		var main = this;
 		main.options = {
@@ -66,6 +66,7 @@
 			if (state === 'toogle') {
 				state = !main.overlays[id].states.show;
 			}
+      log('state', state);
 			main.overlays[id].states.show = state;
 			if (state) {
         for (var key in main.overlays) {
@@ -176,7 +177,6 @@
 /**---------------------------------------
 	BINDINGS
 ---------------------------------------**/
-
 
 		checkCookie();
 	}

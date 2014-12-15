@@ -19,7 +19,7 @@ block append content
     div.panel__bg
     div.panel__content
       div.panel__inner
-        div.cupgame.cupgame--count4(data-cupgame, data-cupcount=4)
+        div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
           //div.cupgame__slot
             div.cup
               div.cup__goblet
@@ -52,14 +52,14 @@ block append content
           div.slides__arrow(data-ng-click="slides.switchSlide(-1)") <-
           div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") ->
 
-    div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlay['juice'].states.show}")
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}")
       div.panel__overlay juicy
 
-    div.panel__scrollarea(data-ng-init="main.registerOverlay('egg')", data-ng-class="{'panel__scrollarea--show':main.overlay['egg'].states.show}")
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('egg')", data-ng-class="{'panel__scrollarea--show':main.overlays['egg'].states.show}")
       div.panel__overlay egg
 
-    div.panel__scrollarea(data-ng-init="main.registerOverlay('sugar')", data-ng-class="{'panel__scrollarea--show':main.overlay['sugar'].states.show}")
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('sugar')", data-ng-class="{'panel__scrollarea--show':main.overlays['sugar'].states.show}")
       div.panel__overlay sugar
 
-    div.panel__scrollarea(data-ng-init="main.registerOverlay('fruit')", data-ng-class="{'panel__scrollarea--show':main.overlay['fruit'].states.show}")
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('fruit')", data-ng-class="{'panel__scrollarea--show':main.overlays['fruit'].states.show}")
       div.panel__overlay fruit

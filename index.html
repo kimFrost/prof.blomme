@@ -18,7 +18,7 @@
       <div data-ng-click="main.toogleHeader()" class="header__toogle">T</div>
       <div class="header__logo"></div>
     </div>
-    <div class="panel panel--list">
+    <div id="scrollCapture" class="panel panel--list">
       <!--div.testme-->
       <section class="panel panel--sun">
         <div class="panel__bg"></div>
@@ -33,7 +33,7 @@
         <div class="panel__bg"></div>
         <div class="panel__content">
           <div class="panel__inner">
-            <div data-cupgame data-cupcount='4' class="cupgame cupgame--count4">
+            <div data-cupgame data-cupcount='3' class="cupgame cupgame--count3">
               <!--div.cupgame__slot
               div.cup
                 div.cup__goblet
@@ -72,20 +72,21 @@
             </div>
           </div>
         </div>
-        <div data-ng-init="main.registerOverlay('juicy')" data-ng-class="{'panel__scrollarea--show':main.overlay['juice'].states.show}" class="panel__scrollarea">
+        <div data-ng-init="main.registerOverlay('juicy')" data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}" class="panel__scrollarea">
           <div class="panel__overlay">juicy</div>
         </div>
-        <div data-ng-init="main.registerOverlay('egg')" data-ng-class="{'panel__scrollarea--show':main.overlay['egg'].states.show}" class="panel__scrollarea">
+        <div data-ng-init="main.registerOverlay('egg')" data-ng-class="{'panel__scrollarea--show':main.overlays['egg'].states.show}" class="panel__scrollarea">
           <div class="panel__overlay">egg</div>
         </div>
-        <div data-ng-init="main.registerOverlay('sugar')" data-ng-class="{'panel__scrollarea--show':main.overlay['sugar'].states.show}" class="panel__scrollarea">
+        <div data-ng-init="main.registerOverlay('sugar')" data-ng-class="{'panel__scrollarea--show':main.overlays['sugar'].states.show}" class="panel__scrollarea">
           <div class="panel__overlay">sugar</div>
         </div>
-        <div data-ng-init="main.registerOverlay('fruit')" data-ng-class="{'panel__scrollarea--show':main.overlay['fruit'].states.show}" class="panel__scrollarea">
+        <div data-ng-init="main.registerOverlay('fruit')" data-ng-class="{'panel__scrollarea--show':main.overlays['fruit'].states.show}" class="panel__scrollarea">
           <div class="panel__overlay">fruit</div>
         </div>
       </section>
     </div>
+    <script src="./assets/scripts/snap.js"></script>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/controllers/main.controller.js"></script>
     <!--script(src="./assets/scripts/controllers/cup.controller.js")-->
