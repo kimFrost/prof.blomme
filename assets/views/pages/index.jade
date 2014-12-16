@@ -8,6 +8,9 @@ block append content
 
   //div.testme
 
+
+
+
   section.panel.panel--sun
     div.panel__bg
     div.intro
@@ -21,6 +24,13 @@ block append content
       div.intro__teaser
 
 
+
+
+
+
+
+
+
   section.panel.panel--frame
     div.panel__bg
     div.game
@@ -30,23 +40,32 @@ block append content
       div.game__game
         div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
 
+
+
+
+
+
+
   section.panel.panel--sun
     div.panel__bg
     div.xperiments
       div.xperiments__logo
       div.xperiments__slides
         div.slides(data-ng-controller="SlidesCtrl as slides", data-slides="4", data-slides-autoplay="false")
-          div.slides__list(data-ng-style="slides.css")
-            div.slides__slide
-              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('juicy', true)")
-            div.slides__slide
-              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('egg', true)")
-            div.slides__slide
-              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('sugar', true)")
-            div.slides__slide
-              img(src="http://placehold.it/600x400", data-ng-click="main.toggleOverlay('fruit', true)")
-          div.slides__arrow(data-ng-click="slides.switchSlide(-1)") <-
-          div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") ->
+          div.slides__cutter
+            div.slides__list(data-ng-style="slides.css")
+              div.slides__slide
+                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('juicy', true)")
+              div.slides__slide
+                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('egg', true)")
+              div.slides__slide
+                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('sugar', true)")
+              div.slides__slide
+                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('fruit', true)")
+          div.slides__act asdsad
+          div.slides__arrow(data-ng-click="slides.switchSlide(-1)") Forrige
+          div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") Mæste
+
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}")
       div.panel__overlay

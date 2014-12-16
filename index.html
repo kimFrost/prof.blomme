@@ -51,14 +51,17 @@
           <div class="xperiments__logo"></div>
           <div class="xperiments__slides">
             <div data-ng-controller="SlidesCtrl as slides" data-slides="4" data-slides-autoplay="false" class="slides">
-              <div data-ng-style="slides.css" class="slides__list">
-                <div class="slides__slide"><img src="http://placehold.it/600x400" data-ng-click="main.toggleOverlay('juicy', true)"></div>
-                <div class="slides__slide"><img src="http://placehold.it/600x400" data-ng-click="main.toggleOverlay('egg', true)"></div>
-                <div class="slides__slide"><img src="http://placehold.it/600x400" data-ng-click="main.toggleOverlay('sugar', true)"></div>
-                <div class="slides__slide"><img src="http://placehold.it/600x400" data-ng-click="main.toggleOverlay('fruit', true)"></div>
+              <div class="slides__cutter">
+                <div data-ng-style="slides.css" class="slides__list">
+                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('juicy', true)"></div>
+                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('egg', true)"></div>
+                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('sugar', true)"></div>
+                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('fruit', true)"></div>
+                </div>
               </div>
-              <div data-ng-click="slides.switchSlide(-1)" class="slides__arrow"><-</div>
-              <div data-ng-click="slides.switchSlide(1)" class="slides__arrow slides__arrow--right">-></div>
+              <div class="slides__act">asdsad</div>
+              <div data-ng-click="slides.switchSlide(-1)" class="slides__arrow">Forrige</div>
+              <div data-ng-click="slides.switchSlide(1)" class="slides__arrow slides__arrow--right">Mæste</div>
             </div>
           </div>
         </div>
