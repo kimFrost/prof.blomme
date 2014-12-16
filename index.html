@@ -22,29 +22,34 @@
       <!--div.testme-->
       <section class="panel panel--sun">
         <div class="panel__bg"></div>
-        <div class="panel__content">
-          <div class="panel__inner">
-            <div class="char char--girl"></div>
-            <div class="char char--prof"></div>
-            <div class="char char--boy"></div>
+        <div class="intro">
+          <div class="intro__logo"></div>
+          <div class="intro__actors">
+            <div class="stage">
+              <div class="stage__actor stage__actor--boy"></div>
+              <div class="stage__actor stage__actor--prof"></div>
+              <div class="stage__actor stage__actor--girl"></div>
+            </div>
           </div>
+          <div class="intro__scrolldown"></div>
+          <div class="intro__teaser"></div>
         </div>
       </section>
       <section class="panel panel--frame">
         <div class="panel__bg"></div>
-        <div class="panel__content">
-          <div class="panel__inner">
+        <div class="game">
+          <div class="game__logo"></div><a href="#" class="game__rulesteaser">Regler og konkurrencebetingelser</a>
+          <div class="game__teaser">teaser</div>
+          <div class="game__game">
             <div data-cupgame data-cupcount='3' class="cupgame cupgame--count3"></div>
           </div>
-        </div>
-        <div class="attachment attachment--bottomleft attachment--rotate">
-          <div class="char char--prof"></div>
         </div>
       </section>
       <section class="panel panel--sun">
         <div class="panel__bg"></div>
-        <div class="panel__content">
-          <div class="panel__inner">
+        <div class="xperiments">
+          <div class="xperiments__logo"></div>
+          <div class="xperiments__slides">
             <div data-ng-controller="SlidesCtrl as slides" data-slides="4" data-slides-autoplay="false" class="slides">
               <div data-ng-style="slides.css" class="slides__list">
                 <div class="slides__slide"><img src="http://placehold.it/600x400" data-ng-click="main.toggleOverlay('juicy', true)"></div>
@@ -58,16 +63,45 @@
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('juicy')" data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}" class="panel__scrollarea">
-          <div class="panel__overlay">juicy</div>
+          <div class="panel__overlay">
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+            <div class="rte"><a href="#">Print ægsperiment</a>
+              <h2 class="rte__headline">ÆGSPERIMENT #1</h2>
+              <h2 class="rte__headline">Bag skallede-æggekager</h2>
+              <p>Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.</p>
+              <div class="rte__segment">
+                <div class="rte__image"><img src="http://placehold.it/338x225"></div>
+                <div class="rte__text">Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.</div>
+              </div>
+              <div class="rte__segment">
+                <div class="rte__image"><img src="http://placehold.it/338x225"></div>
+                <div class="rte__text">Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.</div>
+              </div>
+              <div class="rte__segment">
+                <div class="rte__image"><img src="http://placehold.it/338x225"></div>
+                <div class="rte__text">Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.</div>
+              </div>
+              <div class="rte__segment">
+                <div class="rte__image"><img src="http://placehold.it/338x225"></div>
+                <div class="rte__text">Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div data-ng-init="main.registerOverlay('egg')" data-ng-class="{'panel__scrollarea--show':main.overlays['egg'].states.show}" class="panel__scrollarea">
-          <div class="panel__overlay">egg</div>
+          <div class="panel__overlay">egg
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+          </div>
         </div>
         <div data-ng-init="main.registerOverlay('sugar')" data-ng-class="{'panel__scrollarea--show':main.overlays['sugar'].states.show}" class="panel__scrollarea">
-          <div class="panel__overlay">sugar</div>
+          <div class="panel__overlay">sugar
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+          </div>
         </div>
         <div data-ng-init="main.registerOverlay('fruit')" data-ng-class="{'panel__scrollarea--show':main.overlays['fruit'].states.show}" class="panel__scrollarea">
-          <div class="panel__overlay">fruit</div>
+          <div class="panel__overlay">fruit
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+          </div>
         </div>
       </section>
     </div>

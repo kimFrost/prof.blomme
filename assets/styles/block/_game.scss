@@ -1,0 +1,70 @@
+
+
+// PARAMETERS
+
+// BLOCK
+.game {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.game,
+.game__logo,
+.game__teaser,
+.game__rulesteaser,
+.game__game {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.game__logo {
+  $_width: image-width('../images/graphic/game_banner.png');
+  $_height: image-height('../images/graphic/game_banner.png');
+  $_ratio: ($_height / $_width);
+  background-image: url('/images/graphic/game_banner.png');
+  width: $_width;
+  height: $_height;
+  z-index: 10;
+  position: absolute;
+  top: 40px;
+  left: calc(50% - #{$_width / 2});
+}
+
+.game__teaser {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 3;
+}
+
+.game__rulesteaser {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 3;
+  color: $color_white;
+  text-decoration: underline;
+}
+
+.game__game {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  width: 70%;
+  left: 15%;
+  top: 40%;
+}
+
+
+//--- MODIFIERS ----------------------------------------------------------//
+
+
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//

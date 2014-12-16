@@ -8,7 +8,7 @@ html {
 }
 
 /* Global Mixins */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\000038}}
 .panel {
   -moz-transition: -moz-transform 800ms ease;
   -o-transition: -o-transform 800ms ease;
@@ -16,8 +16,8 @@ html {
   transition: transform 800ms ease;
   width: 100%;
   height: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0;
+  padding-left: 0;
   position: relative;
   opacity: 1;
   overflow-y: hidden;
@@ -25,14 +25,14 @@ html {
   top: 0;
   left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000325}}
 .panel:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000332}}
 .panel,
 .panel__inner,
 .panel__content,
@@ -44,19 +44,19 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000345}}
 .panel__inner {
   position: relative;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000348}}
 .panel__inner:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
 .panel__content {
   width: 100%;
   margin: 0 auto;
@@ -75,34 +75,74 @@ html {
   align-items: center;
 }
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
   .panel__content {
     width: 560px;
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
   .panel__content {
     width: 960px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000392}}
 .panel__overlay {
   display: block;
   position: absolute;
   width: 90%;
-  height: 1200px;
   background-color: #fbeb99;
   border: 4px solid #fff;
+  background-image: url("/images/graphic/sun_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center top;
+  background-attachment: fixed;
   left: 5%;
   top: 100px;
-  border-bottom: 4px solid blue;
+  margin-bottom: 100px;
   padding: 32px 50px;
   z-index: 50;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003111}}
+.panel__overlayclose {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background-color: #bf343b;
+  background-image: url("/images/graphic/close.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003130}}
+.panel__overlayclose:focus, .panel__overlayclose:hover {
+  background-color: #d6696f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003134}}
+.panel__overlayclose:active {
+  background-color: #832428;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003139}}
 .panel__scrollarea {
   position: absolute;
   top: 0;
@@ -116,7 +156,7 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003152}}
 .panel__bg {
   display: block;
   position: absolute;
@@ -124,10 +164,10 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003165}}
 .panel--list {
   position: static;
   display: block;
@@ -137,23 +177,23 @@ html {
   overflow-y: auto;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
 .panel--list::-webkit-scrollbar {
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003182}}
 .panel--list:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003190}}
 .panel--frame .panel__bg {
   background-color: #bf343b;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003193}}
 .panel--frame .panel__bg:before {
   -moz-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -o-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
@@ -170,7 +210,7 @@ html {
   border-width: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003209}}
 .panel--sun .panel__bg {
   background-image: url("/images/graphic/sun_bg.jpg");
   background-repeat: no-repeat;
@@ -178,20 +218,20 @@ html {
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003217}}
 .panel__scrollarea--show {
   display: block;
 }
 
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003225}}
   .panel__overlay {
     width: 80%;
     left: 10%;
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003232}}
   .panel__overlay {
     width: 60%;
     left: 20%;
@@ -1082,37 +1122,51 @@ a.slides__slide {
   transform: translate(0%, -100%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_char\.scss}line{font-family:\000036}}
-.char {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\000036}}
+.stage {
   display: block;
+  text-align: center;
+  width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_char\.scss}line{font-family:\0000310}}
-.char {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000312}}
+.stage,
+.stage__actor {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_char\.scss}line{font-family:\0000322}}
-.char--prof {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000321}}
+.stage__actor {
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000333}}
+.stage__actor--prof {
   background-image: url("/images/graphic/char_prof.png");
   width: 297px;
   height: 359px;
+  z-index: 3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_char\.scss}line{font-family:\0000332}}
-.char--girl {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000344}}
+.stage__actor--girl {
   background-image: url("/images/graphic/char_girl.png");
   width: 271px;
   height: 256px;
+  z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_char\.scss}line{font-family:\0000341}}
-.char--boy {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000354}}
+.stage__actor--boy {
   background-image: url("/images/graphic/char_boy.png");
   width: 247px;
   height: 275px;
+  z-index: 1;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\000036}}
@@ -1143,6 +1197,306 @@ a.slides__slide {
   transform: rotate(15deg);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\000036}}
+.intro {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000313}}
+.intro,
+.intro__logo,
+.intro__scrolldown,
+.intro__actors,
+.intro__teaser {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000325}}
+.intro__logo {
+  background-image: url("/images/graphic/intro_header.png");
+  width: 515px;
+  height: 178px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: calc(50% - 257.5px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000339}}
+.intro__scrolldown {
+  background-image: url("/images/graphic/arrow_scrolldown.png");
+  width: 149px;
+  height: 70px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  left: calc(50% - 74.5px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000353}}
+.intro__actors {
+  position: absolute;
+  top: 30%;
+  width: 70%;
+  left: 15%;
+  z-index: 5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000361}}
+.intro__teaser {
+  background-image: url("/images/graphic/attachment_banner.png");
+  width: 216px;
+  height: 247px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 123.5px);
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\000036}}
+.game {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000313}}
+.game,
+.game__logo,
+.game__teaser,
+.game__rulesteaser,
+.game__game {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000325}}
+.game__logo {
+  background-image: url("/images/graphic/game_banner.png");
+  width: 934px;
+  height: 258px;
+  z-index: 10;
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 467px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000338}}
+.game__teaser {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  z-index: 3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000346}}
+.game__rulesteaser {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 3;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000356}}
+.game__game {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  width: 70%;
+  left: 15%;
+  top: 40%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\000036}}
+.xperiments {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000313}}
+.xperiments,
+.xperiments__logo,
+.xperiments__slides {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000323}}
+.xperiments__logo {
+  background-image: url("/images/graphic/xperiments_banner.png");
+  width: 937px;
+  height: 163px;
+  z-index: 10;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 468.5px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000337}}
+.xperiments__slides {
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 30px;
+  height: 65%;
+  z-index: 5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\000036}}
+.rte {
+  display: block;
+  width: 100%;
+  counter-reset: item;
+  font-family: "Verdane", "Myriad Pro", "Arial", Sans-serif;
+  color: #575757;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+.rte {
+  font-size: 16px;
+  font-size: 0.8888888889rem;
+  line-height: 20.8px;
+  line-height: 1.1555555556rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000315}}
+.rte,
+.rte__headline,
+.rte__segment,
+.rte__image,
+.rte__text {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000327}}
+.rte__headline {
+  text-transform: uppercase;
+  font-family: "HelveticaNeueW01-95Blac", "Verdane", "Myriad Pro", "Arial", Sans-serif;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #bf343b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+.rte__headline {
+  font-size: 32px;
+  font-size: 1.7777777778rem;
+  line-height: 32px;
+  line-height: 1.7777777778rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000338}}
+.rte__segment {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+  clear: both;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000345}}
+.rte__segment + .rte__segment {
+  margin-top: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000350}}
+.rte__image {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  float: left;
+  width: 45%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000356}}
+.rte__image:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  content: counter(item) "  ";
+  counter-increment: item;
+  display: block;
+  background-color: #bf343b;
+  color: #fbeb99;
+  width: 40px;
+  font-family: "HelveticaNeueW01-95Blac", "Verdane", "Myriad Pro", "Arial", Sans-serif;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+.rte__image:before {
+  font-size: 24px;
+  font-size: 1.3333333333rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000373}}
+.rte__image + .rte__text {
+  width: auto;
+  overflow: hidden;
+  padding-left: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000380}}
+.rte__image > img {
+  display: block;
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000387}}
+.rte__text {
+  width: 100%;
+  display: block;
+}
+
+@media all and (min-width: 1px) and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000398}}
+  .rte__segment {
+    padding-left: 0;
+    overflow: visible;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003101}}
+  .rte__segment + .rte__segment {
+    margin-top: 60px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003105}}
+  .rte__image {
+    width: 100%;
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003108}}
+  .rte__image + .rte__text {
+    padding-left: 0;
+    padding-top: 0;
+    width: 100%;
+    clear: both;
+  }
+}
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */

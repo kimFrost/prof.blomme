@@ -1,0 +1,68 @@
+
+
+// PARAMETERS
+
+// BLOCK
+.stage {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.stage,
+.stage__actor {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.stage__actor {
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  & + & {
+    //margin-left: -90px;
+  }
+}
+
+//--- MODIFIERS ----------------------------------------------------------//
+
+.stage__actor--prof {
+  $_width: image-width('../images/graphic/char_prof.png');
+  $_height: image-height('../images/graphic/char_prof.png');
+  $_ratio: ($_height / $_width);
+  background-image: url('/images/graphic/char_prof.png');
+  width: $_width;
+  height: $_height;
+  z-index: 3;
+  //padding-bottom: ($_ratio * 100%);
+}
+
+.stage__actor--girl {
+  $_width: image-width('../images/graphic/char_girl.png');
+  $_height: image-height('../images/graphic/char_girl.png');
+  $_ratio: ($_height / $_width);
+  background-image: url('/images/graphic/char_girl.png');
+  width: $_width;
+  height: $_height;
+  z-index: 1;
+}
+
+.stage__actor--boy {
+  $_width: image-width('../images/graphic/char_boy.png');
+  $_height: image-height('../images/graphic/char_boy.png');
+  $_ratio: ($_height / $_width);
+  background-image: url('/images/graphic/char_boy.png');
+  width: $_width;
+  height: $_height;
+  z-index: 1;
+}
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//
+
+.stage--grouped {
+
+}

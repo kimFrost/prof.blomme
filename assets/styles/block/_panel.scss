@@ -1,7 +1,8 @@
 
 
 // PARAMETERS
-$__gutterWidth: 20px;
+//$__gutterWidth: 20px;
+$__gutterWidth: 0;
 
 // BLOCK
 .panel {
@@ -80,9 +81,6 @@ $__gutterWidth: 20px;
 	@include mediaQueries(desktop){
 		width: $mq-contentWidth;
 	};
-	//@include mediaQueries(narrowdesktop){
-		//width: $mq-contentWidth;
-	//};
 	@include mediaQueries(mobile){
 		//width: $mq-contentWidth; // Mobile is set as default
 	};
@@ -95,14 +93,47 @@ $__gutterWidth: 20px;
   display: block;
   position: absolute;
   width: 90%;
-  height: 1200px;
+  //height: 1200px;
   background-color: $color_harvest;
   border: 4px solid $color_white;
+  background-image: url('/images/graphic/sun_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center top;
+  background-attachment: fixed;
   left: 5%;
   top: 100px;
-  border-bottom: 4px solid blue;
+  margin-bottom: 100px;
   padding: 32px 50px;
   z-index: 50;
+}
+
+.panel__overlayclose {
+  @include noUserSelect();
+  @include border-radius(50%);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  color: $color_white;
+  background-color: $color_hearth;
+  background-image: url('/images/graphic/close.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: lighten($color_hearth, 15%);
+  }
+  &:active {
+    background-color: darken($color_hearth, 15%);
+  }
 }
 
 .panel__scrollarea {
@@ -125,7 +156,8 @@ $__gutterWidth: 20px;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  //z-index: 0;
+  z-index: -1;
 }
 
 //--- MODIFIERS ----------------------------------------------------------//

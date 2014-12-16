@@ -1,0 +1,51 @@
+
+
+// PARAMETERS
+
+// BLOCK
+.xperiments {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.xperiments,
+.xperiments__logo,
+.xperiments__slides {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.xperiments__logo {
+  $_width: image-width('../images/graphic/xperiments_banner.png');
+  $_height: image-height('../images/graphic/xperiments_banner.png');
+  $_ratio: ($_height / $_width);
+  background-image: url('/images/graphic/xperiments_banner.png');
+  width: $_width;
+  height: $_height;
+  z-index: 10;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: calc(50% - #{$_width / 2});
+}
+
+.xperiments__slides {
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 30px;
+  height: 65%;
+  z-index: 5;
+}
+
+//--- MODIFIERS ----------------------------------------------------------//
+
+
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//
