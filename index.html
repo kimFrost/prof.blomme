@@ -19,7 +19,6 @@
       <div class="header__logo"></div>
     </div>
     <div id="scrollCapture" class="panel panel--list">
-      <!--div.testme-->
       <section class="panel panel--sun">
         <div class="panel__bg"></div>
         <div class="intro">
@@ -42,6 +41,65 @@
           <div class="game__teaser">teaser</div>
           <div class="game__game">
             <div data-cupgame data-cupcount='3' class="cupgame cupgame--count3"></div>
+          </div>
+        </div>
+        <div data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;" data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}" class="panel__scrollarea">
+          <div class="panel__overlay">
+            <div class="rte rte--nonumbers">
+              <h2 class="rte__headline">Godt gået, mit lille æggehoved</h2>
+              <div class="rte__segment">
+                <div class="rte__image">
+                  <div class="stage">
+                    <div class="stage__actor stage__actor--prof"></div>
+                  </div>
+                </div>
+                <div class="rte__text">
+                  <p>Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.</p>
+                  <form class="form">
+                    <div class="form__line form__line--2">
+                      <input type="text" placeholder="Fornavn" class="form__input">
+                      <input type="text" placeholder="Efternavn" class="form__input">
+                    </div>
+                    <div class="form__line">
+                      <input type="text" placeholder="Gadenavn" class="form__input">
+                    </div>
+                    <div class="form__line form__line--2">
+                      <input type="text" placeholder="Postnummer" class="form__input">
+                      <input type="text" placeholder="By" class="form__input">
+                    </div>
+                    <div class="form__line">
+                      <input type="text" placeholder="Email" class="form__input">
+                    </div>
+                    <div class="form__line">
+                      <input type="submit" value="Deltag nu" class="form__button">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="rte__segment">
+                <p>Du kan deltage så mange gange du vil. Jo flere gange du deltager jo flere lodder har du med i konkurrencen.</p>
+              </div>
+            </div>
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+          </div>
+        </div>
+        <div data-ng-init="main.registerOverlay('subscribed')" data-ng-class="{'panel__scrollarea--show':main.overlays['subscribed'].states.show}" class="panel__scrollarea">
+          <div class="panel__overlay">subscribed
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+            <div class="rte">
+              <h2 class="rte__headline">Du deltager</h2>
+              <h2 class="rte__headline">nu i konkurrencen</h2>
+              <p>Vinderen får directe besked</p><a data-ng-click="main.closeAllOverlays()">Tilbage til side</a>
+            </div>
+          </div>
+        </div>
+        <div data-ng-init="main.registerOverlay('rules')" data-ng-class="{'panel__scrollarea--show':main.overlays['rules'].states.show}" class="panel__scrollarea">
+          <div class="panel__overlay">rules
+            <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
+            <div class="rte">
+              <h2 class="rte__headline">Konkurrence regler</h2>
+              <p>RULES!!!!</p><a data-ng-click="main.closeAllOverlays()">Luk</a>
+            </div>
           </div>
         </div>
       </section>

@@ -185,6 +185,10 @@
 	BINDINGS
 ---------------------------------------**/
 
+    $scope.$on('MainCtrl:toggleOverlay', function(event, data) {
+      toggleOverlay(data.id, data.state);
+    });
+
 		checkCookie();
 	}
 })();

@@ -6,9 +6,6 @@ block append body
 
 block append content
 
-  //div.testme
-
-
 
 
   section.panel.panel--sun
@@ -27,10 +24,6 @@ block append content
 
 
 
-
-
-
-
   section.panel.panel--frame
     div.panel__bg
     div.game
@@ -40,7 +33,49 @@ block append content
       div.game__game
         div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
 
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;", data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}")
+      div.panel__overlay
+        div.rte.rte--nonumbers
+          h2.rte__headline Godt gået, mit lille æggehoved
+          div.rte__segment
+            div.rte__image
+              div.stage
+                div.stage__actor.stage__actor--prof
+            div.rte__text
+              p Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.
+              form.form
+                div.form__line.form__line--2
+                  input.form__input(type="text", placeholder="Fornavn")
+                  input.form__input(type="text", placeholder="Efternavn")
+                div.form__line
+                  input.form__input(type="text", placeholder="Gadenavn")
+                div.form__line.form__line--2
+                  input.form__input(type="text", placeholder="Postnummer")
+                  input.form__input(type="text", placeholder="By")
+                div.form__line
+                  input.form__input(type="text", placeholder="Email")
+                div.form__line
+                  input.form__button(type="submit", value="Deltag nu")
+          div.rte__segment
+            p Du kan deltage så mange gange du vil. Jo flere gange du deltager jo flere lodder har du med i konkurrencen.
+        div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
 
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('subscribed')", data-ng-class="{'panel__scrollarea--show':main.overlays['subscribed'].states.show}")
+      div.panel__overlay subscribed
+        div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
+        div.rte
+          h2.rte__headline Du deltager
+          h2.rte__headline nu i konkurrencen
+          p Vinderen får directe besked
+          a(data-ng-click="main.closeAllOverlays()") Tilbage til side
+
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('rules')", data-ng-class="{'panel__scrollarea--show':main.overlays['rules'].states.show}")
+      div.panel__overlay rules
+        div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
+        div.rte
+          h2.rte__headline Konkurrence regler
+          p RULES!!!!
+          a(data-ng-click="main.closeAllOverlays()") Luk
 
 
 
@@ -65,7 +100,6 @@ block append content
           div.slides__act asdsad
           div.slides__arrow(data-ng-click="slides.switchSlide(-1)") Forrige
           div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") Mæste
-
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}")
       div.panel__overlay

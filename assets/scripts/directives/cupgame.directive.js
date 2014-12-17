@@ -19,7 +19,7 @@
 		};
 
 		/* @ngInject */
-		function directiveController($scope) {
+		function directiveController($scope, $rootScope, $timeout) {
 
 			$scope.cupgame = {
 				options: {
@@ -113,6 +113,14 @@
           $scope.cupgame.states.won = true;
           $scope.cupgame.states.presentChoice = false;
           $scope.cupgame.states.defeat = false;
+
+          $timeout(function(){
+            $rootScope.$broadcast('MainCtrl:toggleOverlay', {
+              id: 'win',
+              state: true
+            });
+          }, 500);
+
         }
         else {
           log('Defeat');
@@ -120,7 +128,6 @@
           $scope.cupgame.states.presentChoice = false;
           $scope.cupgame.states.defeat = true;
         }
-
       };
 
       $scope.cupgame.liftCup = function(index, isUser) {

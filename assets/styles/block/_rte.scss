@@ -18,9 +18,11 @@
 .rte h2,
 .rte h3,
 .rte h4,
-.rte img {
+.rte img,
+.rte form {
   display: block;
   width: 100%;
+  margin: 0;
   &:last-child {
     margin-bottom: 0;
   }
@@ -119,7 +121,13 @@
 
 //--- MODIFIERS ----------------------------------------------------------//
 
-
+.rte--nonumbers {
+  .rte__image {
+    &:before {
+      display: none;
+    }
+  }
+}
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 

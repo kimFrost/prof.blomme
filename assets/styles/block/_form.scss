@@ -1,0 +1,77 @@
+
+
+// PARAMETERS
+
+// BLOCK
+.form {
+  display: block;
+  width: 100%;
+}
+
+.form,
+.form__line,
+.form__input,
+.form__button {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+//--- ELEMENTS ----------------------------------------------------------//
+
+.form__line {
+  display: block;
+  width: 100%;
+  & + & {
+    margin-top: 20px;
+  }
+  .form__input {
+
+    & + .form__input {
+      margin-top: 5px;
+    }
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 7px;
+  border: none;
+  & + & {
+
+  }
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 7px;
+  background-color: $color_hearth;
+  color: $color_harvest;
+  border: none;
+}
+
+//--- MODIFIERS ----------------------------------------------------------//
+
+.form__line--2 {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .form__input {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    float: left;
+    & + .form__input {
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+}
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//

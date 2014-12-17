@@ -30,6 +30,11 @@
 
 //--- MODIFIERS ----------------------------------------------------------//
 
+.stage--grouped {
+
+}
+
+
 .stage__actor--prof {
   $_width: image-width('../images/graphic/char_prof.png');
   $_height: image-height('../images/graphic/char_prof.png');
@@ -63,6 +68,3 @@
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
-.stage--grouped {
-
-}
