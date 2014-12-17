@@ -1169,7 +1169,12 @@ a.slides__slide {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000335}}
+.stage--grouped .stage__actor + .stage__actor {
+  margin-left: -90px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000341}}
 .stage__actor--prof {
   background-image: url("/images/graphic/char_prof.png");
   width: 297px;
@@ -1177,19 +1182,19 @@ a.slides__slide {
   z-index: 3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000352}}
 .stage__actor--girl {
   background-image: url("/images/graphic/char_girl.png");
   width: 271px;
-  height: 256px;
+  height: 277px;
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000362}}
 .stage__actor--boy {
   background-image: url("/images/graphic/char_boy.png");
   width: 247px;
-  height: 275px;
+  height: 294px;
   z-index: 1;
 }
 
@@ -1595,7 +1600,7 @@ a.slides__slide {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000325}}
 .form__line + .form__line {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000330}}
 .form__line .form__input + .form__input {
@@ -1630,15 +1635,15 @@ a.slides__slide {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000365}}
 .form__line--2 .form__input {
-  width: calc(50% - 10px);
-  margin-right: 10px;
+  width: calc(50% - 7px);
+  margin-right: 7px;
   float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000369}}
 .form__line--2 .form__input + .form__input {
   margin-top: 0;
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 7px;
 }
 
 /* ==========================================================================

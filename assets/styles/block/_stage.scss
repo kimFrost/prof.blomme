@@ -31,9 +31,12 @@
 //--- MODIFIERS ----------------------------------------------------------//
 
 .stage--grouped {
-
+  .stage__actor {
+    & + .stage__actor {
+      margin-left: -90px;
+    }
+  }
 }
-
 
 .stage__actor--prof {
   $_width: image-width('../images/graphic/char_prof.png');
