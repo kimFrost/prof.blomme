@@ -104,9 +104,11 @@ html {
   margin-bottom: 100px;
   padding: 32px 50px;
   z-index: 50;
+  top: 25%;
+  min-height: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003114}}
 .panel__overlayclose {
   user-select: none;
   -webkit-user-select: none;
@@ -133,30 +135,36 @@ html {
   vertical-align: middle;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003133}}
 .panel__overlayclose:focus, .panel__overlayclose:hover {
   background-color: #d6696f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003137}}
 .panel__overlayclose:active {
   background-color: #832428;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003142}}
 .panel__scrollarea {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  overflow-y: auto;
   overflow-x: hidden;
   display: none;
   z-index: 50;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003162}}
+.panel__scrollarea::-webkit-scrollbar {
+  width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003168}}
 .panel__bg {
   display: block;
   position: absolute;
@@ -167,37 +175,38 @@ html {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003181}}
 .panel--list {
   position: static;
   display: block;
   width: 100%;
   height: 100%;
   padding: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003196}}
 .panel--list::-webkit-scrollbar {
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003201}}
 .panel--list:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003208}}
 .panel--frame {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003210}}
 .panel--frame .panel__bg {
   background-color: #bf343b;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003213}}
 .panel--frame .panel__bg:before {
   -moz-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -o-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
@@ -214,7 +223,7 @@ html {
   border-width: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003229}}
 .panel--sun .panel__bg {
   background-image: url("/images/graphic/sun_bg.jpg");
   background-repeat: no-repeat;
@@ -222,20 +231,20 @@ html {
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003237}}
 .panel__scrollarea--show {
   display: block;
 }
 
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003245}}
   .panel__overlay {
     width: 80%;
     left: 10%;
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003252}}
   .panel__overlay {
     width: 60%;
     left: 20%;
@@ -367,8 +376,8 @@ html {
   right: 9%;
   top: 100%;
   z-index: 2;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 30px;
+  margin-top: 30px;
   background-image: url("/images/graphic/logo.png");
   width: 85px;
   height: 46px;
@@ -752,6 +761,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: 3;
+  overflow: hidden;
   background-color: #fff;
   background-image: -webkit-radial-gradient(65% 30%, ellipse cover, white 10px, #888888 100%);
   /* New WebKit syntax */
@@ -762,7 +772,7 @@ html {
   /* Opera (13?) */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003129}}
 .cup__reward {
   display: block;
   position: absolute;
@@ -773,7 +783,7 @@ html {
   background-color: #004444;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003138}}
 .cup__reward:after {
   -moz-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
@@ -791,18 +801,31 @@ html {
   z-index: 2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003161}}
+.cup--unlocked:focus .cup__goblet:before, .cup--unlocked:hover .cup__goblet:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+  opacity: 0.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003177}}
 .cup--open .cup__goblet {
   -moz-transform: translate(0%, -40%) rotate(15deg);
   -ms-transform: translate(0%, -40%) rotate(15deg);
   -webkit-transform: translate(0%, -40%) rotate(15deg);
   transform: translate(0%, -40%) rotate(15deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003181}}
 .cup--open .cup__reward:after {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003185}}
 .cup--open:after {
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
@@ -1231,21 +1254,39 @@ a.slides__slide {
   height: 359px;
   z-index: 3;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000350}}
+.stage__actor--prof.stage__actor--fit {
+  padding-bottom: 120.8754208754%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000355}}
 .stage__actor--girl {
   background-image: url("/images/graphic/char_girl.png");
   width: 271px;
   height: 277px;
   z-index: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000363}}
+.stage__actor--girl.stage__actor--fit {
+  padding-bottom: 102.2140221402%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000368}}
 .stage__actor--boy {
   background-image: url("/images/graphic/char_boy.png");
   width: 247px;
   height: 294px;
   z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000376}}
+.stage__actor--boy.stage__actor--fit {
+  padding-bottom: 119.028340081%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000381}}
+.stage__actor--fit {
+  width: 100%;
+  height: auto;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\000036}}
@@ -1745,10 +1786,6 @@ a.slides__slide {
   font-size: 1.7777777778rem;
   line-height: 32px;
   line-height: 1.7777777778rem;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000327}}
-.btn + .btn {
-  margin-left: 5px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000330}}
 .btn:after {

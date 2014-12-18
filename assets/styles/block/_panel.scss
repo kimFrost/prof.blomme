@@ -106,6 +106,9 @@ $__gutterWidth: 0;
   margin-bottom: 100px;
   padding: 32px 50px;
   z-index: 50;
+
+  top: 25%;
+  min-height: 50%;
 }
 
 .panel__overlayclose {
@@ -142,11 +145,24 @@ $__gutterWidth: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  overflow-y: auto;
+  //overflow-y: auto;
   overflow-x: hidden;
   display: none;
   z-index: 50;
   background-color: rgba($color_black, 0.5);
+
+
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  // Hide scrollbar, but still allow scroll
+  -ms-overflow-style: none;
+  //overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    //display: none;
+    width: 0;
+  }
 }
 
 .panel__bg {
@@ -168,8 +184,11 @@ $__gutterWidth: 0;
   width: 100%;
   height: 100%;
   padding: 0;
-  overflow-y: auto;
+  //overflow-y: auto;
   //overflow: hidden;
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   // Hide scrollbar, but still allow scroll
   -ms-overflow-style: none;

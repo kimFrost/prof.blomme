@@ -37,7 +37,7 @@
       <section class="panel panel--frame">
         <div class="panel__bg"></div>
         <div class="game">
-          <div class="game__logo"></div><a href="#" class="game__rulesteaser">Regler og konkurrencebetingelser</a>
+          <div class="game__logo"></div><a data-ng-click="main.toggleOverlay('rules', true)" class="game__rulesteaser">Regler og konkurrencebetingelser</a>
           <div class="game__teaser">teaser</div>
           <div class="game__game">
             <div data-cupgame data-cupcount='3' class="cupgame cupgame--count3"></div>
@@ -51,7 +51,7 @@
               <div class="rte__segment">
                 <div class="rte__image">
                   <div class="stage">
-                    <div class="stage__actor stage__actor--prof"></div>
+                    <div class="stage__actor stage__actor--prof stage__actor--fit"></div>
                   </div>
                 </div>
                 <div class="rte__text">

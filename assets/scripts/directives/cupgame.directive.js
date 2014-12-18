@@ -109,6 +109,7 @@
 
       $scope.cupgame.validateChoice = function() {
         //$scope.cupgame.openCupIndex
+        $scope.cupgame.states.cupsUserLocked = true;
         if ($scope.cupgame.openCupIndex === $scope.cupgame.options.rewardIndex) {
           log('Won');
           $scope.cupgame.states.won = true;
@@ -119,7 +120,9 @@
               id: 'win',
               state: true
             });
+            $scope.cupgame.states.won = false;
             $scope.cupgame.states.presentNewgame = true;
+            $scope.cupgame.closeCups();
           }, 400);
         }
         else {
@@ -188,6 +191,8 @@
         if ($scope.cupgame.states.shufflingLoop) {
           return false;
         }
+        $scope.cupgame.states.defeat = false;
+        $scope.cupgame.states.won = false;
         $scope.cupgame.states.cupsUserLocked = true;
         $scope.cupgame.states.presentNewgame = false;
         $scope.cupgame.states.presentChoice = false;

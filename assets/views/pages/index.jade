@@ -28,7 +28,7 @@ block append content
     div.panel__bg
     div.game
       div.game__logo
-      a.game__rulesteaser(href="#") Regler og konkurrencebetingelser
+      a.game__rulesteaser(data-ng-click="main.toggleOverlay('rules', true)") Regler og konkurrencebetingelser
       div.game__teaser teaser
       div.game__game
         div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
@@ -41,7 +41,7 @@ block append content
           div.rte__segment
             div.rte__image
               div.stage
-                div.stage__actor.stage__actor--prof
+                div.stage__actor.stage__actor--prof.stage__actor--fit
             div.rte__text
               p Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.
               form.form(name="subscribe", novalidate=)

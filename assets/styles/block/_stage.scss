@@ -47,6 +47,9 @@
   height: $_height;
   z-index: 3;
   //padding-bottom: ($_ratio * 100%);
+  &.stage__actor--fit {
+    padding-bottom: ($_ratio * 100%);
+  }
 }
 
 .stage__actor--girl {
@@ -57,6 +60,9 @@
   width: $_width;
   height: $_height;
   z-index: 1;
+  &.stage__actor--fit {
+    padding-bottom: ($_ratio * 100%);
+  }
 }
 
 .stage__actor--boy {
@@ -67,6 +73,14 @@
   width: $_width;
   height: $_height;
   z-index: 1;
+  &.stage__actor--fit {
+    padding-bottom: ($_ratio * 100%);
+  }
+}
+
+.stage__actor--fit {
+  width: 100%;
+  height: auto;
 }
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
