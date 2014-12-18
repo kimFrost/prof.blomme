@@ -121,6 +121,10 @@
 
 //--- MODIFIERS ----------------------------------------------------------//
 
+.rte--inherit {
+  color: inherit;
+}
+
 .rte--nonumbers {
   .rte__image {
     &:before {

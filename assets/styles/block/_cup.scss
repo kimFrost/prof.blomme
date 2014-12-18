@@ -153,6 +153,12 @@
 
 //--- MODIFIERS -------------------------------------------------------//
 
+.cup--unlocked {
+  &:hover {
+
+  }
+}
+
 .cup--open {
   .cup__goblet {
     @include transform(translate(0%, -40%) rotate(15deg));

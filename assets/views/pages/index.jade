@@ -32,6 +32,7 @@ block append content
       div.game__teaser teaser
       div.game__game
         div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
+      div.game__footer Hjælp Professor Blomme med at finde sine briller og deltag
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;", data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}")
       div.panel__overlay
@@ -43,17 +44,17 @@ block append content
                 div.stage__actor.stage__actor--prof
             div.rte__text
               p Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.
-              form.form
+              form.form(name="subscribe", novalidate=)
                 div.form__line.form__line--2
-                  input.form__input(type="text", placeholder="Fornavn")
-                  input.form__input(type="text", placeholder="Efternavn")
+                  input.form__input(type="text", placeholder="Fornavn", data-ng-model="subscribe.firstname")
+                  input.form__input(type="text", placeholder="Efternavn", data-ng-model="subscribe.lastname")
                 div.form__line
-                  input.form__input(type="text", placeholder="Gadenavn")
+                  input.form__input(type="text", placeholder="Adresse", data-ng-model="subscribe.address")
                 div.form__line.form__line--2
-                  input.form__input(type="text", placeholder="Postnummer")
-                  input.form__input(type="text", placeholder="By")
+                  input.form__input(type="text", placeholder="Postnummer", data-ng-model="subscribe.zipcode")
+                  input.form__input(type="text", placeholder="By", data-ng-model="subscribe.town")
                 div.form__line
-                  input.form__input(type="text", placeholder="Email")
+                  input.form__input(type="text", placeholder="Email", data-ng-model="subscribe.email")
                 div.form__line
                   input.form__button(type="submit", value="Deltag nu")
           div.rte__segment
@@ -86,18 +87,29 @@ block append content
     div.xperiments
       div.xperiments__logo
       div.xperiments__slides
-        div.slides(data-ng-controller="SlidesCtrl as slides", data-slides="4", data-slides-autoplay="false")
+        div.slides.slides--fit(data-ng-controller="SlidesCtrl as slides", data-slides="4", data-slides-autoplay="false")
+          h1.slides__headline(data-ng-show="slides.currentIndex === 0") Headline 1
+          h1.slides__headline(data-ng-show="slides.currentIndex === 1") Headline 2
+          h1.slides__headline(data-ng-show="slides.currentIndex === 2") Headline 3
+          h1.slides__headline(data-ng-show="slides.currentIndex === 3") Headline 4
           div.slides__cutter
             div.slides__list(data-ng-style="slides.css")
-              div.slides__slide
-                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('juicy', true)")
-              div.slides__slide
-                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('egg', true)")
-              div.slides__slide
-                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('sugar', true)")
-              div.slides__slide
-                img(src="http://placehold.it/900x400", data-ng-click="main.toggleOverlay('fruit', true)")
-          div.slides__act asdsad
+              div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
+              div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
+              div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
+              div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
+          div.slides__attachment(data-ng-show="slides.currentIndex === 0")
+            div.btn.btn--center
+              div.btn__text(data-ng-click="main.toggleOverlay('juicy', true)") Se ægsperiment 1
+          div.slides__attachment(data-ng-show="slides.currentIndex === 1")
+            div.btn.btn--center
+              div.btn__text(data-ng-click="main.toggleOverlay('egg', true)") Se ægsperiment 2
+          div.slides__attachment(data-ng-show="slides.currentIndex === 2")
+            div.btn.btn--center
+              div.btn__text(data-ng-click="main.toggleOverlay('sugar', true)") Se ægsperiment 3
+          div.slides__attachment(data-ng-show="slides.currentIndex === 3")
+            div.btn.btn--center
+              div.btn__text(data-ng-click="main.toggleOverlay('fruit', true)") Se ægsperiment 4
           div.slides__arrow(data-ng-click="slides.switchSlide(-1)") Forrige
           div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") Mæste
 

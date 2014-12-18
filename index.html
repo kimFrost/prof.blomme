@@ -42,6 +42,7 @@
           <div class="game__game">
             <div data-cupgame data-cupcount='3' class="cupgame cupgame--count3"></div>
           </div>
+          <div class="game__footer">Hjælp Professor Blomme med at finde sine briller og deltag</div>
         </div>
         <div data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;" data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}" class="panel__scrollarea">
           <div class="panel__overlay">
@@ -55,20 +56,20 @@
                 </div>
                 <div class="rte__text">
                   <p>Udfyld felterne nedenfor så vi kan kontakte dig hvis du er den heldige vinder. Vinderne får besked løbende.</p>
-                  <form class="form">
+                  <form name="subscribe" novalidate class="form">
                     <div class="form__line form__line--2">
-                      <input type="text" placeholder="Fornavn" class="form__input">
-                      <input type="text" placeholder="Efternavn" class="form__input">
+                      <input type="text" placeholder="Fornavn" data-ng-model="subscribe.firstname" class="form__input">
+                      <input type="text" placeholder="Efternavn" data-ng-model="subscribe.lastname" class="form__input">
                     </div>
                     <div class="form__line">
-                      <input type="text" placeholder="Gadenavn" class="form__input">
+                      <input type="text" placeholder="Adresse" data-ng-model="subscribe.address" class="form__input">
                     </div>
                     <div class="form__line form__line--2">
-                      <input type="text" placeholder="Postnummer" class="form__input">
-                      <input type="text" placeholder="By" class="form__input">
+                      <input type="text" placeholder="Postnummer" data-ng-model="subscribe.zipcode" class="form__input">
+                      <input type="text" placeholder="By" data-ng-model="subscribe.town" class="form__input">
                     </div>
                     <div class="form__line">
-                      <input type="text" placeholder="Email" class="form__input">
+                      <input type="text" placeholder="Email" data-ng-model="subscribe.email" class="form__input">
                     </div>
                     <div class="form__line">
                       <input type="submit" value="Deltag nu" class="form__button">
@@ -108,16 +109,39 @@
         <div class="xperiments">
           <div class="xperiments__logo"></div>
           <div class="xperiments__slides">
-            <div data-ng-controller="SlidesCtrl as slides" data-slides="4" data-slides-autoplay="false" class="slides">
+            <div data-ng-controller="SlidesCtrl as slides" data-slides="4" data-slides-autoplay="false" class="slides slides--fit">
+              <h1 data-ng-show="slides.currentIndex === 0" class="slides__headline">Headline 1</h1>
+              <h1 data-ng-show="slides.currentIndex === 1" class="slides__headline">Headline 2</h1>
+              <h1 data-ng-show="slides.currentIndex === 2" class="slides__headline">Headline 3</h1>
+              <h1 data-ng-show="slides.currentIndex === 3" class="slides__headline">Headline 4</h1>
               <div class="slides__cutter">
                 <div data-ng-style="slides.css" class="slides__list">
-                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('juicy', true)"></div>
-                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('egg', true)"></div>
-                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('sugar', true)"></div>
-                  <div class="slides__slide"><img src="http://placehold.it/900x400" data-ng-click="main.toggleOverlay('fruit', true)"></div>
+                  <div style="background-image:url('http://placehold.it/900x400')" class="slides__slide"></div>
+                  <div style="background-image:url('http://placehold.it/900x400')" class="slides__slide"></div>
+                  <div style="background-image:url('http://placehold.it/900x400')" class="slides__slide"></div>
+                  <div style="background-image:url('http://placehold.it/900x400')" class="slides__slide"></div>
                 </div>
               </div>
-              <div class="slides__act">asdsad</div>
+              <div data-ng-show="slides.currentIndex === 0" class="slides__attachment">
+                <div class="btn btn--center">
+                  <div data-ng-click="main.toggleOverlay('juicy', true)" class="btn__text">Se ægsperiment 1</div>
+                </div>
+              </div>
+              <div data-ng-show="slides.currentIndex === 1" class="slides__attachment">
+                <div class="btn btn--center">
+                  <div data-ng-click="main.toggleOverlay('egg', true)" class="btn__text">Se ægsperiment 2</div>
+                </div>
+              </div>
+              <div data-ng-show="slides.currentIndex === 2" class="slides__attachment">
+                <div class="btn btn--center">
+                  <div data-ng-click="main.toggleOverlay('sugar', true)" class="btn__text">Se ægsperiment 3</div>
+                </div>
+              </div>
+              <div data-ng-show="slides.currentIndex === 3" class="slides__attachment">
+                <div class="btn btn--center">
+                  <div data-ng-click="main.toggleOverlay('fruit', true)" class="btn__text">Se ægsperiment 4</div>
+                </div>
+              </div>
               <div data-ng-click="slides.switchSlide(-1)" class="slides__arrow">Forrige</div>
               <div data-ng-click="slides.switchSlide(1)" class="slides__arrow slides__arrow--right">Mæste</div>
             </div>

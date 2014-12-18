@@ -38,6 +38,7 @@
           cupsLocked: false,
           cupsUserLocked: true,
           presentChoice: false,
+          presentNewgame: false,
           defeat: false,
           won: false
 				},
@@ -111,16 +112,15 @@
         if ($scope.cupgame.openCupIndex === $scope.cupgame.options.rewardIndex) {
           log('Won');
           $scope.cupgame.states.won = true;
-          $scope.cupgame.states.presentChoice = false;
           $scope.cupgame.states.defeat = false;
-
+          $scope.cupgame.states.presentChoice = false;
           $timeout(function(){
             $rootScope.$broadcast('MainCtrl:toggleOverlay', {
               id: 'win',
               state: true
             });
-          }, 500);
-
+            $scope.cupgame.states.presentNewgame = true;
+          }, 400);
         }
         else {
           log('Defeat');
@@ -188,12 +188,14 @@
         if ($scope.cupgame.states.shufflingLoop) {
           return false;
         }
+        $scope.cupgame.states.cupsUserLocked = true;
+        $scope.cupgame.states.presentNewgame = false;
+        $scope.cupgame.states.presentChoice = false;
         $scope.cupgame.liftCup($scope.cupgame.options.rewardIndex, false);
         $timeout(function(){
           $scope.cupgame.closeCups();
         },2000);
         $timeout(function(){
-          $scope.cupgame.states.cupsUserLocked = true;
           $scope.cupgame.shuffle();
         },2500);
       };
@@ -219,6 +221,7 @@
 
 					$scope.cupgame.updateOffsets();
 					$scope.cupgame.states.initiated = true;
+					$scope.cupgame.states.presentNewgame = true;
 				}
 			};
 

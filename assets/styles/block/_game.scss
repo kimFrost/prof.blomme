@@ -14,7 +14,8 @@
 .game__logo,
 .game__teaser,
 .game__rulesteaser,
-.game__game {
+.game__game,
+.game__footer {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -62,6 +63,18 @@
   top: 40%;
 }
 
+.game__footer {
+  @include fontSize(eta, 1);
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font_HelveticaNeueBlack;
+  font-weight: 400;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
 
 //--- MODIFIERS ----------------------------------------------------------//
 

@@ -25,6 +25,8 @@ $_slidesArrowHeight: image-height('../images/graphic/arrow_left.png');
 .slides__arrow,
 .slides__map,
 .slides__mapitem,
+.slides__headline,
+.slides__attachment,
 .slides__dev {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -67,6 +69,7 @@ $_slidesArrowHeight: image-height('../images/graphic/arrow_left.png');
 	overflow: hidden; // Can be removed to make a kind of carousel
 	background-repeat: no-repeat;
 	background-position: center center;
+  background-size: cover;
   // Fix
   & + & {
     position: absolute;
@@ -144,8 +147,7 @@ a.slides__slide {
 .slides__arrow {
 	@include transition(transform 300ms ease);
 	@include translate(0%, 0%);
-	@include fontSize(beta, 0);
-	@include hoverActiveStates($color_black, 'color', 25%);
+	@include fontSize(alpha, 0);
   @include noUserSelect();
 	display: block;
 	position: absolute;
@@ -163,7 +165,9 @@ a.slides__slide {
   text-transform: uppercase;
 	margin-top: -($_slidesArrowHeight/2);
 	z-index: 40;
+  font-family: $font_HelveticaNeueBlack;
 	cursor: pointer;
+  padding-left: 4px;
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -207,6 +211,36 @@ a.slides__slide {
 	}
 }
 
+.slides__headline {
+  @include transition(opacity 300ms ease);
+  @include fontSize(eta, 1);
+  color: $color_hearth;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font_HelveticaNeueBlack;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  padding: 0;
+  position: relative;
+  z-index: 40;
+  opacity: 1;
+  &.ng-hide {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+  }
+}
+
+.slides__attachment {
+  //@include translate(0, -100px);
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 60;
+  margin-top: 10px;
+}
+
 .slides__dev {
 	@include fontSize(beta);
 	position: fixed;
@@ -221,6 +255,18 @@ a.slides__slide {
 }
 
 //--- MODIFIERS -------------------------------------------------------//
+
+.slides--fit {
+  height: 100%;
+  .slides__headline {
+    position: absolute;
+    top: 0;
+  }
+  .slides__cutter {
+    margin-top: 30px;
+    height: calc(100% - 120px);
+  }
+}
 
 .slides--fadeanimate {
   .slides__list {
@@ -251,6 +297,8 @@ a.slides__slide {
   background-image: url('/images/graphic/arrow_right.png');
 	left: auto;
 	right: 0;
+  padding-left: 0;
+  padding-right: 4px;
 }
 
 .slides__arrow--hide {
