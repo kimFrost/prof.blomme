@@ -123,23 +123,21 @@
                 </div>
               </div>
               <div data-ng-show="slides.currentIndex === 0" class="slides__attachment">
-                <div class="btn btn--center">
-                  <div data-ng-click="main.toggleOverlay('juicy', true)" class="btn__text">Se ægsperiment 1</div>
-                </div>
-              </div>
-              <div data-ng-show="slides.currentIndex === 1" class="slides__attachment">
-                <div class="btn btn--center">
-                  <div data-ng-click="main.toggleOverlay('egg', true)" class="btn__text">Se ægsperiment 2</div>
-                </div>
-              </div>
-              <div data-ng-show="slides.currentIndex === 2" class="slides__attachment">
-                <div class="btn btn--center">
-                  <div data-ng-click="main.toggleOverlay('sugar', true)" class="btn__text">Se ægsperiment 3</div>
-                </div>
-              </div>
-              <div data-ng-show="slides.currentIndex === 3" class="slides__attachment">
-                <div class="btn btn--center">
-                  <div data-ng-click="main.toggleOverlay('fruit', true)" class="btn__text">Se ægsperiment 4</div>
+                <div class="stage stage--fit">
+                  <div class="stage__slot stage__slot--1">
+                    <div class="stage__actor stage__actor--girl stage__actor--fit"></div>
+                  </div>
+                  <div class="stage__slot stage__slot--2">
+                    <div class="btn btn--fit">
+                      <div data-ng-click="main.toggleOverlay('juicy', true)" class="btn__text">Se ægsperiment</div>
+                    </div>
+                  </div>
+                  <div class="stage__slot stage__slot--3">
+                    <div class="stage__actor stage__actor--prof stage__actor--fit"></div>
+                  </div>
+                  <div class="stage__slot stage__slot--4">
+                    <div class="stage__actor stage__actor--boy stage__actor--fit"></div>
+                  </div>
                 </div>
               </div>
               <div data-ng-click="slides.switchSlide(-1)" class="slides__arrow">Forrige</div>
@@ -193,10 +191,7 @@
     <script src="./assets/scripts/snap.js"></script>
     <script src="./assets/scripts/app.js"></script>
     <script src="./assets/scripts/controllers/main.controller.js"></script>
-    <!--script(src="./assets/scripts/controllers/cup.controller.js")-->
-    <!--script(src="./assets/scripts/controllers/cupgame.controller.js")-->
     <script src="./assets/scripts/controllers/slides.controller.js"></script>
     <script src="./assets/scripts/directives/cupgame.directive.js"></script>
-    <!--script(src="./assets/scripts/directives/cup.directive.js")-->
   </body>
 </html>

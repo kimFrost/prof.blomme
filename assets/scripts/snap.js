@@ -24,8 +24,11 @@
     fpsCount = 0,
     lastScrollTop = 0,
     numOfLogs = 0,
+    debounceTimer = null,
     windowHeight = window.innerHeight,
+    activePanelIndex = 0,
     animationQuery = [];
+
 
   var states = {
     animating: false
@@ -39,9 +42,40 @@
     return a + f * (b - a);
   }
 
+  // Debounce
+  var debounce = function (func, threshold) {
+
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function(){
+      func();
+    },threshold);
+
+    /*
+    var timeout;
+    return function debounced () {
+      var obj = this, args = arguments;
+      function delayed () {
+        if (!execAsap) {
+          func.apply(obj, args);
+        }
+        timeout = null;
+      }
+
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+      else if (execAsap) {
+        func.apply(obj, args);
+      }
+      timeout = setTimeout(delayed, threshold || 100);
+    };
+    */
+
+  };
+
   // Recal
   function recal() {
-
+    console.log('recal');
   }
 
   // Animate
@@ -80,7 +114,7 @@
         animationDone = true;
       }
 
-      console.log('timeProgress',timeProgress);
+      //console.log('timeProgress',timeProgress);
 
       var y = lerp(animation.from, animation.to, timeProgress);
       animation.element.scrollTop = y;
@@ -99,10 +133,10 @@
 
   // Scroll
   document.querySelector('#scrollCapture').addEventListener('scroll', function (event) {
-    if (states.animating) {
-      return;
-    }
 
+    if (states.animating) {
+      //return;
+    }
 
     var container = this,
       scrollTop = container.scrollTop,
@@ -110,47 +144,77 @@
       percent = scrollTop / windowHeight * 100,
       snapPercent = percent % 100;
 
-    if (scrollTop > lastScrollTop) {
-      direction = 1;
-    }
-    else if (scrollTop < lastScrollTop) {
-      direction = -1;
-    }
-
-    var newPos = scrollTop;
-
-    if (direction > 0) {
-      if (snapPercent >= options.snapPercent) {
-        newPos = (percent + 100 - snapPercent) * windowHeight / 100;
+    debounce(function() {
+      if (scrollTop > lastScrollTop) {
+        direction = 1;
       }
-    }
-    else if (direction < 0) {
-      if (snapPercent <= (100 - options.snapPercent)) {
-        newPos = (percent + 0 - snapPercent) * windowHeight / 100;
+      else if (scrollTop < lastScrollTop) {
+        direction = -1;
       }
-    }
 
-    if (newPos !== scrollTop) {
-      //container.scrollTop = newPos;
-      animate(scrollTop, newPos, container);
-    }
+      var newPos = scrollTop;
+      var newIndex = activePanelIndex;
 
-    console.log('v-------------scrollCapture-------------v');
-    console.log('scrollTop', scrollTop);
-    console.log('lastScrollTop', lastScrollTop);
-    console.log('direction', direction);
-    console.log('windowHeight', windowHeight);
-    console.log('percent', percent);
-    console.log('snapPercent', snapPercent);
-    console.log(' ');
+      if (direction > 0) {
+        if (snapPercent >= options.snapPercent) {
+          newPos = (percent + 100 - snapPercent) * windowHeight / 100;
+          newIndex = Math.floor((percent + 100 - snapPercent) / 100);
+        }
+        else {
+          newIndex = Math.floor((percent) / 100);
+        }
+      }
+      else if (direction < 0) {
+        if (snapPercent <= (100 - options.snapPercent)) {
+          newPos = (percent - snapPercent) * windowHeight / 100;
+          newIndex = Math.floor((percent - snapPercent) / 100);
+        }
+        else {
+          newIndex = Math.floor((percent) / 100);
+        }
+      }
 
-    lastScrollTop = scrollTop;
+      activePanelIndex = newIndex;
+
+      if (newPos !== scrollTop) {
+        animate(scrollTop, newPos, container);
+      }
+
+
+      console.log('v-------------scrollCapture-------------v');
+      console.log('newIndex', newIndex);
+      console.log('newPos', newPos);
+      console.log('scrollTop', scrollTop);
+      console.log('lastScrollTop', lastScrollTop);
+      console.log('direction', direction);
+      console.log('windowHeight', windowHeight);
+      console.log('percent', percent);
+      console.log('snapPercent', snapPercent);
+      console.log(' ');
+
+
+      lastScrollTop = scrollTop;
+    }, 300);
   });
 
   // Resize
   window.addEventListener('resize', function(event){
-    console.log('resize');
+    //console.log('resize');
     windowHeight = window.innerHeight;
+    var container  = document.querySelector('#scrollCapture');
+    container.scrollTop = activePanelIndex * windowHeight;
+    lastScrollTop = container.scrollTop;
+    /*
+    debounce(function() {
+      var container  = document.querySelector('#scrollCapture');
+      var scrollTop = container.scrollTop;
+      var percent = scrollTop / windowHeight * 100;
+      var newIndex = Math.round(percent / 100);
+      console.log('percent', percent);
+      console.log('newIndex', newIndex);
+      container.scrollTop = newIndex * windowHeight;
+    }, 100);
+    */
   });
 
   // Fps set

@@ -99,17 +99,18 @@ block append content
               div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
               div.slides__slide(style="background-image:url('http://placehold.it/900x400')")
           div.slides__attachment(data-ng-show="slides.currentIndex === 0")
-            div.btn.btn--center
-              div.btn__text(data-ng-click="main.toggleOverlay('juicy', true)") Se ægsperiment 1
-          div.slides__attachment(data-ng-show="slides.currentIndex === 1")
-            div.btn.btn--center
-              div.btn__text(data-ng-click="main.toggleOverlay('egg', true)") Se ægsperiment 2
-          div.slides__attachment(data-ng-show="slides.currentIndex === 2")
-            div.btn.btn--center
-              div.btn__text(data-ng-click="main.toggleOverlay('sugar', true)") Se ægsperiment 3
-          div.slides__attachment(data-ng-show="slides.currentIndex === 3")
-            div.btn.btn--center
-              div.btn__text(data-ng-click="main.toggleOverlay('fruit', true)") Se ægsperiment 4
+            div.stage.stage--fit
+              div.stage__slot.stage__slot--1
+                div.stage__actor.stage__actor--girl.stage__actor--fit
+              div.stage__slot.stage__slot--2
+                div.btn.btn--fit
+                  div.btn__text(data-ng-click="main.toggleOverlay('juicy', true)") Se ægsperiment
+              div.stage__slot.stage__slot--3
+                div.stage__actor.stage__actor--prof.stage__actor--fit
+              div.stage__slot.stage__slot--4
+                div.stage__actor.stage__actor--boy.stage__actor--fit
+
+
           div.slides__arrow(data-ng-click="slides.switchSlide(-1)") Forrige
           div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") Mæste
 

@@ -7,10 +7,12 @@
   display: block;
   text-align: center;
   width: 100%;
+  position: relative;
 }
 
 .stage,
-.stage__actor {
+.stage__actor,
+.stage__slot {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -28,6 +30,12 @@
   }
 }
 
+.stage__slot {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+
 //--- MODIFIERS ----------------------------------------------------------//
 
 .stage--grouped {
@@ -35,6 +43,14 @@
     & + .stage__actor {
       margin-left: -90px;
     }
+  }
+}
+
+.stage--fit {
+  width: 100%;
+  height: 100%;
+  .stage__actor {
+
   }
 }
 
@@ -82,6 +98,29 @@
   width: 100%;
   height: auto;
 }
+
+.stage__slot--1 {
+  left: 0;
+  width: 12%;
+}
+
+.stage__slot--2 {
+  left: 30%;
+  width: 40%;
+  top: 0;
+  bottom: auto;
+}
+
+.stage__slot--3 {
+  right: 10%;
+  width: 16%;
+}
+
+.stage__slot--4 {
+  right: 0;
+  width: 12%;
+}
+
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
