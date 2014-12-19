@@ -180,7 +180,7 @@
         animate(scrollTop, newPos, container);
       }
 
-
+      /*
       console.log('v-------------scrollCapture-------------v');
       console.log('newIndex', newIndex);
       console.log('newPos', newPos);
@@ -191,7 +191,7 @@
       console.log('percent', percent);
       console.log('snapPercent', snapPercent);
       console.log(' ');
-
+      */
 
       lastScrollTop = scrollTop;
     }, 300);

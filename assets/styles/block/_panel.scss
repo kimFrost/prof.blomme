@@ -107,8 +107,6 @@ $__gutterWidth: 0;
   padding: 32px 50px;
   z-index: 50;
 
-  top: 25%;
-  min-height: 50%;
 }
 
 .panel__overlayclose {
@@ -247,6 +245,9 @@ $__gutterWidth: 0;
   .panel__overlay {
     width: 80%;
     left: 10%;
+    //top: 25%;
+    top: 100px;
+    min-height: 40%;
   }
 }
 
@@ -254,5 +255,8 @@ $__gutterWidth: 0;
   .panel__overlay {
     width: 60%;
     left: 20%;
+    //top: 25%;
+    top: 100px;
+    min-height: 40%;
   }
 }

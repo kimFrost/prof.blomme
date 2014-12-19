@@ -25,13 +25,18 @@
   $_height: image-height('../images/graphic/xperiments_banner.png');
   $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/xperiments_banner.png');
-  width: $_width;
-  height: $_height;
+  background-repeat: no-repeat;
+  //width: $_width;
+  width: 70%;
+  //height: $_height;
+  padding-bottom: (100% * $_ratio * 0.7);
   z-index: 10;
   display: block;
   position: absolute;
   top: 40px;
-  left: calc(50% - #{$_width / 2});
+  //left: calc(50% - #{$_width / 2});
+  left: 15%;
+  background-size: contain;
 }
 
 .xperiments__slides {

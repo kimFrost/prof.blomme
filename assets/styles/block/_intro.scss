@@ -27,13 +27,18 @@
   $_height: image-height('../images/graphic/intro_header.png');
   $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/intro_header.png');
-  width: $_width;
-  height: $_height;
+  background-repeat: no-repeat;
+  //width: $_width;
+  width: 50%;
+  //height: $_height;
+  padding-bottom: (100% * $_ratio * 0.5);
   display: block;
   z-index: 1;
   position: absolute;
   top: 10%;
-  left: calc(50% - #{$_width / 2});
+  //left: calc(50% - #{$_width / 2});
+  left: 25%;
+  background-size: contain;
 }
 
 .intro__scrolldown {
