@@ -18,7 +18,7 @@
       <div data-ng-click="main.toogleHeader()" class="header__toogle">T</div>
       <div class="header__logo"></div>
     </div>
-    <div id="scrollCapture" class="panel panel--list">
+    <div id="scrollCapture" data-ng-class="{'panel--lockscroll':main.states.lockPageScroll}" class="panel panel--list">
       <section class="panel panel--sun">
         <div class="panel__bg"></div>
         <div class="intro">

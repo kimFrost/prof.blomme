@@ -11,7 +11,8 @@
 .form,
 .form__line,
 .form__input,
-.form__button {
+.form__button,
+.form__msg {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -42,6 +43,11 @@
   & + & {
 
   }
+  &.ng-invalid-required {
+    &.ng-dirty {
+      border: 1px solid $color_hearth;
+    }
+  }
 }
 
 .form__button {
@@ -52,6 +58,11 @@
   background-color: $color_hearth;
   color: $color_harvest;
   border: none;
+}
+
+.form__msg {
+  display: block;
+  width: 100%;
 }
 
 //--- MODIFIERS ----------------------------------------------------------//

@@ -205,6 +205,10 @@ $__gutterWidth: 0;
   }
 }
 
+.panel--lockscroll {
+  overflow: hidden;
+}
+
 .panel--frame {
   color: $color_white;
   .panel__bg {

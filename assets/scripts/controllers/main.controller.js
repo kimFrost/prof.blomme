@@ -42,7 +42,8 @@
 		};
 		main.states = {
 			showCookiePopup: true,
-			expandHeader: false
+			expandHeader: false,
+      lockPageScroll: false
 		};
 
 		// Public functions
@@ -69,6 +70,7 @@
 			}
       log('state', state);
 			main.overlays[id].states.show = state;
+      main.states.lockPageScroll = state;
 			if (state) {
         for (var key in main.overlays) {
           if (key !== id) {
@@ -80,7 +82,8 @@
 
     function closeAllOverlays(event) {
       for (var key in main.overlays) {
-          main.overlays[key].states.show = false;
+        main.overlays[key].states.show = false;
+        main.states.lockPageScroll = false;
       }
     }
 
