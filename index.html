@@ -45,6 +45,7 @@
           <div class="game__footer">Hjælp Professor Blomme med at finde sine briller og deltag</div>
         </div>
         <div data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;" data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">
             <div class="rte rte--nonumbers">
               <h2 class="rte__headline">Godt gået, mit lille æggehoved</h2>
@@ -85,6 +86,7 @@
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('subscribed')" data-ng-class="{'panel__scrollarea--show':main.overlays['subscribed'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">subscribed
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
             <div class="rte">
@@ -95,6 +97,7 @@
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('rules')" data-ng-class="{'panel__scrollarea--show':main.overlays['rules'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">rules
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
             <div class="rte">
@@ -146,6 +149,7 @@
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('juicy')" data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
             <div class="rte"><a href="#">Print ægsperiment</a>
@@ -172,16 +176,19 @@
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('egg')" data-ng-class="{'panel__scrollarea--show':main.overlays['egg'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">egg
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('sugar')" data-ng-class="{'panel__scrollarea--show':main.overlays['sugar'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">sugar
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
           </div>
         </div>
         <div data-ng-init="main.registerOverlay('fruit')" data-ng-class="{'panel__scrollarea--show':main.overlays['fruit'].states.show}" class="panel__scrollarea">
+          <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">fruit
             <div data-ng-click="main.closeAllOverlays()" class="panel__overlayclose"></div>
           </div>

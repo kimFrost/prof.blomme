@@ -37,6 +37,7 @@ html {
 .panel__inner,
 .panel__content,
 .panel__overlay,
+.panel__overlaybg,
 .panel__bg,
 .panel__bg:before {
   box-sizing: border-box;
@@ -44,19 +45,19 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000346}}
 .panel__inner {
   position: relative;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000349}}
 .panel__inner:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
 .panel__content {
   width: 100%;
   margin: 0 auto;
@@ -75,19 +76,19 @@ html {
   align-items: center;
 }
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
   .panel__content {
     width: 560px;
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
   .panel__content {
     width: 960px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000393}}
 .panel__overlay {
   display: block;
   position: absolute;
@@ -107,6 +108,17 @@ html {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003112}}
+.panel__overlaybg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003122}}
 .panel__overlayclose {
   user-select: none;
   -webkit-user-select: none;
@@ -133,16 +145,16 @@ html {
   vertical-align: middle;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003141}}
 .panel__overlayclose:focus, .panel__overlayclose:hover {
   background-color: #d6696f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003145}}
 .panel__overlayclose:active {
   background-color: #832428;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003150}}
 .panel__scrollarea {
   position: absolute;
   top: 0;
@@ -152,18 +164,17 @@ html {
   overflow-x: hidden;
   display: none;
   z-index: 50;
-  background-color: rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003171}}
 .panel__scrollarea::-webkit-scrollbar {
   width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
 .panel__bg {
   display: block;
   position: absolute;
@@ -174,7 +185,7 @@ html {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003190}}
 .panel--list {
   position: static;
   display: block;
@@ -186,32 +197,32 @@ html {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003206}}
 .panel--list::-webkit-scrollbar {
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003211}}
 .panel--list:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003218}}
 .panel--lockscroll {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003222}}
 .panel--frame {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003224}}
 .panel--frame .panel__bg {
   background-color: #bf343b;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003227}}
 .panel--frame .panel__bg:before {
   -moz-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -o-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
@@ -228,7 +239,7 @@ html {
   border-width: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003243}}
 .panel--sun .panel__bg {
   background-image: url("/images/graphic/sun_bg.jpg");
   background-repeat: no-repeat;
@@ -236,13 +247,13 @@ html {
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003251}}
 .panel__scrollarea--show {
   display: block;
 }
 
 @media all and (min-width: 620px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003259}}
   .panel__overlay {
     width: 80%;
     left: 10%;
@@ -251,7 +262,7 @@ html {
   }
 }
 @media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003269}}
   .panel__overlay {
     width: 60%;
     left: 20%;

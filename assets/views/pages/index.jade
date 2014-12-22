@@ -35,6 +35,7 @@ block append content
       div.game__footer Hjælp Professor Blomme med at finde sine briller og deltag
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;", data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay
         div.rte.rte--nonumbers
           h2.rte__headline Godt gået, mit lille æggehoved
@@ -62,6 +63,7 @@ block append content
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('subscribed')", data-ng-class="{'panel__scrollarea--show':main.overlays['subscribed'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay subscribed
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
         div.rte
@@ -71,6 +73,7 @@ block append content
           a(data-ng-click="main.closeAllOverlays()") Tilbage til side
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('rules')", data-ng-class="{'panel__scrollarea--show':main.overlays['rules'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay rules
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
         div.rte
@@ -115,6 +118,7 @@ block append content
           div.slides__arrow.slides__arrow--right(data-ng-click="slides.switchSlide(1)") Mæste
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('juicy')", data-ng-class="{'panel__scrollarea--show':main.overlays['juicy'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
         div.rte
@@ -140,13 +144,16 @@ block append content
             div.rte__text Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('egg')", data-ng-class="{'panel__scrollarea--show':main.overlays['egg'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay egg
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('sugar')", data-ng-class="{'panel__scrollarea--show':main.overlays['sugar'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay sugar
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
 
     div.panel__scrollarea(data-ng-init="main.registerOverlay('fruit')", data-ng-class="{'panel__scrollarea--show':main.overlays['fruit'].states.show}")
+      div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay fruit
         div.panel__overlayclose(data-ng-click="main.closeAllOverlays()")
