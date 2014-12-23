@@ -1,6 +1,17 @@
 
 
 // PARAMETERS
+$_logoWidth: image-width('../images/graphic/intro_header.png');
+$_logoHeight: image-height('../images/graphic/intro_header.png');
+$_logoRatio: ($_logoWidth / $_logoHeight);
+
+$_teaserWidth: image-width('../images/graphic/attachment_banner.png');
+$_teaserHeight: image-height('../images/graphic/attachment_banner.png');
+$_teaserRatio: ($_teaserWidth / $_teaserHeight);
+
+$_scrolldownWidth: image-width('../images/graphic/arrow_scrolldown.png');
+$_scrolldownHeight: image-height('../images/graphic/arrow_scrolldown.png');
+$_scrolldownRatio: ($_scrolldownWidth / $_scrolldownHeight);
 
 // BLOCK
 .intro {
@@ -23,15 +34,13 @@
 //--- ELEMENTS ----------------------------------------------------------//
 
 .intro__logo {
-  $_width: image-width('../images/graphic/intro_header.png');
-  $_height: image-height('../images/graphic/intro_header.png');
-  $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/intro_header.png');
   background-repeat: no-repeat;
+  background-position: center top;
   //width: $_width;
   width: 50%;
   //height: $_height;
-  padding-bottom: (100% * $_ratio * 0.5);
+  padding-bottom: (100% * $_logoRatio * 0.5);
   display: block;
   z-index: 1;
   position: absolute;
@@ -42,17 +51,14 @@
 }
 
 .intro__scrolldown {
-  $_width: image-width('../images/graphic/arrow_scrolldown.png');
-  $_height: image-height('../images/graphic/arrow_scrolldown.png');
-  $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/arrow_scrolldown.png');
-  width: $_width;
-  height: $_height;
+  width: $_scrolldownWidth;
+  height: $_scrolldownHeight;
   display: block;
   position: absolute;
   z-index: 10;
   bottom: 20px;
-  left: calc(50% - #{$_width / 2});
+  left: calc(50% - #{$_scrolldownWidth / 2});
 }
 
 .intro__actors {
@@ -64,17 +70,14 @@
 }
 
 .intro__teaser {
-  $_width: image-width('../images/graphic/attachment_banner.png');
-  $_height: image-height('../images/graphic/attachment_banner.png');
-  $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/attachment_banner.png');
-  width: $_width;
-  height: $_height;
-  display: block;
+  width: $_teaserWidth;
+  height: $_teaserHeight;
   position: absolute;
   left: 0;
-  top: calc(50% - #{$_height / 2});
+  top: calc(80% - #{$_teaserHeight / 2});
   z-index: 10;
+  display: none;
 }
 
 //--- MODIFIERS ----------------------------------------------------------//
@@ -83,3 +86,43 @@
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
+@include mediaQueries(desktop) {
+  .intro__logo {
+    height: $_logoHeight;
+    width: $mq-contentWidth;
+    left: calc(50% - #{$mq-contentWidth / 2});
+    padding-bottom: 0;
+  }
+  .intro__actors {
+    top: 30%;
+    width: 70%;
+    left: 15%;
+  }
+  .intro__teaser {
+    display: block;
+    top: calc(50% - #{$_teaserHeight / 2});
+  }
+  .intro__scrolldown {
+
+  }
+}
+
+@include mediaQueries(tablet) {
+  .intro__logo {
+    height: $_logoHeight;
+    width: $mq-contentWidth;
+    left: calc(50% - #{$mq-contentWidth / 2});
+    padding-bottom: 0;
+  }
+  .intro__actors {
+    top: 30%;
+    width: 70%;
+    left: 15%;
+  }
+  .intro__teaser {
+    display: block;
+  }
+  .intro__scrolldown {
+
+  }
+}

@@ -41,7 +41,11 @@
 .stage--grouped {
   .stage__actor {
     & + .stage__actor {
-      margin-left: -90px;
+      //margin-left: -90px;
+      margin-left: -10%;
+    }
+    &.stage__actor--fit {
+      width: 33%;
     }
   }
 }
@@ -65,6 +69,10 @@
   //padding-bottom: ($_ratio * 100%);
   &.stage__actor--fit {
     padding-bottom: ($_ratio * 100%);
+    .stage--grouped & {
+      width: (100% / 3);
+      padding-bottom: ($_ratio * (100% / 3));
+    }
   }
 }
 
@@ -78,6 +86,10 @@
   z-index: 1;
   &.stage__actor--fit {
     padding-bottom: ($_ratio * 100%);
+    .stage--grouped & {
+      width: (100% / 3);
+      padding-bottom: ($_ratio * (100% / 3));
+    }
   }
 }
 
@@ -91,6 +103,10 @@
   z-index: 1;
   &.stage__actor--fit {
     padding-bottom: ($_ratio * 100%);
+    .stage--grouped & {
+      width: (100% / 3);
+      padding-bottom: ($_ratio * (100% / 3));
+    }
   }
 }
 
