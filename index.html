@@ -14,8 +14,8 @@
   </head>
   <body data-ng-controller="MainCtrl as main" class="prof-blomme">
     <div data-ng-class="{'header--show':main.states.expandHeader}" class="header">
-      <div class="header__menu"><a class="header__menuitem">Forside</a><a class="header__menuitem">Konkurrence</a><a class="header__menuitem">Ægsperimenter</a></div>
-      <div data-ng-click="main.toogleHeader()" class="header__toogle">T</div>
+      <div class="header__menu"><a data-ng-class="{'header__menuitem--active':main.activePanelIndex === 0}" onclick="snap.scrolltoIndex(0)" class="header__menuitem">Forside</a><a data-ng-class="{'header__menuitem--active':main.activePanelIndex === 1}" onclick="snap.scrolltoIndex(1)" class="header__menuitem">Konkurrence</a><a data-ng-class="{'header__menuitem--active':main.activePanelIndex === 2}" onclick="snap.scrolltoIndex(2)" class="header__menuitem">Ægsperimenter</a></div>
+      <div data-ng-click="main.toggleHeader()" class="header__toggle">T</div>
       <div class="header__logo"></div>
     </div>
     <div id="scrollCapture" data-ng-class="{'panel--lockscroll':main.states.lockPageScroll}" class="panel panel--list">
@@ -30,7 +30,7 @@
               <div class="stage__actor stage__actor--girl stage__actor--fit"></div>
             </div>
           </div>
-          <div class="intro__scrolldown"></div>
+          <div onclick="snap.scrolltoIndex(1)" class="intro__scrolldown"></div>
           <div class="intro__teaser"></div>
         </div>
       </section>
@@ -44,7 +44,7 @@
           </div>
           <div class="game__footer">Hjælp Professor Blomme med at finde sine briller og deltag</div>
         </div>
-        <div data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;" data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}" class="panel__scrollarea">
+        <div data-ng-init="main.registerOverlay('win')" data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}" class="panel__scrollarea">
           <div data-ng-click="main.closeAllOverlays()" class="panel__overlaybg"></div>
           <div class="panel__overlay">
             <div class="rte rte--nonumbers">

@@ -25,7 +25,7 @@
 		.controller('MainCtrl', MainCtrl);
 
 	/* @ngInject */
-	function MainCtrl($scope, $window) {
+	function MainCtrl($scope, $window, $interval) {
 
 		var main = this;
 		main.options = {
@@ -33,6 +33,7 @@
 			useWebStorage: false,
 			cookieStorageName: 'CookieAccepted'
 		};
+    main.activePanelIndex = 0;
 		main.overlays = {
 			juicy: {
 				states: {
@@ -48,7 +49,8 @@
 
 		// Public functions
 		main.setStorage = setStorage;
-		main.toogleHeader = toogleHeader;
+		main.toggleHeader = toggleHeader;
+		main.activePanel = activePanel;
 		main.toggleOverlay = toggleOverlay;
 		main.registerOverlay = registerOverlay;
 		main.closeAllOverlays = closeAllOverlays;
@@ -60,12 +62,11 @@
 
 		// Overlay
 		function toggleOverlay(id, state) {
-			state = (state === undefined) ? 'toogle' : state;
-      log('toggleOverlay', id);
+			state = (state === undefined) ? 'toggle' : state;
 			if (main.overlays[id] === undefined) {
 				return undefined;
 			}
-			if (state === 'toogle') {
+			if (state === 'toggle') {
 				state = !main.overlays[id].states.show;
 			}
       log('state', state);
@@ -98,14 +99,23 @@
       }
 		}
 
-		// Header
-		function toogleHeader(state) {
-			state = (state === undefined) ? 'toogle' : state;
-			if (state === 'toogle') {
+		// Header Toggle
+		function toggleHeader(state) {
+			state = (state === undefined) ? 'toggle' : state;
+			if (state === 'toggle') {
 				state = !main.states.expandHeader;
 			}
 			main.states.expandHeader = state;
 		}
+
+    function activePanel(index) {
+      if (index !== undefined) {
+        var container = document.querySelector('#scrollCapture');
+        var scrollTop = container.scrollTop;
+
+        return true;
+      }
+    }
 
 		// Cookie
 		function checkCookie() {
@@ -191,6 +201,13 @@
     $scope.$on('MainCtrl:toggleOverlay', function(event, data) {
       toggleOverlay(data.id, data.state);
     });
+
+    //Get Active Panel Index from window.snap
+    $interval(function(){
+      main.activePanelIndex = window.snap.activeIndex;
+    }, 300);
+
+    //angular.element(window).bind("scroll", function(){});
 
 		checkCookie();
 	}

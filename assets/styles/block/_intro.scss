@@ -37,16 +37,13 @@ $_scrolldownRatio: ($_scrolldownWidth / $_scrolldownHeight);
   background-image: url('/images/graphic/intro_header.png');
   background-repeat: no-repeat;
   background-position: center top;
-  //width: $_width;
-  width: 50%;
-  //height: $_height;
-  padding-bottom: (100% * $_logoRatio * 0.5);
+  width: 90%;
+  padding-bottom: (100% / $_logoRatio * 0.9);
   display: block;
   z-index: 1;
   position: absolute;
-  top: 10%;
-  //left: calc(50% - #{$_width / 2});
-  left: 25%;
+  top: 15%;
+  left: 5%;
   background-size: contain;
 }
 
@@ -59,13 +56,20 @@ $_scrolldownRatio: ($_scrolldownWidth / $_scrolldownHeight);
   z-index: 10;
   bottom: 20px;
   left: calc(50% - #{$_scrolldownWidth / 2});
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 1;
+  }
 }
 
 .intro__actors {
   position: absolute;
-  top: 30%;
-  width: 70%;
-  left: 15%;
+  top: 35%;
+  width: 100%;
+  left: 0;
   z-index: 5;
 }
 

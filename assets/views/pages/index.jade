@@ -17,7 +17,7 @@ block append content
           div.stage__actor.stage__actor--boy.stage__actor--fit
           div.stage__actor.stage__actor--prof.stage__actor--fit
           div.stage__actor.stage__actor--girl.stage__actor--fit
-      div.intro__scrolldown
+      div.intro__scrolldown(onclick="snap.scrolltoIndex(1)")
       div.intro__teaser
 
 
@@ -34,7 +34,7 @@ block append content
         div.cupgame.cupgame--count3(data-cupgame, data-cupcount=3)
       div.game__footer Hjælp Professor Blomme med at finde sine briller og deltag
 
-    div.panel__scrollarea(data-ng-init="main.registerOverlay('win'); main.overlays['win'].states.show = true;", data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}")
+    div.panel__scrollarea(data-ng-init="main.registerOverlay('win')", data-ng-class="{'panel__scrollarea--show':main.overlays['win'].states.show}")
       div.panel__overlaybg(data-ng-click="main.closeAllOverlays()")
       div.panel__overlay
         div.rte.rte--nonumbers

@@ -18,10 +18,10 @@ html(data-ng-app="BrugSkallen", lang="da")
 		block body
 		div.header(data-ng-class="{'header--show':main.states.expandHeader}")
 			div.header__menu
-				a.header__menuitem Forside
-				a.header__menuitem Konkurrence
-				a.header__menuitem Ægsperimenter
-			div.header__toogle(data-ng-click="main.toogleHeader()") T
+				a.header__menuitem(data-ng-class="{'header__menuitem--active':main.activePanelIndex === 0}", onclick="snap.scrolltoIndex(0)") Forside
+				a.header__menuitem(data-ng-class="{'header__menuitem--active':main.activePanelIndex === 1}", onclick="snap.scrolltoIndex(1)") Konkurrence
+				a.header__menuitem(data-ng-class="{'header__menuitem--active':main.activePanelIndex === 2}", onclick="snap.scrolltoIndex(2)") Ægsperimenter
+			div.header__toggle(data-ng-click="main.toggleHeader()") T
 			div.header__logo
 		div.panel.panel--list(id="scrollCapture", data-ng-class="{'panel--lockscroll':main.states.lockPageScroll}")
 			block content

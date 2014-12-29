@@ -1,4 +1,4 @@
-(function (undefined) {
+(function (window, undefined) {
   'use strict';
 
   // shim layer with setTimeout fallback
@@ -11,7 +11,9 @@
       };
   })();
 
-
+  window.snap = {};
+  window.snap.scrolltoIndex = scrolltoIndex;
+  window.snap.activeIndex = 0;
 
 //--- VARIABLES ----------------------------------------------------------//
 
@@ -28,7 +30,6 @@
     windowHeight = window.innerHeight,
     activePanelIndex = 0,
     animationQuery = [];
-
 
   var states = {
     animating: false
@@ -78,6 +79,18 @@
     console.log('recal');
   }
 
+  function scrolltoIndex(index){
+    if (index !== undefined) {
+      var container = document.querySelector('#scrollCapture');
+      var scrollTop = container.scrollTop;
+      var newPos = scrollTop;
+      newPos = windowHeight * index;
+      if (newPos !== scrollTop) {
+        animate(scrollTop, newPos, container);
+      }
+    }
+  }
+
   // Animate
   function animate(from, to, element) {
     if (from !== undefined && to !== undefined && element !== undefined) {
@@ -89,7 +102,6 @@
         length: options.animationDuration,
         element: element
       });
-
     }
   }
 
@@ -128,16 +140,13 @@
     }
   }
 
-
 //--- BINDINGS ----------------------------------------------------------//
 
   // Scroll
   document.querySelector('#scrollCapture').addEventListener('scroll', function (event) {
-
     if (states.animating) {
       //return;
     }
-
     var container = this,
       scrollTop = container.scrollTop,
       direction = 0,
@@ -174,7 +183,7 @@
         }
       }
 
-      activePanelIndex = newIndex;
+      //activePanelIndex = newIndex;
 
       if (newPos !== scrollTop) {
         animate(scrollTop, newPos, container);
@@ -195,6 +204,11 @@
 
       lastScrollTop = scrollTop;
     }, 300);
+
+
+    //activePanelIndex = newIndex;
+    //window.snap.activeIndex = activePanelIndex;
+
   });
 
   // Resize
@@ -223,12 +237,16 @@
     fpsCount = 0;
   },1000);
 
+  setInterval(function() {
+    var container = document.querySelector('#scrollCapture');
+    var scrollTop = container.scrollTop;
+    var index = Math.round(scrollTop / windowHeight);
+    window.snap.activeIndex = index;
+  },300);
+
 //--- INIT ----------------------------------------------------------//
 
   // Start draw loop
   updateLoop();
 
-
-  //console.log(lerp(100,500,0.5)); == 300
-
-})();
+})(window);

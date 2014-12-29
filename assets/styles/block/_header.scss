@@ -6,28 +6,26 @@
 
 
 // PARAMETERS
-$_headerHeight: 60px;
-$_headerDesktopHeight: 60px;
-$_toogleWidth: 50px;
-$_toogleHeight: 45px;
+$_toggleWidth: 50px;
 
 // BLOCK
 .header {
   @include transition(transform 300ms ease);
-  @include translate(0%, -#{$_headerHeight});
+  @include translate(0%, -100%);
   display: block;
   position: fixed;
   left: -10%;
   top: 0;
   width: 120%;
-  height: $_headerHeight;
+  height: auto;
   z-index: 60;
   color: $color_easter;
   font-family: $font_HelveticaNeueBlack;
   text-transform: uppercase;
   &:before,
   &:after {
-    @include border-radius(0 0 50% 50%);
+    @include border-radius(0 0 30% 30%);
+    //@include border-radius(0% 0% 50% 50% / 0% 0% 100% 100%);
   }
   &:before {
     @include box-shadow(0px 0px 5px 0px rgba($color_black, 0.6));
@@ -57,7 +55,7 @@ $_toogleHeight: 45px;
 .header__menu,
 .header__menuitem,
 .header__logo,
-.header__toogle {
+.header__toggle {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -67,17 +65,19 @@ $_toogleHeight: 45px;
 
 .header__menu {
   display: block;
-  position: absolute;
+  //position: absolute;
   width: 100%;
   left: 0;
-  top: 25px;
+  //top: 25px;
   position: relative;
   text-align: center;
   z-index: 10;
+  padding: 10px;
 }
 
 .header__menuitem {
-  display: inline-block;
+  display: block;
+  clear: both;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -87,14 +87,6 @@ $_toogleHeight: 45px;
   }
   &:active {
     color: darken($color_white, 15%);
-  }
-  &:first-child {
-    @include transform-origin(100%, 0%);
-    @include rotate(5deg);
-  }
-  &:last-child {
-    @include transform-origin(0%, 0%);
-    @include rotate(-5deg);
   }
   & + & {
     margin-left: 20px;
@@ -114,13 +106,12 @@ $_toogleHeight: 45px;
   height: image-height('../images/graphic/logo.png');
 }
 
-.header__toogle {
-  @include translate(-#{$_toogleWidth/2}, $_toogleHeight);
+.header__toggle {
+  @include translate(-#{$_toggleWidth/2}, 100%);
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: $_toogleWidth;
-  height: $_toogleHeight;
+  width: $_toggleWidth;
   background-color: $color_hearth;
   padding: 9px 12px;
   text-align: center;
@@ -153,26 +144,30 @@ $_toogleHeight: 45px;
   @include translate(0%, 0%);
 }
 
+.header__menuitem--active {
+  color: $color_white;
+}
 
 //--- MEDIA QUERIES -------------------------------------------------------//
+@include mediaQueries(mobile) {
+  .header__logo {
+    display: none;
+  }
+}
+
 @include mediaQueries(tablet) {
+  .header {
+    @include border-radius(0 0 50% 50%);
+  }
   .header__menuitem {
-    &:first-child {
-      @include rotate(3deg);
-    }
-    &:last-child {
-      @include rotate(-3deg);
-    }
+
   }
 }
 @include mediaQueries(desktop) {
-
+  .header {
+    @include border-radius(0 0 50% 50%);
+  }
   .header__menuitem {
-    &:first-child {
-      @include rotate(1deg);
-    }
-    &:last-child {
-      @include rotate(-1deg);
-    }
+    display: inline-block;
   }
 }
