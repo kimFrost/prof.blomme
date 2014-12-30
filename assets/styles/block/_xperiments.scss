@@ -1,6 +1,9 @@
 
 
 // PARAMETERS
+$_logoWidth: image-width('../images/graphic/xperiments_banner.png');
+$_logoHeight: image-height('../images/graphic/xperiments_banner.png');
+$_logoRatio: ($_logoWidth / $_logoHeight);
 
 // BLOCK
 .xperiments {
@@ -21,22 +24,17 @@
 //--- ELEMENTS ----------------------------------------------------------//
 
 .xperiments__logo {
-  $_width: image-width('../images/graphic/xperiments_banner.png');
-  $_height: image-height('../images/graphic/xperiments_banner.png');
-  $_ratio: ($_height / $_width);
   background-image: url('/images/graphic/xperiments_banner.png');
   background-repeat: no-repeat;
-  //width: $_width;
-  width: 70%;
-  //height: $_height;
-  padding-bottom: (100% * $_ratio * 0.7);
+  background-size: contain;
+  width: 80%;
+  padding-bottom: (100% / $_logoRatio * 0.8);
   z-index: 10;
   display: block;
   position: absolute;
-  top: 40px;
-  //left: calc(50% - #{$_width / 2});
-  left: 15%;
-  background-size: contain;
+  top: 15%;
+  left: 10%;
+
 }
 
 .xperiments__slides {
@@ -55,3 +53,16 @@
 
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
+
+@include mediaQueries(mobile) {
+  @include landscape() {
+    .xperiments__logo {
+      width: 60%;
+      padding-bottom: (100% / $_logoRatio * 0.6);
+      left: 20%;
+    }
+    .xperiments__slides {
+      top: 29%;
+    }
+  }
+}

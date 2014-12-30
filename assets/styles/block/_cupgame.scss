@@ -56,7 +56,7 @@
   display: block;
   float: left;
   //width: calc(100% / 3 - 30px);
-  width: calc(100% / 3 - 40px);
+  width: calc(100% / 3 - 10px);
   padding-left: 5px;
   padding-right: 5px;
 
@@ -120,35 +120,35 @@
 //--- MODIFIERS -------------------------------------------------------//
 
 .cupgame--count2 {
-  padding-bottom: calc(100% / 2 - 40px);
+  padding-bottom: calc(100% / 2 - 10px);
   .cupgame__slot {
     width: calc(100% / 2);
   }
 }
 
 .cupgame--count3 {
-  padding-bottom: calc(100% / 3 - 40px);
+  padding-bottom: calc(100% / 3 - 10px);
   .cupgame__slot {
     width: calc(100% / 3);
   }
 }
 
 .cupgame--count4 {
-  padding-bottom: calc(100% / 4 - 40px);
+  padding-bottom: calc(100% / 4 - 10px);
   .cupgame__slot {
     width: calc(100% / 4);
   }
 }
 
 .cupgame--count5 {
-  padding-bottom: calc(100% / 5 - 40px);
+  padding-bottom: calc(100% / 5 - 10px);
   .cupgame__slot {
     width: calc(100% / 5);
   }
 }
 
 .cupgame--count6 {
-  padding-bottom: calc(100% / 6 - 40px);
+  padding-bottom: calc(100% / 6 - 10px);
   .cupgame__slot {
     width: calc(100% / 6);
   }
@@ -158,6 +158,9 @@
 //--- MEDIA QUERIES -------------------------------------------------------//
 
 @include mediaQueries(tablet) {
+  .cupgame--count3 {
+    padding-bottom: calc(100% / 3 - 20px);
+  }
   .cupgame__slot {
     padding-left: 10px;
     padding-right: 10px;
@@ -165,6 +168,9 @@
 }
 
 @include mediaQueries(desktop) {
+  .cupgame--count3 {
+    padding-bottom: calc(100% / 3 - 40px);
+  }
   .cupgame__slot {
     padding-left: 20px;
     padding-right: 20px;

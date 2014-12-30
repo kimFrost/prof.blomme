@@ -136,6 +136,12 @@
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
 @include mediaQueries(mobile) {
+  .rte {
+
+  }
+  .rte__headline {
+    @include fontSize(zeta, 1);
+  }
   .rte__segment {
     padding-left: 0;
     overflow: visible;

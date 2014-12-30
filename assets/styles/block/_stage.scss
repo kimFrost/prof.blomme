@@ -140,3 +140,21 @@
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
+@include mediaQueries(mobile) {
+  .stage__slot {
+    display: none;
+  }
+  .stage__slot--2 {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@include mediaQueries(tablet) {
+
+}
+
+@include mediaQueries(desktop) {
+
+}

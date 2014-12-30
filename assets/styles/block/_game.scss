@@ -32,7 +32,7 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
   background-repeat: no-repeat;
   background-size: contain;
   width: 80%;
-  padding-bottom: (100% / $_logoRatio * 0.9);
+  padding-bottom: (100% / $_logoRatio * 0.8);
   z-index: 10;
   position: absolute;
   top: 15%;
@@ -48,13 +48,16 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
 }
 
 .game__rulesteaser {
+  @include fontSize(beta, 1);
   display: block;
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 40px;
-  z-index: 3;
+  width: calc(100% - 80px);
+  z-index: 15;
   color: $color_white;
   text-decoration: underline;
+  text-align: center;
 }
 
 .game__game {
@@ -85,6 +88,31 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
 
 //--- MEDIA QUERRIES ----------------------------------------------------------//
 
+@include mediaQueries(mobile) {
+  @include landscape() {
+    .game__rulesteaser {
+      text-align: left;
+      top: 30px;
+      left: 40px;
+      width: auto;
+    }
+    .game__logo {
+      width: 60%;
+      padding-bottom: (100% / $_logoRatio * 0.6);
+      left: 20%;
+      top: 7%;
+    }
+    .game__game {
+      width: 60%;
+      left: 20%;
+      top: 30%;
+    }
+    .game__footer {
+
+    }
+  }
+}
+
 @include mediaQueries(desktop) {
   .game__logo {
     height: $_logoHeight;
@@ -100,6 +128,8 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
   .game__rulesteaser {
     top: 30px;
     left: 40px;
+    width: auto;
+    text-align: left;
   }
   .game__game {
     width: 70%;
@@ -129,6 +159,8 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
   .game__rulesteaser {
     top: 30px;
     left: 40px;
+    width: auto;
+    text-align: left;
   }
   .game__game {
     width: 70%;

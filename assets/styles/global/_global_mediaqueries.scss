@@ -62,10 +62,8 @@ $mq-activeMediaQuery: null;
 }
 
 @mixin landscape() {
-  & {
-    @media(orientation: landscape) {
-      @content;
-    }
+  @media(orientation: landscape) {
+    @content;
   }
 }
 

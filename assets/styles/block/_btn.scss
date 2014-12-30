@@ -7,7 +7,7 @@ $_btnHeight: 52px;
 // BLOCK
 
 .btn {
-	@include fontSize(theta, 1);
+	@include fontSize(epsilon, 1);
 	width: auto;
 	border: none;
 	color: $color_white;
@@ -135,5 +135,19 @@ $_btnHeight: 52px;
     &:before {
       background-color: $color_easter;
     }
+  }
+}
+
+//--- MEDIA QUERRIES ----------------------------------------------------------//
+
+@include mediaQueries(tablet) {
+  .btn {
+    @include fontSize(theta, 1);
+  }
+}
+
+@include mediaQueries(desktop) {
+  .btn {
+    @include fontSize(theta, 1);
   }
 }
