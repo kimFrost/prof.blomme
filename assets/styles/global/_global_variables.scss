@@ -23,8 +23,8 @@ $color_ash: #575757;
 
 
 // Media Queries, Labels and Content widths
-@include newMediaQuerie((name: mobile, min-width: 1px, max-width: 619px, contentWidth: 100%, default: true));
-@include newMediaQuerie((name: tablet, min-width: 620px, max-width: 1008px, contentWidth: 560px));
+@include newMediaQuerie((name: mobile, min-width: 1px, max-width: 679px, contentWidth: 100%, default: true));
+@include newMediaQuerie((name: tablet, min-width: 680px, max-width: 1008px, contentWidth: 560px));
 @include newMediaQuerie((name: desktop, min-width: 1009px, contentWidth: 960px));
 
 
