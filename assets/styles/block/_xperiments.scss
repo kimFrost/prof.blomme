@@ -74,6 +74,16 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
     left: calc(50% - #{$mq-contentWidth / 2});
     padding-bottom: 0;
   }
+  @include landscape() {
+    .xperiments__logo {
+      width: 60%;
+      padding-bottom: (100% / $_logoRatio * 0.6);
+      left: 20%;
+    }
+    .xperiments__slides {
+      top: 29%;
+    }
+  }
 }
 
 @include mediaQueries(desktop) {
@@ -82,5 +92,8 @@ $_logoRatio: ($_logoWidth / $_logoHeight);
     width: $mq-contentWidth;
     left: calc(50% - #{$mq-contentWidth / 2});
     padding-bottom: 0;
+  }
+  .xperiments__slides {
+    top: 31%;
   }
 }

@@ -2,13 +2,13 @@
 /* Global mediaQueries mixin */
 /* Global Variables */
 /* Global font Calculation */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000381}}
 html {
   font-size: 112.5% !important;
 }
 
 /* Global Mixins */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\000038}}
 .panel {
   -moz-transition: -moz-transform 800ms ease;
   -o-transition: -o-transform 800ms ease;
@@ -25,14 +25,14 @@ html {
   top: 0;
   left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000325}}
 .panel:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000332}}
 .panel,
 .panel__inner,
 .panel__content,
@@ -45,19 +45,19 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000346}}
 .panel__inner {
   position: relative;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000349}}
 .panel__inner:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
 .panel__content {
   width: 100%;
   margin: 0 auto;
@@ -75,20 +75,20 @@ html {
   -webkit-align-items: center;
   align-items: center;
 }
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
   .panel__content {
     width: 560px;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000359}}
   .panel__content {
     width: 960px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\0000393}}
 .panel__overlay {
   display: block;
   position: absolute;
@@ -107,7 +107,7 @@ html {
   z-index: 50;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003112}}
 .panel__overlaybg {
   position: fixed;
   top: 0;
@@ -118,7 +118,7 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003122}}
 .panel__overlayclose {
   user-select: none;
   -webkit-user-select: none;
@@ -145,16 +145,16 @@ html {
   vertical-align: middle;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003141}}
 .panel__overlayclose:focus, .panel__overlayclose:hover {
   background-color: #d6696f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003145}}
 .panel__overlayclose:active {
   background-color: #832428;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003150}}
 .panel__scrollarea {
   position: absolute;
   top: 0;
@@ -169,12 +169,12 @@ html {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003171}}
 .panel__scrollarea::-webkit-scrollbar {
   width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003177}}
 .panel__bg {
   display: block;
   position: absolute;
@@ -185,7 +185,7 @@ html {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003190}}
 .panel--list {
   position: static;
   display: block;
@@ -197,32 +197,32 @@ html {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003206}}
 .panel--list::-webkit-scrollbar {
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003211}}
 .panel--list:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003218}}
 .panel--lockscroll {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003222}}
 .panel--frame {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003224}}
 .panel--frame .panel__bg {
   background-color: #bf343b;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003227}}
 .panel--frame .panel__bg:before {
   -moz-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
   -o-border-image: url("/images/graphic/border_bullet.png") 15 15 round;
@@ -239,7 +239,7 @@ html {
   border-width: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003243}}
 .panel--sun .panel__bg {
   background-image: url("/images/graphic/sun_bg.jpg");
   background-repeat: no-repeat;
@@ -247,13 +247,13 @@ html {
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003251}}
 .panel__scrollarea--show {
   display: block;
 }
 
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003259}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003259}}
   .panel__overlay {
     width: 80%;
     left: 10%;
@@ -262,8 +262,8 @@ html {
     padding: 32px 50px;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003270}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_panel\.scss}line{font-family:\00003270}}
   .panel__overlay {
     width: 60%;
     left: 20%;
@@ -272,7 +272,7 @@ html {
     padding: 32px 50px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000312}}
 .header {
   -moz-transition: -moz-transform 300ms ease;
   -o-transition: -o-transform 300ms ease;
@@ -293,13 +293,13 @@ html {
   font-family: "HelveticaNeueW01-95Blac", "Verdane", "Myriad Pro", "Arial", Sans-serif;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000325}}
 .header:before, .header:after {
   -moz-border-radius: 0 0 30% 30%;
   -webkit-border-radius: 0;
   border-radius: 0 0 30% 30%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000330}}
 .header:before {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
@@ -313,7 +313,7 @@ html {
   height: 100%;
   z-index: -1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000341}}
 .header:after {
   content: "";
   display: block;
@@ -326,7 +326,7 @@ html {
   background-color: #bf343b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000354}}
 .header,
 .header__menu,
 .header__menuitem,
@@ -337,7 +337,7 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000366}}
 .header__menu {
   display: block;
   width: 100%;
@@ -348,7 +348,7 @@ html {
   padding: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000378}}
 .header__menuitem {
   display: block;
   clear: both;
@@ -356,20 +356,20 @@ html {
   color: inherit;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000384}}
 .header__menuitem:hover, .header__menuitem:focus {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000388}}
 .header__menuitem:active {
   color: #d9d9d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000391}}
 .header__menuitem + .header__menuitem {
   margin-left: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\0000396}}
 .header__logo {
   display: block;
   position: absolute;
@@ -383,7 +383,7 @@ html {
   height: 46px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003109}}
 .header__toggle {
   -moz-transform: translate(-25px, 100%);
   -ms-transform: translate(-25px, 100%);
@@ -400,15 +400,15 @@ html {
   cursor: pointer;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003121}}
 .header__toggle:hover, .header__toggle:focus {
   color: #fef9e3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003125}}
 .header__toggle:active {
   color: #f8dd4f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003128}}
 .header__toggle:before {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
@@ -423,7 +423,7 @@ html {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003143}}
 .header--show {
   -moz-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
@@ -431,39 +431,39 @@ html {
   transform: translate(0%, 0%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003147}}
 .header__menuitem--active {
   color: #fff;
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003153}}
   .header__logo {
     display: none;
   }
 }
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003159}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003159}}
   .header {
     -moz-border-radius: 0 0 50% 50%;
     -webkit-border-radius: 0;
     border-radius: 0 0 50% 50%;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003167}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003167}}
   .header {
     -moz-border-radius: 0 0 50% 50%;
     -webkit-border-radius: 0;
     border-radius: 0 0 50% 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_header\.scss}line{font-family:\00003170}}
   .header__menuitem {
     display: inline-block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000312}}
 .cupgame {
   width: 100%;
   display: block;
@@ -483,14 +483,14 @@ html {
   -ms-perspective: 1000;
   perspective: 1000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000335}}
 .cupgame:after {
   display: block;
   content: "";
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000342}}
 .cupgame,
 .cupgame__slot,
 .cupgame__controls {
@@ -499,7 +499,7 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000352}}
 .cupgame__slot {
   -moz-transition: -moz-transform 250ms linear;
   -o-transition: -o-transform 250ms linear;
@@ -526,42 +526,42 @@ html {
   float: none;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000384}}
 .cupgame__slot:nth-of-type(1) {
   -moz-transform: translate(0%, 0%);
   -ms-transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000387}}
 .cupgame__slot:nth-of-type(2) {
   -moz-transform: translate(100%, 0%);
   -ms-transform: translate(100%, 0%);
   -webkit-transform: translate(100%, 0%);
   transform: translate(100%, 0%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000391}}
 .cupgame__slot:nth-of-type(3) {
   -moz-transform: translate(200%, 0%);
   -ms-transform: translate(200%, 0%);
   -webkit-transform: translate(200%, 0%);
   transform: translate(200%, 0%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000395}}
 .cupgame__slot:nth-of-type(4) {
   -moz-transform: translate(300%, 0%);
   -ms-transform: translate(300%, 0%);
   -webkit-transform: translate(300%, 0%);
   transform: translate(300%, 0%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\0000399}}
 .cupgame__slot:nth-of-type(5) {
   -moz-transform: translate(400%, 0%);
   -ms-transform: translate(400%, 0%);
   -webkit-transform: translate(400%, 0%);
   transform: translate(400%, 0%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003102}}
 .cupgame__slot:nth-of-type(6) {
   -moz-transform: translate(500%, 0%);
   -ms-transform: translate(500%, 0%);
@@ -569,7 +569,7 @@ html {
   transform: translate(500%, 0%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003107}}
 .cupgame__controls {
   user-select: none;
   -webkit-user-select: none;
@@ -584,81 +584,81 @@ html {
   top: calc(100% + 10px);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003122}}
 .cupgame--count2 {
   padding-bottom: calc(100% / 2 - 10px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003124}}
 .cupgame--count2 .cupgame__slot {
   width: calc(100% / 2);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003129}}
 .cupgame--count3 {
   padding-bottom: calc(100% / 3 - 10px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003131}}
 .cupgame--count3 .cupgame__slot {
   width: calc(100% / 3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003136}}
 .cupgame--count4 {
   padding-bottom: calc(100% / 4 - 10px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003138}}
 .cupgame--count4 .cupgame__slot {
   width: calc(100% / 4);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003143}}
 .cupgame--count5 {
   padding-bottom: calc(100% / 5 - 10px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003145}}
 .cupgame--count5 .cupgame__slot {
   width: calc(100% / 5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003150}}
 .cupgame--count6 {
   padding-bottom: calc(100% / 6 - 10px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003152}}
 .cupgame--count6 .cupgame__slot {
   width: calc(100% / 6);
 }
 
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003161}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003161}}
   .cupgame--count3 {
     padding-bottom: calc(100% / 3 - 20px);
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003164}}
   .cupgame__slot {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003171}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003171}}
   .cupgame--count3 {
     padding-bottom: calc(100% / 3 - 40px);
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003174}}
   .cupgame__slot {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cupgame\.scss}line{font-family:\00003188}}
 .cupgame__slot:nth-child(2) .cup__reward {
   background-color: gold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000312}}
 .cup {
   display: block;
   width: 100%;
@@ -696,7 +696,7 @@ html {
   }
   */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000355}}
 .cup:before {
   -moz-border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
   -webkit-border-radius: 0%;
@@ -707,7 +707,7 @@ html {
   top: 100%;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000365}}
 .cup:after {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -737,7 +737,7 @@ html {
   z-index: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\0000390}}
 .cup,
 .cup__goblet,
 .cup__reward {
@@ -746,7 +746,7 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003100}}
 .cup__goblet {
   -moz-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
@@ -781,7 +781,7 @@ html {
   /* Opera (13?) */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003129}}
 .cup__reward {
   display: block;
   position: absolute;
@@ -792,7 +792,7 @@ html {
   background-color: #004444;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003138}}
 .cup__reward:after {
   -moz-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
@@ -810,7 +810,7 @@ html {
   z-index: 2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003161}}
 .cup--unlocked:focus .cup__goblet:before, .cup--unlocked:hover .cup__goblet:before {
   content: "";
   display: block;
@@ -823,18 +823,18 @@ html {
   opacity: 0.3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003177}}
 .cup--open .cup__goblet {
   -moz-transform: translate(0%, -40%) rotate(15deg);
   -ms-transform: translate(0%, -40%) rotate(15deg);
   -webkit-transform: translate(0%, -40%) rotate(15deg);
   transform: translate(0%, -40%) rotate(15deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003181}}
 .cup--open .cup__reward:after {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_cup\.scss}line{font-family:\00003185}}
 .cup--open:after {
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
@@ -847,7 +847,7 @@ html {
 /*
   Right now the first slides determines the height of the container
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000313}}
 .slides {
   position: relative;
   overflow: hidden;
@@ -855,7 +855,7 @@ html {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000321}}
 .slides,
 .slides__cutter,
 .slides__list,
@@ -872,7 +872,7 @@ html {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000339}}
 .slides__cutter {
   width: 100%;
   height: 100%;
@@ -882,7 +882,7 @@ html {
   border: 3px solid #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000348}}
 .slides__list {
   -moz-transition: -moz-transform 300ms ease;
   -o-transition: -o-transform 300ms ease;
@@ -901,7 +901,7 @@ html {
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000360}}
 .slides__slide {
   user-select: none;
   -webkit-user-select: none;
@@ -917,85 +917,85 @@ html {
   background-position: center center;
   background-size: cover;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000373}}
 .slides__slide + .slides__slide {
   position: absolute;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000377}}
 .slides__slide:nth-of-type(2) {
   left: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000381}}
 .slides__slide:nth-of-type(3) {
   left: 200%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000385}}
 .slides__slide:nth-of-type(4) {
   left: 300%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000389}}
 .slides__slide:nth-of-type(5) {
   left: 400%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000393}}
 .slides__slide:nth-of-type(6) {
   left: 500%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\0000397}}
 .slides__slide:nth-of-type(7) {
   left: 600%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003101}}
 .slides__slide:nth-of-type(8) {
   left: 700%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003105}}
 .slides__slide:nth-of-type(9) {
   left: 800%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003109}}
 .slides__slide:nth-of-type(10) {
   left: 900%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003113}}
 .slides__slide:nth-of-type(11) {
   left: 1000%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003116}}
 .slides__slide:nth-of-type(12) {
   left: 1100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003119}}
 .slides__slide:nth-of-type(13) {
   left: 1200%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003122}}
 .slides__slide:nth-of-type(14) {
   left: 1300%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003125}}
 .slides__slide:nth-of-type(15) {
   left: 1400%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003128}}
 .slides__slide:nth-of-type(16) {
   left: 1500%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003131}}
 .slides__slide:nth-of-type(17) {
   left: 1600%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003134}}
 .slides__slide:nth-of-type(18) {
   left: 1700%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003137}}
 .slides__slide > img {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003142}}
 a.slides__slide {
   user-select: none;
   -webkit-user-select: none;
@@ -1004,7 +1004,7 @@ a.slides__slide {
   -o-user-select: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003146}}
 .slides__arrow {
   -moz-transition: -moz-transform 300ms ease;
   -o-transition: -o-transform 300ms ease;
@@ -1040,21 +1040,21 @@ a.slides__slide {
   cursor: pointer;
   padding-left: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .slides__arrow {
   font-size: 11px;
   font-size: 0.6111111111rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003171}}
 .slides__arrow:hover, .slides__arrow:focus {
   opacity: 0.6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003175}}
 .slides__arrow:active {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003180}}
 .slides__map {
   display: block;
   width: 100%;
@@ -1064,7 +1064,7 @@ a.slides__slide {
   z-index: 40;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003189}}
 .slides__mapitem {
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50%;
@@ -1078,7 +1078,7 @@ a.slides__slide {
   position: relative;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003199}}
 .slides__mapitem:before {
   -moz-border-radius: 50% 50% 50% 50%;
   -webkit-border-radius: 50%;
@@ -1095,7 +1095,7 @@ a.slides__slide {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003214}}
 .slides__headline {
   -moz-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
@@ -1113,21 +1113,21 @@ a.slides__slide {
   z-index: 40;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .slides__headline {
   font-size: 24px;
   font-size: 1.3333333333rem;
   line-height: 24px;
   line-height: 1.3333333333rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003228}}
 .slides__headline.ng-hide {
   position: absolute;
   opacity: 0;
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003235}}
 .slides__attachment {
   display: block;
   width: 100%;
@@ -1137,7 +1137,7 @@ a.slides__slide {
   height: 95px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003245}}
 .slides__dev {
   position: fixed;
   left: 10px;
@@ -1148,7 +1148,7 @@ a.slides__slide {
   padding: 5px;
   z-index: 20;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .slides__dev {
   font-size: 12px;
   font-size: 0.6666666667rem;
@@ -1156,29 +1156,29 @@ a.slides__slide {
   line-height: 0.6666666667rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003260}}
 .slides--fit {
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003262}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003262}}
 .slides--fit .slides__headline {
   position: absolute;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003266}}
 .slides--fit .slides__cutter {
   margin-top: 30px;
   height: calc(100% - 120px);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003273}}
 .slides--fadeanimate .slides__list {
   -moz-transition: none;
   -o-transition: none;
   -webkit-transition: none;
   transition: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003276}}
 .slides--fadeanimate .slides__slide {
   -moz-transition: opacity 800ms ease;
   -o-transition: opacity 800ms ease;
@@ -1186,12 +1186,12 @@ a.slides__slide {
   transition: opacity 800ms ease;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003280}}
 .slides--fadeanimate .slides__slide--active {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003286}}
 .slides--noanimate .slides__list {
   -moz-transition: none;
   -o-transition: none;
@@ -1199,12 +1199,12 @@ a.slides__slide {
   transition: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003292}}
 .slides__mapitem--active:before {
   background-color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003297}}
 .slides__arrow--right {
   background-image: url("/images/graphic/arrow_right.png");
   left: auto;
@@ -1213,14 +1213,14 @@ a.slides__slide {
   padding-right: 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003305}}
 .slides__arrow--hide {
   -moz-transform: translate(0%, 100%);
   -ms-transform: translate(0%, 100%);
   -webkit-transform: translate(0%, 100%);
   transform: translate(0%, 100%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003307}}
 .slides__arrow--hide.slides__arrow--top {
   -moz-transform: translate(0%, -100%);
   -ms-transform: translate(0%, -100%);
@@ -1229,14 +1229,14 @@ a.slides__slide {
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003315}}
   .slides__cutter {
     width: calc(100% - 60px);
     margin-left: 30px;
     margin-right: 30px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003320}}
   .slides__arrow {
     display: block;
     width: 20px;
@@ -1246,43 +1246,43 @@ a.slides__slide {
     margin-top: -40px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003328}}
   .slides__attachment {
     height: 65px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003331}}
   .slides--fit .slides__cutter {
     height: calc(100% - 95px);
   }
 }
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003337}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003337}}
   .slides__cutter {
     width: calc(100% - 200px);
     margin-left: 100px;
     margin-right: 100px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003342}}
   .slides__arrow {
     display: block;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003348}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003348}}
   .slides__cutter {
     width: calc(100% - 200px);
     margin-left: 100px;
     margin-right: 100px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_slides\.scss}line{font-family:\00003353}}
   .slides__arrow {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\000036}}
 .stage {
   display: block;
   text-align: center;
@@ -1290,7 +1290,7 @@ a.slides__slide {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000313}}
 .stage,
 .stage__actor,
 .stage__slot {
@@ -1299,7 +1299,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000323}}
 .stage__actor {
   display: inline-block;
   position: relative;
@@ -1307,92 +1307,92 @@ a.slides__slide {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000333}}
 .stage__slot {
   position: absolute;
   bottom: 0;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000343}}
 .stage--grouped .stage__actor + .stage__actor {
   margin-left: -10%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000347}}
 .stage--grouped .stage__actor.stage__actor--fit {
   width: 33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000353}}
 .stage--fit {
   width: 100%;
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000361}}
 .stage__actor--prof {
   background-image: url("/images/graphic/char_prof.png");
   width: 297px;
   height: 359px;
   z-index: 3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000370}}
 .stage__actor--prof.stage__actor--fit {
   padding-bottom: 120.8754208754%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000372}}
 .stage--grouped .stage__actor--prof.stage__actor--fit {
   width: 33.3333333333%;
   padding-bottom: 40.2918069585%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000379}}
 .stage__actor--girl {
   background-image: url("/images/graphic/char_girl.png");
   width: 271px;
   height: 277px;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000387}}
 .stage__actor--girl.stage__actor--fit {
   padding-bottom: 102.2140221402%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000389}}
 .stage--grouped .stage__actor--girl.stage__actor--fit {
   width: 33.3333333333%;
   padding-bottom: 34.0713407134%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\0000396}}
 .stage__actor--boy {
   background-image: url("/images/graphic/char_boy.png");
   width: 247px;
   height: 294px;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003104}}
 .stage__actor--boy.stage__actor--fit {
   padding-bottom: 119.028340081%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003106}}
 .stage--grouped .stage__actor--boy.stage__actor--fit {
   width: 33.3333333333%;
   padding-bottom: 39.6761133603%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003113}}
 .stage__actor--fit {
   width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003118}}
 .stage__slot--1 {
   left: 0;
   width: 12%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003123}}
 .stage__slot--2 {
   left: 30%;
   width: 40%;
@@ -1400,44 +1400,44 @@ a.slides__slide {
   bottom: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003130}}
 .stage__slot--3 {
   right: 10%;
   width: 16%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003135}}
 .stage__slot--4 {
   right: 0;
   width: 12%;
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003144}}
   .stage__slot {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_stage\.scss}line{font-family:\00003147}}
   .stage__slot--2 {
     display: block;
     width: 100%;
     left: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\000036}}
 .attachment {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000310}}
 .attachment {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000322}}
 .attachment--leftbottom {
   -moz-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
@@ -1445,7 +1445,7 @@ a.slides__slide {
   transform-origin: 0% 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_attachment\.scss}line{font-family:\0000326}}
 .attachment--rotate {
   -moz-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
@@ -1453,7 +1453,7 @@ a.slides__slide {
   transform: rotate(15deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000317}}
 .intro {
   display: block;
   position: relative;
@@ -1461,7 +1461,7 @@ a.slides__slide {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000324}}
 .intro,
 .intro__logo,
 .intro__scrolldown,
@@ -1472,7 +1472,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000336}}
 .intro__logo {
   background-image: url("/images/graphic/intro_header.png");
   background-repeat: no-repeat;
@@ -1487,7 +1487,7 @@ a.slides__slide {
   background-size: contain;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000350}}
 .intro__scrolldown {
   background-image: url("/images/graphic/arrow_scrolldown.png");
   width: 149px;
@@ -1499,16 +1499,16 @@ a.slides__slide {
   left: calc(50% - 74.5px);
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000360}}
 .intro__scrolldown:hover {
   opacity: 0.7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000363}}
 .intro__scrolldown:active {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000368}}
 .intro__actors {
   position: absolute;
   top: 35%;
@@ -1517,7 +1517,7 @@ a.slides__slide {
   z-index: 5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000376}}
 .intro__teaser {
   background-image: url("/images/graphic/attachment_banner.png");
   width: 216px;
@@ -1530,44 +1530,22 @@ a.slides__slide {
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) and (orientation: landscape) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\0000395}}
   .intro__logo {
-    width: 50%;
-    padding-bottom: 17.2815533981%;
-    left: 25%;
+    width: 40%;
+    padding-bottom: 13.8252427184%;
+    left: 30%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003100}}
   .intro__actors {
     top: 40%;
     width: 60%;
     left: 20%;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003109}}
-  .intro__logo {
-    height: 178px;
-    width: 960px;
-    left: calc(50% - 480px);
-    padding-bottom: 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003115}}
-  .intro__actors {
-    top: 30%;
-    width: 70%;
-    left: 15%;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003120}}
-  .intro__teaser {
-    display: block;
-    top: calc(50% - 123.5px);
-  }
-}
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003130}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003109}}
   .intro__logo {
     height: 178px;
     width: 560px;
@@ -1575,19 +1553,56 @@ a.slides__slide {
     padding-bottom: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003115}}
   .intro__actors {
-    top: 30%;
+    top: 39%;
     width: 70%;
     left: 15%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003120}}
   .intro__teaser {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000310}}
+@media all and (min-width: 680px) and (max-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003127}}
+  .intro__logo {
+    width: 50%;
+    padding-bottom: 17.2815533981%;
+    left: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003132}}
+  .intro__actors {
+    top: 40%;
+    width: 60%;
+    left: 20%;
+  }
+}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003141}}
+  .intro__logo {
+    height: 178px;
+    width: 960px;
+    left: calc(50% - 480px);
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003147}}
+  .intro__actors {
+    top: 34%;
+    width: 70%;
+    left: 15%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_intro\.scss}line{font-family:\00003152}}
+  .intro__teaser {
+    display: block;
+    top: calc(50% - 123.5px);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000310}}
 .game {
   display: block;
   position: relative;
@@ -1595,7 +1610,7 @@ a.slides__slide {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000317}}
 .game,
 .game__logo,
 .game__teaser,
@@ -1607,7 +1622,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000330}}
 .game__logo {
   background-image: url("/images/graphic/game_banner.png");
   background-repeat: no-repeat;
@@ -1620,7 +1635,7 @@ a.slides__slide {
   left: 10%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000342}}
 .game__teaser {
   display: none;
   position: absolute;
@@ -1629,7 +1644,7 @@ a.slides__slide {
   z-index: 3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000350}}
 .game__rulesteaser {
   display: block;
   position: absolute;
@@ -1641,7 +1656,7 @@ a.slides__slide {
   text-decoration: underline;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .game__rulesteaser {
   font-size: 12px;
   font-size: 0.6666666667rem;
@@ -1649,7 +1664,7 @@ a.slides__slide {
   line-height: 0.6666666667rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000363}}
 .game__game {
   display: block;
   position: absolute;
@@ -1659,7 +1674,7 @@ a.slides__slide {
   top: 40%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000372}}
 .game__footer {
   width: 80%;
   display: block;
@@ -1671,7 +1686,7 @@ a.slides__slide {
   bottom: 30px;
   left: 10%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .game__footer {
   font-size: 18px;
   font-size: 1rem;
@@ -1680,7 +1695,7 @@ a.slides__slide {
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) and (orientation: landscape) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000393}}
   .game__rulesteaser {
     text-align: left;
     top: 30px;
@@ -1688,7 +1703,7 @@ a.slides__slide {
     width: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\0000399}}
   .game__logo {
     width: 60%;
     padding-bottom: 16.573875803%;
@@ -1696,60 +1711,15 @@ a.slides__slide {
     top: 7%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003105}}
   .game__game {
     width: 60%;
     left: 20%;
     top: 30%;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003117}}
-  .game__logo {
-    height: 258px;
-    width: 960px;
-    left: calc(50% - 480px);
-    padding-bottom: 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003123}}
-  .game__teaser {
-    display: block;
-    bottom: 10%;
-    left: 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003128}}
-  .game__rulesteaser {
-    top: 30px;
-    left: 40px;
-    width: auto;
-    text-align: left;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003134}}
-  .game__game {
-    width: 70%;
-    left: 15%;
-    top: 40%;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003139}}
-  .game__footer {
-    bottom: 40px;
-    left: 0;
-    width: 100%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
-  .game__footer {
-    font-size: 24px;
-    font-size: 1.3333333333rem;
-    line-height: 24px;
-    line-height: 1.3333333333rem;
-  }
-}
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003148}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003117}}
   .game__logo {
     height: 258px;
     width: 560px;
@@ -1757,14 +1727,14 @@ a.slides__slide {
     padding-bottom: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003123}}
   .game__teaser {
     display: block;
     bottom: 10%;
     left: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003128}}
   .game__rulesteaser {
     top: 30px;
     left: 40px;
@@ -1772,20 +1742,20 @@ a.slides__slide {
     text-align: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003134}}
   .game__game {
     width: 70%;
     left: 15%;
     top: 40%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003139}}
   .game__footer {
     bottom: 40px;
     left: 0;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
   .game__footer {
     font-size: 24px;
     font-size: 1.3333333333rem;
@@ -1793,7 +1763,76 @@ a.slides__slide {
     line-height: 1.3333333333rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\000039}}
+@media all and (min-width: 680px) and (max-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003146}}
+  .game__rulesteaser {
+    text-align: left;
+    top: 30px;
+    left: 40px;
+    width: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003152}}
+  .game__logo {
+    width: 60%;
+    padding-bottom: 16.573875803%;
+    left: 20%;
+    top: 7%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003158}}
+  .game__game {
+    width: 60%;
+    left: 20%;
+    top: 30%;
+  }
+}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003170}}
+  .game__logo {
+    height: 258px;
+    width: 960px;
+    left: calc(50% - 480px);
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003176}}
+  .game__teaser {
+    display: block;
+    bottom: 10%;
+    left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003181}}
+  .game__rulesteaser {
+    top: 30px;
+    left: 40px;
+    width: auto;
+    text-align: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003187}}
+  .game__game {
+    width: 70%;
+    left: 15%;
+    top: 40%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_game\.scss}line{font-family:\00003192}}
+  .game__footer {
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+  .game__footer {
+    font-size: 24px;
+    font-size: 1.3333333333rem;
+    line-height: 24px;
+    line-height: 1.3333333333rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\000039}}
 .xperiments {
   display: block;
   position: relative;
@@ -1801,7 +1840,7 @@ a.slides__slide {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000316}}
 .xperiments,
 .xperiments__logo,
 .xperiments__slides {
@@ -1810,7 +1849,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000326}}
 .xperiments__logo {
   background-image: url("/images/graphic/xperiments_banner.png");
   background-repeat: no-repeat;
@@ -1824,7 +1863,7 @@ a.slides__slide {
   left: 10%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000340}}
 .xperiments__slides {
   display: block;
   position: absolute;
@@ -1836,20 +1875,20 @@ a.slides__slide {
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) and (orientation: landscape) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000359}}
   .xperiments__logo {
     width: 60%;
     padding-bottom: 10.4375667022%;
     left: 20%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000364}}
   .xperiments__slides {
     top: 29%;
   }
 }
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000371}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000371}}
   .xperiments__logo {
     height: 163px;
     width: 560px;
@@ -1857,16 +1896,34 @@ a.slides__slide {
     padding-bottom: 0;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000380}}
+@media all and (min-width: 680px) and (max-width: 1024px) and (orientation: landscape) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000378}}
+  .xperiments__logo {
+    width: 60%;
+    padding-bottom: 10.4375667022%;
+    left: 20%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000383}}
+  .xperiments__slides {
+    top: 29%;
+  }
+}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000390}}
   .xperiments__logo {
     height: 163px;
     width: 960px;
     left: calc(50% - 480px);
     padding-bottom: 0;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_xperiments\.scss}line{font-family:\0000396}}
+  .xperiments__slides {
+    top: 31%;
+  }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\000036}}
 .rte {
   display: block;
   width: 100%;
@@ -1874,7 +1931,7 @@ a.slides__slide {
   font-family: "Verdane", "Myriad Pro", "Arial", Sans-serif;
   color: #575757;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .rte {
   font-size: 16px;
   font-size: 0.8888888889rem;
@@ -1882,7 +1939,7 @@ a.slides__slide {
   line-height: 1.1555555556rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000315}}
 .rte p,
 .rte a,
 .rte h1,
@@ -1895,7 +1952,7 @@ a.slides__slide {
   width: 100%;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000326}}
 .rte p:last-child,
 .rte a:last-child,
 .rte h1:last-child,
@@ -1906,7 +1963,7 @@ a.slides__slide {
 .rte form:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000329}}
 .rte p + *,
 .rte a + *,
 .rte h1 + *,
@@ -1918,7 +1975,7 @@ a.slides__slide {
   margin-top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000335}}
 .rte p a {
   display: inline;
   text-transform: none;
@@ -1928,7 +1985,7 @@ a.slides__slide {
   line-height: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000345}}
 .rte,
 .rte__headline,
 .rte__segment,
@@ -1939,7 +1996,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000357}}
 .rte__headline {
   text-transform: uppercase;
   font-family: "HelveticaNeueW01-95Blac", "Verdane", "Myriad Pro", "Arial", Sans-serif;
@@ -1949,7 +2006,7 @@ a.slides__slide {
   font-weight: 400;
   color: #bf343b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .rte__headline {
   font-size: 32px;
   font-size: 1.7777777778rem;
@@ -1957,7 +2014,7 @@ a.slides__slide {
   line-height: 1.7777777778rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000368}}
 .rte__segment {
   display: block;
   width: 100%;
@@ -1966,12 +2023,12 @@ a.slides__slide {
   clear: both;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000375}}
 .rte__segment + .rte__segment {
   margin-top: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000380}}
 .rte__image {
   display: block;
   position: relative;
@@ -1979,7 +2036,7 @@ a.slides__slide {
   float: left;
   width: 45%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\0000386}}
 .rte__image:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1998,12 +2055,12 @@ a.slides__slide {
   top: -20px;
   left: -20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .rte__image:before {
   font-size: 24px;
   font-size: 1.3333333333rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003103}}
 .rte__image + .rte__text {
   width: auto;
   overflow: hidden;
@@ -2011,31 +2068,31 @@ a.slides__slide {
   margin-top: 20px;
   padding-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003110}}
 .rte__image > img {
   display: block;
   width: 100%;
   border: 2px solid #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003117}}
 .rte__text {
   width: 100%;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003124}}
 .rte--inherit {
   color: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003130}}
 .rte--nonumbers .rte__image:before {
   display: none;
 }
 
 @media all and (min-width: 1px) and (max-width: 679px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
   .rte__headline {
     font-size: 20px;
     font-size: 1.1111111111rem;
@@ -2043,22 +2100,22 @@ a.slides__slide {
     line-height: 1.1111111111rem;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003145}}
   .rte__segment {
     padding-left: 0;
     overflow: visible;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003148}}
   .rte__segment + .rte__segment {
     margin-top: 60px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003152}}
   .rte__image {
     width: 100%;
     float: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_rte\.scss}line{font-family:\00003155}}
   .rte__image + .rte__text {
     padding-left: 0;
     padding-top: 0;
@@ -2066,13 +2123,13 @@ a.slides__slide {
     clear: both;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\000036}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\000036}}
 .form {
   display: block;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000311}}
 .form,
 .form__line,
 .form__input,
@@ -2083,21 +2140,21 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000323}}
 .form__line {
   display: block;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000326}}
 .form__line + .form__line {
   margin-top: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000331}}
 .form__line .form__input + .form__input {
   margin-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000337}}
 .form__input {
   display: block;
   width: 100%;
@@ -2105,12 +2162,12 @@ a.slides__slide {
   padding: 10px 7px;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000347}}
 .form__input.ng-invalid-required.ng-dirty {
   border: 1px solid #bf343b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000353}}
 .form__button {
   display: block;
   width: 100%;
@@ -2121,32 +2178,32 @@ a.slides__slide {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000363}}
 .form__msg {
   display: block;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000371}}
 .form__line--2:after {
   content: "";
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000376}}
 .form__line--2 .form__input {
   width: calc(50% - 7px);
   margin-right: 7px;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_form\.scss}line{font-family:\0000380}}
 .form__line--2 .form__input + .form__input {
   margin-top: 0;
   margin-right: 0;
   margin-left: 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\000039}}
 .btn {
   width: auto;
   border: none;
@@ -2163,21 +2220,21 @@ a.slides__slide {
   font-weight: 400;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
 .btn {
   font-size: 18px;
   font-size: 1rem;
   line-height: 18px;
   line-height: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000330}}
 .btn:after {
   content: "";
   display: block;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000337}}
 .btn,
 .btn__text,
 .btn__text:before,
@@ -2187,7 +2244,7 @@ a.slides__slide {
   -webkit-box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000348}}
 .btn__text {
   -moz-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -2210,7 +2267,7 @@ a.slides__slide {
   text-decoration: none;
   border: 2px dotted #bf343b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000366}}
 .btn__text:before {
   content: "";
   display: block;
@@ -2223,32 +2280,32 @@ a.slides__slide {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000390}}
 .btn__icon {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000396}}
 .btn--center {
   float: none;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\0000399}}
 .btn--center .btn__text {
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003104}}
 .btn--fit {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003106}}
 .btn--fit .btn__text {
   min-width: 0;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003113}}
 .btn--inherit,
 .btn--inherit .btn__icon,
 .btn--inherit .btn__text {
@@ -2256,26 +2313,26 @@ a.slides__slide {
   color: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003126}}
 .btn--auto .btn__text {
   min-width: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003131}}
 .btn--easter {
   color: #bf343b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003133}}
 .btn--easter .btn__text {
   border-color: #ecb619;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/block\/_btn\.scss}line{font-family:\00003135}}
 .btn--easter .btn__text:before {
   background-color: #ecb619;
 }
 
-@media all and (min-width: 680px) and (max-width: 1008px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media all and (min-width: 680px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
   .btn {
     font-size: 32px;
     font-size: 1.7777777778rem;
@@ -2283,8 +2340,8 @@ a.slides__slide {
     line-height: 1.7777777778rem;
   }
 }
-@media all and (min-width: 1009px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
+@media all and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/global\/_global_fonts\.scss}line{font-family:\0000343}}
   .btn {
     font-size: 32px;
     font-size: 1.7777777778rem;
@@ -2295,7 +2352,7 @@ a.slides__slide {
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\000035}}
 html,
 button,
 input,
@@ -2304,25 +2361,25 @@ textarea {
   color: #222;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000313}}
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000318}}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000323}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000328}}
 hr {
   display: block;
   height: 1px;
@@ -2332,24 +2389,24 @@ hr {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000337}}
 img {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000341}}
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000347}}
 textarea {
   resize: vertical;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000351}}
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -2366,7 +2423,7 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\0000396}}
 .ir {
   background-color: transparent;
   border: 0;
@@ -2374,7 +2431,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003103}}
 .ir:before {
   content: "";
   display: block;
@@ -2382,13 +2439,13 @@ textarea {
   height: 150%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003110}}
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003115}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2400,7 +2457,7 @@ textarea {
   width: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003126}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2411,24 +2468,24 @@ textarea {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003136}}
 .invisible {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003140}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003146}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003150}}
 .clearfix {
   *zoom: 1;
 }
@@ -2437,7 +2494,7 @@ textarea {
    Print styles
    ========================================================================== */
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003159}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -2446,18 +2503,18 @@ textarea {
     text-shadow: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003166}}
   a,
   a:visited {
     text-decoration: underline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003171}}
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003175}}
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -2465,33 +2522,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003183}}
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003189}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003195}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003199}}
   tr,
   img {
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003204}}
   img {
     max-width: 100% !important;
   }
@@ -2499,7 +2556,7 @@ textarea {
   @page {
     margin: 0.5cm;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003212}}
   p,
   h2,
   h3 {
@@ -2507,28 +2564,28 @@ textarea {
     widows: 3;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_boilerplate\.scss}line{font-family:\00003219}}
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000031}}
 html, body {
   margin: 0;
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000037}}
 a {
   color: inherit;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\000039}}
 a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/workspace\/prof\.blomme\/assets\/styles\/vendor\/_vendor_pollutions\.scss}line{font-family:\0000315}}
 h1, h2, h3, h4, p {
   margin-top: 0;
 }
